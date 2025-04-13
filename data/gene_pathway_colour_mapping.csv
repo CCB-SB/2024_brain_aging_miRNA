@@ -1,0 +1,37 @@
+genes	pathway	colour	text_colour
+GSK3B	mTOR Signaling Pathway	#E09900	white
+MAPK1	mTOR Signaling Pathway	#E09900	white
+RHEB	mTOR Signaling Pathway	#E09900	white
+RICTOR	mTOR Signaling Pathway	#E09900	white
+ARNTL	Regulation of cell communication	#335F70	white
+CAMTA1	Regulation of cell communication	#335F70	white
+CISH	Regulation of cell communication	#335F70	white
+CSNK1A1	Regulation of cell communication	#335F70	white
+CSNK1G2	Regulation of cell communication	#335F70	white
+GSK3B	Regulation of cell communication	#335F70	white
+MAPK1	Regulation of cell communication	#335F70	white
+OPA1	Regulation of cell communication	#335F70	white
+PRKAR1B	Regulation of cell communication	#335F70	white
+PTPRJ	Regulation of cell communication	#335F70	white
+RHEB	Regulation of cell communication	#335F70	white
+RICTOR	Regulation of cell communication	#335F70	white
+RNF6	Regulation of cell communication	#335F70	white
+RORA	Regulation of cell communication	#335F70	white
+SDCBP	Regulation of cell communication	#335F70	white
+TCF7L2	Regulation of cell communication	#335F70	white
+TLE4	Regulation of cell communication	#335F70	white
+TSPAN14	Regulation of cell communication	#335F70	white
+ZNRF3	Regulation of cell communication	#335F70	white
+CCNH	NA	white	black
+ZFP322A	NA	white	black
+NWD2	NA	white	black
+MEF2A	NA	white	black
+BRWD1	NA	white	black
+ARID4A	NA	white	black
+ETV3	NA	white	black
+ZFP652	NA	white	black
+KRAS	NA	white	black
+ZFP236	NA	white	black
+HDAC4	NA	white	black
+JARID2	NA	white	black
+S1PR1	NA	white	black

@@ -1,0 +1,114 @@
+mouse_ID	V1	Pool number	Sample ID	Barcode Number	SampleID	sampleID	cohort	ID	brain_region	brain_region_long	age	sex	experiment	number	name	Experiment	treatment	months	cage	fastq_name
+61	731	BA47	CA2_olf_61	1	CA2_olf_61	BulkSeq_olf_61	CA2	CA2_olf_61	olf	Olfactory bulb	19	Female	CA2	61	DR1_1	diet restriction	treatment	20	4652056	BA47_CA2_olf_61_1
+62	732	BA47	CA2_olf_62	2	CA2_olf_62	BulkSeq_olf_62	CA2	CA2_olf_62	olf	Olfactory bulb	19	Female	CA2	62	DR2_1	diet restriction	treatment	20	4644991	BA47_CA2_olf_62_1
+63	733	BA47	CA2_olf_63	3	CA2_olf_63	BulkSeq_olf_63	CA2	CA2_olf_63	olf	Olfactory bulb	19	Female	CA2	63	AL1_1	diet restriction	control	20	4644990	BA47_CA2_olf_63_1
+64	734	BA47	CA2_olf_64	4	CA2_olf_64	BulkSeq_olf_64	CA2	CA2_olf_64	olf	Olfactory bulb	19	Female	CA2	64	DR1_2	diet restriction	treatment	20	4652056	BA47_CA2_olf_64_1
+65	735	BA47	CA2_olf_65	13	CA2_olf_65	BulkSeq_olf_65	CA2	CA2_olf_65	olf	Olfactory bulb	19	Female	CA2	65	DR2_2	diet restriction	treatment	20	4644991	BA47_CA2_olf_65_1
+66	736	BA47	CA2_olf_66	14	CA2_olf_66	BulkSeq_olf_66	CA2	CA2_olf_66	olf	Olfactory bulb	19	Female	CA2	66	AL1_2	diet restriction	control	20	4644990	BA47_CA2_olf_66_1
+67	737	BA47	CA2_olf_67	15	CA2_olf_67	BulkSeq_olf_67	CA2	CA2_olf_67	olf	Olfactory bulb	19	Female	CA2	67	DR2_3	diet restriction	treatment	20	4644991	BA47_CA2_olf_67_1
+68	738	BA47	CA2_olf_68	16	CA2_olf_68	BulkSeq_olf_68	CA2	CA2_olf_68	olf	Olfactory bulb	19	Female	CA2	68	AL1_3	diet restriction	control	20	4644990	BA47_CA2_olf_68_1
+69	747	BA48	CA2_olf_69	1	CA2_olf_69	BulkSeq_olf_69	CA2	CA2_olf_69	olf	Olfactory bulb	19	Female	CA2	69	AL1_4	diet restriction	control	20	4644990	BA48_CA2_olf_69_1
+61	939	BA60	CA2_plx_61	1	CA2_plx_61	BulkSeq_plx_61	CA2	CA2_plx_61	plx	Choroid Plexus	19	Female	CA2	61	DR1_1	diet restriction	treatment	20	4652056	BA60_CA2_plx_61_1
+61	940	BA60	CA2_hi2_61	2	CA2_hi2_61	BulkSeq_hi2_61	CA2	CA2_hi2_61	hi2	Hippocampus (posterior)	19	Female	CA2	61	DR1_1	diet restriction	treatment	20	4652056	BA60_CA2_hi2_61_1
+61	941	BA60	CA2_vis_61	3	CA2_vis_61	BulkSeq_vis_61	CA2	CA2_vis_61	vis	Visual Cortex	19	Female	CA2	61	DR1_1	diet restriction	treatment	20	4652056	BA60_CA2_vis_61_1
+61	942	BA60	CA2_ent_61	4	CA2_ent_61	BulkSeq_ent_61	CA2	CA2_ent_61	ent	Entorhinal cortex	19	Female	CA2	61	DR1_1	diet restriction	treatment	20	4652056	BA60_CA2_ent_61_1
+61	944	BA60	CA2_pon_61	14	CA2_pon_61	BulkSeq_pon_61	CA2	CA2_pon_61	pon	Pons	19	Female	CA2	61	DR1_1	diet restriction	treatment	20	4652056	BA60_CA2_pon_61_1
+61	945	BA60	CA2_cer_61	15	CA2_cer_61	BulkSeq_cer_61	CA2	CA2_cer_61	cer	Cerebellum	19	Female	CA2	61	DR1_1	diet restriction	treatment	20	4652056	BA60_CA2_cer_61_1
+61	946	BA60	CA2_med_61	16	CA2_med_61	BulkSeq_med_61	CA2	CA2_med_61	med	Medulla	19	Female	CA2	61	DR1_1	diet restriction	treatment	20	4652056	BA60_CA2_med_61_1
+61	947	BA60	CA2_cor_61	25	CA2_cor_61	BulkSeq_cor_61	CA2	CA2_cor_61	cor	Motor cortex	19	Female	CA2	61	DR1_1	diet restriction	treatment	20	4652056	BA60_CA2_cor_61_1
+62	949	BA60	CA2_cp_62	27	CA2_cp_62	BulkSeq_cp_62	CA2	CA2_cp_62	cp	Caudate putamen	19	Female	CA2	62	DR2_1	diet restriction	treatment	20	4644991	BA60_CA2_cp_62_1
+62	950	BA60	CA2_svz_62	28	CA2_svz_62	BulkSeq_svz_62	CA2	CA2_svz_62	svz	Subventricular zone	19	Female	CA2	62	DR2_1	diet restriction	treatment	20	4644991	BA60_CA2_svz_62_1
+62	952	BA60	CA2_th_62	30	CA2_th_62	BulkSeq_th_62	CA2	CA2_th_62	th	Thalamus	19	Female	CA2	62	DR2_1	diet restriction	treatment	20	4644991	BA60_CA2_th_62_1
+62	953	BA60	CA2_hy_62	31	CA2_hy_62	BulkSeq_hy_62	CA2	CA2_hy_62	hy	Hypothalamus	19	Female	CA2	62	DR2_1	diet restriction	treatment	20	4644991	BA60_CA2_hy_62_1
+62	954	BA60	CA2_hi_62	32	CA2_hi_62	BulkSeq_hi_62	CA2	CA2_hi_62	hi	Hippocampus (anterior)	19	Female	CA2	62	DR2_1	diet restriction	treatment	20	4644991	BA60_CA2_hi_62_1
+62	956	BA61	CA2_hi2_62	2	CA2_hi2_62	BulkSeq_hi2_62	CA2	CA2_hi2_62	hi2	Hippocampus (posterior)	19	Female	CA2	62	DR2_1	diet restriction	treatment	20	4644991	BA61_CA2_hi2_62_1
+62	957	BA61	CA2_vis_62	3	CA2_vis_62	BulkSeq_vis_62	CA2	CA2_vis_62	vis	Visual Cortex	19	Female	CA2	62	DR2_1	diet restriction	treatment	20	4644991	BA61_CA2_vis_62_1
+62	958	BA61	CA2_ent_62	4	CA2_ent_62	BulkSeq_ent_62	CA2	CA2_ent_62	ent	Entorhinal cortex	19	Female	CA2	62	DR2_1	diet restriction	treatment	20	4644991	BA61_CA2_ent_62_1
+62	960	BA61	CA2_pon_62	14	CA2_pon_62	BulkSeq_pon_62	CA2	CA2_pon_62	pon	Pons	19	Female	CA2	62	DR2_1	diet restriction	treatment	20	4644991	BA61_CA2_pon_62_1
+62	961	BA61	CA2_cer_62	15	CA2_cer_62	BulkSeq_cer_62	CA2	CA2_cer_62	cer	Cerebellum	19	Female	CA2	62	DR2_1	diet restriction	treatment	20	4644991	BA61_CA2_cer_62_1
+62	962	BA61	CA2_med_62	16	CA2_med_62	BulkSeq_med_62	CA2	CA2_med_62	med	Medulla	19	Female	CA2	62	DR2_1	diet restriction	treatment	20	4644991	BA61_CA2_med_62_1
+61	963	BA61	CA2_cp_61	25	CA2_cp_61	BulkSeq_cp_61	CA2	CA2_cp_61	cp	Caudate putamen	19	Female	CA2	61	DR1_1	diet restriction	treatment	20	4652056	BA61_CA2_cp_61_1
+63	964	BA61	CA2_cor_63	26	CA2_cor_63	BulkSeq_cor_63	CA2	CA2_cor_63	cor	Motor cortex	19	Female	CA2	63	AL1_1	diet restriction	control	20	4644990	BA61_CA2_cor_63_1
+63	965	BA61	CA2_cp_63	27	CA2_cp_63	BulkSeq_cp_63	CA2	CA2_cp_63	cp	Caudate putamen	19	Female	CA2	63	AL1_1	diet restriction	control	20	4644990	BA61_CA2_cp_63_1
+63	966	BA61	CA2_svz_63	28	CA2_svz_63	BulkSeq_svz_63	CA2	CA2_svz_63	svz	Subventricular zone	19	Female	CA2	63	AL1_1	diet restriction	control	20	4644990	BA61_CA2_svz_63_1
+63	968	BA61	CA2_th_63	30	CA2_th_63	BulkSeq_th_63	CA2	CA2_th_63	th	Thalamus	19	Female	CA2	63	AL1_1	diet restriction	control	20	4644990	BA61_CA2_th_63_1
+63	969	BA61	CA2_hy_63	31	CA2_hy_63	BulkSeq_hy_63	CA2	CA2_hy_63	hy	Hypothalamus	19	Female	CA2	63	AL1_1	diet restriction	control	20	4644990	BA61_CA2_hy_63_1
+63	970	BA61	CA2_hi_63	32	CA2_hi_63	BulkSeq_hi_63	CA2	CA2_hi_63	hi	Hippocampus (anterior)	19	Female	CA2	63	AL1_1	diet restriction	control	20	4644990	BA61_CA2_hi_63_1
+63	971	BA62	CA2_plx_63	1	CA2_plx_63	BulkSeq_plx_63	CA2	CA2_plx_63	plx	Choroid Plexus	19	Female	CA2	63	AL1_1	diet restriction	control	20	4644990	BA62_CA2_plx_63_1
+63	972	BA62	CA2_hi2_63	2	CA2_hi2_63	BulkSeq_hi2_63	CA2	CA2_hi2_63	hi2	Hippocampus (posterior)	19	Female	CA2	63	AL1_1	diet restriction	control	20	4644990	BA62_CA2_hi2_63_1
+63	973	BA62	CA2_vis_63	3	CA2_vis_63	BulkSeq_vis_63	CA2	CA2_vis_63	vis	Visual Cortex	19	Female	CA2	63	AL1_1	diet restriction	control	20	4644990	BA62_CA2_vis_63_1
+63	974	BA62	CA2_ent_63	4	CA2_ent_63	BulkSeq_ent_63	CA2	CA2_ent_63	ent	Entorhinal cortex	19	Female	CA2	63	AL1_1	diet restriction	control	20	4644990	BA62_CA2_ent_63_1
+63	976	BA62	CA2_pon_63	14	CA2_pon_63	BulkSeq_pon_63	CA2	CA2_pon_63	pon	Pons	19	Female	CA2	63	AL1_1	diet restriction	control	20	4644990	BA62_CA2_pon_63_1
+63	977	BA62	CA2_cer_63	15	CA2_cer_63	BulkSeq_cer_63	CA2	CA2_cer_63	cer	Cerebellum	19	Female	CA2	63	AL1_1	diet restriction	control	20	4644990	BA62_CA2_cer_63_1
+63	978	BA62	CA2_med_63	16	CA2_med_63	BulkSeq_med_63	CA2	CA2_med_63	med	Medulla	19	Female	CA2	63	AL1_1	diet restriction	control	20	4644990	BA62_CA2_med_63_1
+61	979	BA62	CA2_svz_61	25	CA2_svz_61	BulkSeq_svz_61	CA2	CA2_svz_61	svz	Subventricular zone	19	Female	CA2	61	DR1_1	diet restriction	treatment	20	4652056	BA62_CA2_svz_61_1
+64	984	BA62	CA2_th_64	30	CA2_th_64	BulkSeq_th_64	CA2	CA2_th_64	th	Thalamus	19	Female	CA2	64	DR1_2	diet restriction	treatment	20	4652056	BA62_CA2_th_64_1
+64	986	BA62	CA2_hi_64	32	CA2_hi_64	BulkSeq_hi_64	CA2	CA2_hi_64	hi	Hippocampus (anterior)	19	Female	CA2	64	DR1_2	diet restriction	treatment	20	4652056	BA62_CA2_hi_64_1
+64	988	BA63	CA2_hi2_64	2	CA2_hi2_64	BulkSeq_hi2_64	CA2	CA2_hi2_64	hi2	Hippocampus (posterior)	19	Female	CA2	64	DR1_2	diet restriction	treatment	20	4652056	BA63_CA2_hi2_64_1
+64	989	BA63	CA2_vis_64	3	CA2_vis_64	BulkSeq_vis_64	CA2	CA2_vis_64	vis	Visual Cortex	19	Female	CA2	64	DR1_2	diet restriction	treatment	20	4652056	BA63_CA2_vis_64_1
+64	990	BA63	CA2_ent_64	4	CA2_ent_64	BulkSeq_ent_64	CA2	CA2_ent_64	ent	Entorhinal cortex	19	Female	CA2	64	DR1_2	diet restriction	treatment	20	4652056	BA63_CA2_ent_64_1
+64	993	BA63	CA2_cer_64	15	CA2_cer_64	BulkSeq_cer_64	CA2	CA2_cer_64	cer	Cerebellum	19	Female	CA2	64	DR1_2	diet restriction	treatment	20	4652056	BA63_CA2_cer_64_1
+64	994	BA63	CA2_med_64	16	CA2_med_64	BulkSeq_med_64	CA2	CA2_med_64	med	Medulla	19	Female	CA2	64	DR1_2	diet restriction	treatment	20	4652056	BA63_CA2_med_64_1
+65	996	BA63	CA2_cor_65	26	CA2_cor_65	BulkSeq_cor_65	CA2	CA2_cor_65	cor	Motor cortex	19	Female	CA2	65	DR2_2	diet restriction	treatment	20	4644991	BA63_CA2_cor_65_1
+65	997	BA63	CA2_cp_65	27	CA2_cp_65	BulkSeq_cp_65	CA2	CA2_cp_65	cp	Caudate putamen	19	Female	CA2	65	DR2_2	diet restriction	treatment	20	4644991	BA63_CA2_cp_65_1
+65	998	BA63	CA2_svz_65	28	CA2_svz_65	BulkSeq_svz_65	CA2	CA2_svz_65	svz	Subventricular zone	19	Female	CA2	65	DR2_2	diet restriction	treatment	20	4644991	BA63_CA2_svz_65_1
+65	1000	BA63	CA2_th_65	30	CA2_th_65	BulkSeq_th_65	CA2	CA2_th_65	th	Thalamus	19	Female	CA2	65	DR2_2	diet restriction	treatment	20	4644991	BA63_CA2_th_65_1
+65	1001	BA63	CA2_hy_65	31	CA2_hy_65	BulkSeq_hy_65	CA2	CA2_hy_65	hy	Hypothalamus	19	Female	CA2	65	DR2_2	diet restriction	treatment	20	4644991	BA63_CA2_hy_65_1
+65	1002	BA63	CA2_hi_65	32	CA2_hi_65	BulkSeq_hi_65	CA2	CA2_hi_65	hi	Hippocampus (anterior)	19	Female	CA2	65	DR2_2	diet restriction	treatment	20	4644991	BA63_CA2_hi_65_1
+65	1003	BA64	CA2_plx_65	1	CA2_plx_65	BulkSeq_plx_65	CA2	CA2_plx_65	plx	Choroid Plexus	19	Female	CA2	65	DR2_2	diet restriction	treatment	20	4644991	BA64_CA2_plx_65_1
+65	1004	BA64	CA2_hi2_65	2	CA2_hi2_65	BulkSeq_hi2_65	CA2	CA2_hi2_65	hi2	Hippocampus (posterior)	19	Female	CA2	65	DR2_2	diet restriction	treatment	20	4644991	BA64_CA2_hi2_65_1
+65	1005	BA64	CA2_vis_65	3	CA2_vis_65	BulkSeq_vis_65	CA2	CA2_vis_65	vis	Visual Cortex	19	Female	CA2	65	DR2_2	diet restriction	treatment	20	4644991	BA64_CA2_vis_65_1
+65	1008	BA64	CA2_pon_65	14	CA2_pon_65	BulkSeq_pon_65	CA2	CA2_pon_65	pon	Pons	19	Female	CA2	65	DR2_2	diet restriction	treatment	20	4644991	BA64_CA2_pon_65_1
+65	1010	BA64	CA2_med_65	16	CA2_med_65	BulkSeq_med_65	CA2	CA2_med_65	med	Medulla	19	Female	CA2	65	DR2_2	diet restriction	treatment	20	4644991	BA64_CA2_med_65_1
+61	1011	BA64	CA2_th_61	25	CA2_th_61	BulkSeq_th_61	CA2	CA2_th_61	th	Thalamus	19	Female	CA2	61	DR1_1	diet restriction	treatment	20	4652056	BA64_CA2_th_61_1
+66	1012	BA64	CA2_cor_66	26	CA2_cor_66	BulkSeq_cor_66	CA2	CA2_cor_66	cor	Motor cortex	19	Female	CA2	66	AL1_2	diet restriction	control	20	4644990	BA64_CA2_cor_66_1
+66	1013	BA64	CA2_cp_66	27	CA2_cp_66	BulkSeq_cp_66	CA2	CA2_cp_66	cp	Caudate putamen	19	Female	CA2	66	AL1_2	diet restriction	control	20	4644990	BA64_CA2_cp_66_1
+66	1014	BA64	CA2_svz_66	28	CA2_svz_66	BulkSeq_svz_66	CA2	CA2_svz_66	svz	Subventricular zone	19	Female	CA2	66	AL1_2	diet restriction	control	20	4644990	BA64_CA2_svz_66_1
+66	1016	BA64	CA2_th_66	30	CA2_th_66	BulkSeq_th_66	CA2	CA2_th_66	th	Thalamus	19	Female	CA2	66	AL1_2	diet restriction	control	20	4644990	BA64_CA2_th_66_1
+66	1017	BA64	CA2_hy_66	31	CA2_hy_66	BulkSeq_hy_66	CA2	CA2_hy_66	hy	Hypothalamus	19	Female	CA2	66	AL1_2	diet restriction	control	20	4644990	BA64_CA2_hy_66_1
+66	1018	BA64	CA2_hi_66	32	CA2_hi_66	BulkSeq_hi_66	CA2	CA2_hi_66	hi	Hippocampus (anterior)	19	Female	CA2	66	AL1_2	diet restriction	control	20	4644990	BA64_CA2_hi_66_1
+66	1019	BA65	CA2_plx_66	1	CA2_plx_66	BulkSeq_plx_66	CA2	CA2_plx_66	plx	Choroid Plexus	19	Female	CA2	66	AL1_2	diet restriction	control	20	4644990	BA65_CA2_plx_66_1
+66	1020	BA65	CA2_hi2_66	2	CA2_hi2_66	BulkSeq_hi2_66	CA2	CA2_hi2_66	hi2	Hippocampus (posterior)	19	Female	CA2	66	AL1_2	diet restriction	control	20	4644990	BA65_CA2_hi2_66_1
+66	1021	BA65	CA2_vis_66	3	CA2_vis_66	BulkSeq_vis_66	CA2	CA2_vis_66	vis	Visual Cortex	19	Female	CA2	66	AL1_2	diet restriction	control	20	4644990	BA65_CA2_vis_66_1
+66	1022	BA65	CA2_ent_66	4	CA2_ent_66	BulkSeq_ent_66	CA2	CA2_ent_66	ent	Entorhinal cortex	19	Female	CA2	66	AL1_2	diet restriction	control	20	4644990	BA65_CA2_ent_66_1
+66	1024	BA65	CA2_pon_66	14	CA2_pon_66	BulkSeq_pon_66	CA2	CA2_pon_66	pon	Pons	19	Female	CA2	66	AL1_2	diet restriction	control	20	4644990	BA65_CA2_pon_66_1
+66	1025	BA65	CA2_cer_66	15	CA2_cer_66	BulkSeq_cer_66	CA2	CA2_cer_66	cer	Cerebellum	19	Female	CA2	66	AL1_2	diet restriction	control	20	4644990	BA65_CA2_cer_66_1
+66	1026	BA65	CA2_med_66	16	CA2_med_66	BulkSeq_med_66	CA2	CA2_med_66	med	Medulla	19	Female	CA2	66	AL1_2	diet restriction	control	20	4644990	BA65_CA2_med_66_1
+61	1027	BA65	CA2_hy_61	25	CA2_hy_61	BulkSeq_hy_61	CA2	CA2_hy_61	hy	Hypothalamus	19	Female	CA2	61	DR1_1	diet restriction	treatment	20	4652056	BA65_CA2_hy_61_1
+61	1043	BA66	CA2_hi_61	25	CA2_hi_61	BulkSeq_hi_61	CA2	CA2_hi_61	hi	Hippocampus (anterior)	19	Female	CA2	61	DR1_1	diet restriction	treatment	20	4652056	BA66_CA2_hi_61_1
+67	1067	BA68	CA2_cp_67	1	CA2_cp_67	BulkSeq_cp_67	CA2	CA2_cp_67	cp	Caudate putamen	19	Female	CA2	67	DR2_3	diet restriction	treatment	20	4644991	BA68_CA2_cp_67_1
+67	1083	BA69	CA2_svz_67	1	CA2_svz_67	BulkSeq_svz_67	CA2	CA2_svz_67	svz	Subventricular zone	19	Female	CA2	67	DR2_3	diet restriction	treatment	20	4644991	BA69_CA2_svz_67_1
+67	1115	BA71	CA2_th_67	1	CA2_th_67	BulkSeq_th_67	CA2	CA2_th_67	th	Thalamus	19	Female	CA2	67	DR2_3	diet restriction	treatment	20	4644991	BA71_CA2_th_67_1
+67	1123	BA71	CA2_hy_67	25	CA2_hy_67	BulkSeq_hy_67	CA2	CA2_hy_67	hy	Hypothalamus	19	Female	CA2	67	DR2_3	diet restriction	treatment	20	4644991	BA71_CA2_hy_67_1
+67	1147	BA73	CA2_plx_67	1	CA2_plx_67	BulkSeq_plx_67	CA2	CA2_plx_67	plx	Choroid Plexus	19	Female	CA2	67	DR2_3	diet restriction	treatment	20	4644991	BA73_CA2_plx_67_1
+67	1148	BA73	CA2_hi2_67	2	CA2_hi2_67	BulkSeq_hi2_67	CA2	CA2_hi2_67	hi2	Hippocampus (posterior)	19	Female	CA2	67	DR2_3	diet restriction	treatment	20	4644991	BA73_CA2_hi2_67_1
+67	1149	BA73	CA2_vis_67	3	CA2_vis_67	BulkSeq_vis_67	CA2	CA2_vis_67	vis	Visual Cortex	19	Female	CA2	67	DR2_3	diet restriction	treatment	20	4644991	BA73_CA2_vis_67_1
+67	1150	BA73	CA2_ent_67	4	CA2_ent_67	BulkSeq_ent_67	CA2	CA2_ent_67	ent	Entorhinal cortex	19	Female	CA2	67	DR2_3	diet restriction	treatment	20	4644991	BA73_CA2_ent_67_1
+67	1152	BA73	CA2_pon_67	14	CA2_pon_67	BulkSeq_pon_67	CA2	CA2_pon_67	pon	Pons	19	Female	CA2	67	DR2_3	diet restriction	treatment	20	4644991	BA73_CA2_pon_67_1
+67	1153	BA73	CA2_cer_67	15	CA2_cer_67	BulkSeq_cer_67	CA2	CA2_cer_67	cer	Cerebellum	19	Female	CA2	67	DR2_3	diet restriction	treatment	20	4644991	BA73_CA2_cer_67_1
+67	1154	BA73	CA2_med_67	16	CA2_med_67	BulkSeq_med_67	CA2	CA2_med_67	med	Medulla	19	Female	CA2	67	DR2_3	diet restriction	treatment	20	4644991	BA73_CA2_med_67_1
+67	1155	BA73	CA2_hi_67	25	CA2_hi_67	BulkSeq_hi_67	CA2	CA2_hi_67	hi	Hippocampus (anterior)	19	Female	CA2	67	DR2_3	diet restriction	treatment	20	4644991	BA73_CA2_hi_67_1
+68	1156	BA73	CA2_cor_68	26	CA2_cor_68	BulkSeq_cor_68	CA2	CA2_cor_68	cor	Motor cortex	19	Female	CA2	68	AL1_3	diet restriction	control	20	4644990	BA73_CA2_cor_68_1
+68	1157	BA73	CA2_cp_68	27	CA2_cp_68	BulkSeq_cp_68	CA2	CA2_cp_68	cp	Caudate putamen	19	Female	CA2	68	AL1_3	diet restriction	control	20	4644990	BA73_CA2_cp_68_1
+68	1158	BA73	CA2_svz_68	28	CA2_svz_68	BulkSeq_svz_68	CA2	CA2_svz_68	svz	Subventricular zone	19	Female	CA2	68	AL1_3	diet restriction	control	20	4644990	BA73_CA2_svz_68_1
+68	1161	BA73	CA2_hy_68	31	CA2_hy_68	BulkSeq_hy_68	CA2	CA2_hy_68	hy	Hypothalamus	19	Female	CA2	68	AL1_3	diet restriction	control	20	4644990	BA73_CA2_hy_68_1
+68	1162	BA73	CA2_hi_68	32	CA2_hi_68	BulkSeq_hi_68	CA2	CA2_hi_68	hi	Hippocampus (anterior)	19	Female	CA2	68	AL1_3	diet restriction	control	20	4644990	BA73_CA2_hi_68_1
+68	1163	BA74	CA2_plx_68	1	CA2_plx_68	BulkSeq_plx_68	CA2	CA2_plx_68	plx	Choroid Plexus	19	Female	CA2	68	AL1_3	diet restriction	control	20	4644990	BA74_CA2_plx_68_1
+68	1164	BA74	CA2_hi2_68	2	CA2_hi2_68	BulkSeq_hi2_68	CA2	CA2_hi2_68	hi2	Hippocampus (posterior)	19	Female	CA2	68	AL1_3	diet restriction	control	20	4644990	BA74_CA2_hi2_68_1
+68	1165	BA74	CA2_vis_68	3	CA2_vis_68	BulkSeq_vis_68	CA2	CA2_vis_68	vis	Visual Cortex	19	Female	CA2	68	AL1_3	diet restriction	control	20	4644990	BA74_CA2_vis_68_1
+68	1168	BA74	CA2_pon_68	14	CA2_pon_68	BulkSeq_pon_68	CA2	CA2_pon_68	pon	Pons	19	Female	CA2	68	AL1_3	diet restriction	control	20	4644990	BA74_CA2_pon_68_1
+68	1169	BA74	CA2_cer_68	15	CA2_cer_68	BulkSeq_cer_68	CA2	CA2_cer_68	cer	Cerebellum	19	Female	CA2	68	AL1_3	diet restriction	control	20	4644990	BA74_CA2_cer_68_1
+68	1170	BA74	CA2_med_68	16	CA2_med_68	BulkSeq_med_68	CA2	CA2_med_68	med	Medulla	19	Female	CA2	68	AL1_3	diet restriction	control	20	4644990	BA74_CA2_med_68_1
+69	1172	BA74	CA2_cor_69	26	CA2_cor_69	BulkSeq_cor_69	CA2	CA2_cor_69	cor	Motor cortex	19	Female	CA2	69	AL1_4	diet restriction	control	20	4644990	BA74_CA2_cor_69_1
+69	1173	BA74	CA2_cp_69	27	CA2_cp_69	BulkSeq_cp_69	CA2	CA2_cp_69	cp	Caudate putamen	19	Female	CA2	69	AL1_4	diet restriction	control	20	4644990	BA74_CA2_cp_69_1
+69	1174	BA74	CA2_svz_69	28	CA2_svz_69	BulkSeq_svz_69	CA2	CA2_svz_69	svz	Subventricular zone	19	Female	CA2	69	AL1_4	diet restriction	control	20	4644990	BA74_CA2_svz_69_1
+69	1176	BA74	CA2_th_69	30	CA2_th_69	BulkSeq_th_69	CA2	CA2_th_69	th	Thalamus	19	Female	CA2	69	AL1_4	diet restriction	control	20	4644990	BA74_CA2_th_69_1
+69	1177	BA74	CA2_hy_69	31	CA2_hy_69	BulkSeq_hy_69	CA2	CA2_hy_69	hy	Hypothalamus	19	Female	CA2	69	AL1_4	diet restriction	control	20	4644990	BA74_CA2_hy_69_1
+69	1178	BA74	CA2_hi_69	32	CA2_hi_69	BulkSeq_hi_69	CA2	CA2_hi_69	hi	Hippocampus (anterior)	19	Female	CA2	69	AL1_4	diet restriction	control	20	4644990	BA74_CA2_hi_69_1
+69	1179	BA75	CA2_plx_69	1	CA2_plx_69	BulkSeq_plx_69	CA2	CA2_plx_69	plx	Choroid Plexus	19	Female	CA2	69	AL1_4	diet restriction	control	20	4644990	BA75_CA2_plx_69_1
+69	1180	BA75	CA2_hi2_69	2	CA2_hi2_69	BulkSeq_hi2_69	CA2	CA2_hi2_69	hi2	Hippocampus (posterior)	19	Female	CA2	69	AL1_4	diet restriction	control	20	4644990	BA75_CA2_hi2_69_1
+69	1181	BA75	CA2_vis_69	3	CA2_vis_69	BulkSeq_vis_69	CA2	CA2_vis_69	vis	Visual Cortex	19	Female	CA2	69	AL1_4	diet restriction	control	20	4644990	BA75_CA2_vis_69_1
+69	1182	BA75	CA2_ent_69	4	CA2_ent_69	BulkSeq_ent_69	CA2	CA2_ent_69	ent	Entorhinal cortex	19	Female	CA2	69	AL1_4	diet restriction	control	20	4644990	BA75_CA2_ent_69_1
+69	1184	BA75	CA2_pon_69	14	CA2_pon_69	BulkSeq_pon_69	CA2	CA2_pon_69	pon	Pons	19	Female	CA2	69	AL1_4	diet restriction	control	20	4644990	BA75_CA2_pon_69_1
+69	1185	BA75	CA2_cer_69	15	CA2_cer_69	BulkSeq_cer_69	CA2	CA2_cer_69	cer	Cerebellum	19	Female	CA2	69	AL1_4	diet restriction	control	20	4644990	BA75_CA2_cer_69_1
+69	1186	BA75	CA2_med_69	16	CA2_med_69	BulkSeq_med_69	CA2	CA2_med_69	med	Medulla	19	Female	CA2	69	AL1_4	diet restriction	control	20	4644990	BA75_CA2_med_69_1

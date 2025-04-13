@@ -1,0 +1,278 @@
+### GENERAL SETTINGS
+feature_list: data/miRNA_list.csv
+mapping_info: data/mapping_infos/mapping_vs_mm10_mis1_microglia.csv
+
+results_folder: results/results_rpmm
+
+#--------------------- modules --------------------
+# additionnal modules: diff_exp_values_table, mirna_expression_median_violin_plot, pathway_analysis_results_heatmap_plots, halushka_violin_plots, make_publication_folder
+
+# make publication folder
+# modules: [
+#     make_publication_folder,
+# ]
+
+#microglia
+modules: [ 
+  alignment_stats_bar_plot,
+  #mirna_number_per_tissue_bar_plot,
+  #metadata_overview_tables,
+  diff_exp, 
+  volcano_scatter_plot, 
+  #fc_versus_expr_scatter_plot,
+  top_expressed_mirnas,
+  top_expressed_mirnas_heatmap_plot,
+  coefficient_of_variation,
+  hclust_expression_zscores_heatmap_plot,
+  #pca_scatter_plot,
+  #umap,
+  #mirna_expression_median_violin_plot,
+  mirna_expression_median_per_group_line_plot,
+  comparing_overlapping_feature_sets
+] 
+
+
+#---------- common parameter and colours ----------
+common:
+  input:
+    raw_data_folder: raw_data/data
+    annotation_data_folder: data/annotations
+    data_sub_set: microglia
+    rna_class: miRNA
+    feature_column: miRNA
+    feature_filtering: filtered
+    norm: rpmm_norm
+    detection_group: age
+    detection_rate: 10p
+    identifier_column: SampleID
+  parameters:
+    set_seed: 42
+  plots:
+    dpi: 600
+    font_family: "Arial"
+    image_height: 6
+    image_width: 9
+    image_units: cm
+    font_size: 9
+    font_size_header: 12
+
+colors:
+  - direction:
+      up: "#E09900"
+      up_light: "#E9BD5B"
+      light: "#F4F5F5"
+      down_light: "#91C2AB"
+      down: "#488468"
+      pos: "#E09900"
+      neg: "#488468"
+  - age:
+      young: "#C74132"
+      old: "#B5DAEA"
+  - RNA: 
+      piRNA: "#9f4e07"
+      mRNA: "#c37012"
+      lncRNA: "#e1a458"
+      miRNA: "#98c27c"
+      snoRNA: "#6baf6b"
+      snRNA: "#399852"
+      tRNA: "#1f743a"
+      rRNA: "#01592f"
+      scaRNA: "#003c24"
+      circRNA: ""
+
+xticks_names:
+  - categories:
+      age_capital: "Age"
+      age: "age"
+
+  - age:
+      #3: "3m"
+      #21: "21m"
+      young: "young"
+      old: "old"
+
+  - age_sample:
+      young1: "y1"
+      young2: "y2"
+      young3: "y3" 
+      young4: "y4"
+      old1: "o1"
+      old2: "o2"
+      old3: "o3"
+      old4: "o4"
+
+
+#----------------- preprocessing stats -----------------
+alignment_stats_bar_plot:
+  grouping: ["age", ""]
+
+mirna_number_per_tissue_bar_plot:
+    tissue: age
+    detection_rate: [10, 50]
+    min_detect_raw: 5
+
+
+#------------------ plots and tables ------------------        
+metadata_overview_tables:
+  combinations:
+    - SampleID:
+        g: ["age", "group"]
+        pooling: []
+
+diff_exp:
+  log_list: ["_log2", "_log10"]
+  adjustment: BH
+  comparisons:
+    - age:
+        g: ["old", "young"]
+        subset: []
+
+pca_scatter_plot:
+  parameters:
+  properties: 
+    - p1: ["age", "group"]
+    - p2: ["age"]
+
+top_expressed_mirnas: 
+  top_list: ["all", "100", "75", "50", "25"]
+
+top_expressed_mirnas_heatmap_plot:
+  top_list: ["100", "75", "50", "25"]
+  sample_order: ["young1", "young2", "young3", "young4", "old1", "old2", "old3", "old4"]
+  properties: 
+    - [age]
+
+coefficient_of_variation:
+  tissues: "age"
+  top_list: [100, 75, 50, 25]
+
+hclust_expression_zscores_heatmap_plot:
+  top_list: ["100", "75", "50", "25"]
+  sample_order: ["young1", "young2", "young3", "young4", "old1", "old2", "old3", "old4"]
+  properties: 
+    - [age]
+  diff_log: "_log2"
+
+umap:
+  top_list: ["all", "100", "75", "50"]
+  neighbors: [5,10,25] # [5 -> 50]
+  min_dist: [0.1,0.25] # [0.01 -> 0.5]
+  metric: [euclidean,correlation]
+  init: [random] # [random,spectral]
+  seed: [42]
+  norm: [raw,std]
+  properties: 
+    - [age]
+
+mirna_expression_median_violin_plot:
+  comparisons:
+    - g1:
+        comp: ["group", "age"]
+        plot_size: [6, 6]
+        order_of_x_axis: ["young", "old"]
+        plot_layout: [1, 1]
+  parameters:
+    corr_methods: ["spearman"]
+    diff_log: "_log2"
+    sig_niveau: 0.05
+    fc_th: 1.5
+  files: 
+   # - [../../data_microglia/sncrna-pipeline-input_%s/quantification/miRNA_filtered_quantification_rpmmm_norm.detection_rate_10p_per_age.csv]
+   - [data/miRNA_list.csv]
+  features:
+    - [mmu-miR-9-3p, mmu-miR-9-5p, mmu-miR-155-5p, mmu-miR-142a-3p, mmu-miR-146a-5p, mmu-miR-29c-3p]
+  manual_plots_parameters:
+    features:
+    tissues: []
+    plot_layout: [3, 5]
+    plot_size: [10, 14]
+
+mirna_expression_median_per_group_line_plot:
+  diff_log: _log10
+  properties: 
+    - [age]
+  features_black:
+   - [mmu-miR-155-5p]
+  features_grey:
+   #- [mmu-miR-9-3p, mmu-miR-9-5p, mmu-miR-142a-3p, mmu-miR-146a-5p, mmu-miR-29c-3p]
+   - [mmu-miR-146a-5p, mmu-miR-5100]
+
+fc_versus_expr_scatter_plot:
+  diff_log: _log10
+  prop: age
+  thresholds:
+      fc: 1.5
+      adj_p_value: 0.05
+      auc: ""
+  comparisons:
+    - age:
+        g: ["old", "young"]
+        subset: []
+
+volcano_scatter_plot:
+  diff_log: _log2
+  parameters:
+    updownregulated: 1.5
+    significance: 0.05
+    mineffectsize: 0.5
+  comparisons:
+    - age:
+        g: ["old", "young"]
+        subset: []
+
+fc_versus_expr_scatter_plot:
+  diff_log: _log10
+  prop: age 
+  thresholds:
+      fc: 1.5
+      adj_p_value: 0.05
+      auc: ""
+  comparisons:
+    - age:
+        g: ["old", "young"]
+        subset: []
+
+comparing_overlapping_feature_sets:
+  sets:
+    - young:
+        file_path: ["results/results_rpmm/miRNA_10p/results_microglia/matrices/expressed_per_age/expressed_miRNA_in_age=young.csv"]
+        name: "Young samples"
+    - old:
+        file_path: ["results/results_rpmm/miRNA_10p/results_microglia/matrices/expressed_per_age/expressed_miRNA_in_age=old.csv"]
+        name: "Old samples"
+    - paper:
+        file_path: ["data/paper_10.1038_s42003-023-04926-8/8_week_Microglia_vs_Cd45-_adj.csv"]
+        name: "Paper"
+  colour_set: 
+    - Young samples: "#C74132"
+    - Old samples: "#B5DAEA"
+    - Paper: "#4E554E"
+    - Young samples..Old samples: "#BE8E8E"
+    - Young samples..Paper: "#8B4B40"
+    - Old samples..Paper: "#82989C"
+    - Young samples..Old samples..Paper: "#8E5252"
+
+isomir_line_plot:
+  plot_group: "group"
+  comp_group: "age"
+  order_of_x_axis: ["young", "old"]
+  feature: "mmu-miR-155-5p"
+  colours:
+    - canonical: "#525200"
+    - rest: "#DFDFB9"
+  feature_col: "miRNA"
+  plot_layout: [1, 1]
+  plot_size: [4, 4]
+  manual_plot:
+    - props: ["group"]
+    - plot_layout: [1, 1]
+    - plot_size: [4, 4]
+
+isomir_heatmap_plot:
+  plot_group: "age"
+  feature: "mmu-miR-155-5p"
+  top_list: [5]
+  colours:
+    - canonical: "#525200"
+    - rest: "#DFDFB9"
+  feature_col: "miRNA"

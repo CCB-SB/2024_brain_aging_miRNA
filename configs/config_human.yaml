@@ -1,0 +1,264 @@
+### GENERAL SETTINGS
+#feature_list: miRNA_list.csv
+#mapping_info: ../../data_exter/mapping_infos/mapping_vs_mm10_mis1.csv
+
+results_folder: results/results_rpmm
+
+#--------------------- modules --------------------
+# additionnal modules: diff_exp_values_table, mirna_expression_median_violin_plot, pathway_analysis_results_heatmap_plots, halushka_violin_plots, make_publication_folder
+
+# make publication folder
+# modules: [
+#     make_publication_folder,
+# ]
+
+# ROSMAP
+modules: [
+  create_binned_human_age,
+  #metadata_overview_tables,
+  diff_exp_human,
+  deregulation_mirna_human_heatmap_plot,
+  #correlation_mirna_human_with_age_heatmap_plot,
+  #top_expressed_mirnas,
+  #umap,
+  #volcano_human_scatter_plot,
+  volcano_human_scatter_plot_manual,
+]
+
+# create publication folder
+# modules: [
+#     make_publication_folder
+# ]
+
+#---------- common parameter and colours ----------
+common:
+  input:
+    raw_data_folder: raw_data/data
+    annotation_data_folder: data/annotations
+    data_sub_set: ROSMAP 
+    rna_class: miRNA 
+    feature_column: miRNA
+    feature_filtering: filtered
+    norm: rpmm_norm
+    detection_group: msex 
+    detection_rate: 10p
+    identifier_column: SampleID
+  parameters:
+    set_seed: 42
+  plots:
+    dpi: 600
+    font_family: "Arial"
+    image_height: 6
+    image_width: 9
+    image_units: cm
+    font_size: 9
+    font_size_header: 12
+
+colors:
+  - direction:
+      up: "#E09900"
+      up_light: "#E9BD5B"
+      light: "#F4F5F5"
+      down_light: "#91C2AB"
+      down: "#488468"
+      sig_pos: "#E09900"
+      pos: "#E9BD5B"
+      neg: "#91C2AB"
+      sig_neg: "#488468"
+      enriched: "#E09900"
+      depleted: "#488468"
+  - msex:
+      1: "#4dc8bf"
+      0: "#7b5aa6"
+      #nan: "#000000"
+  - age:
+      3: "#C74132"
+      12: "#EFB16E"
+      15: "#F7E19B"
+      18: "#E4F2F9"
+      21: "#B5DAEA"
+      26: "#5175B1"
+      28: "#333990"
+  #- age_bin_3_groups:
+  - RNA: 
+      piRNA: "#9f4e07"
+      mRNA: "#c37012"
+      lncRNA: "#e1a458"
+      miRNA: "#98c27c"
+      snoRNA: "#6baf6b"
+      snRNA: "#399852"
+      tRNA: "#1f743a"
+      rRNA: "#01592f"
+      scaRNA: "#003c24"
+      circRNA: "#002918"
+
+xticks_names:
+  - categories:
+      brain_region_capital: "Brain region"
+      brain_region: "brain region"
+      age_capital: "Age (month)"
+      age: "age (month)"
+      sex_capital: "Sex"
+      sex: "sex"
+      mouse_ID_capital: "Individual"
+      mouse_ID: "individual"
+  - age:
+      3: "3m"
+      12: "12m"
+      15: "15m"
+      18: "18m"
+      21: "21m"
+      26: "26m"
+      28: "28m"
+  - brain_region:
+      cc: "cc"
+      cer: "cer"
+      cor: "cor"
+      cp: "cp"
+      ent: "ent"
+      hi: "hi ant."
+      hi2: "hi post."
+      hy: "hy"
+      med: "med"
+      olf: "olf"
+      plx: "plx"
+      pon: "pon"
+      svz: "svz"
+      th: "th"
+      vis: "vis"
+  - msex:
+      1: "Male"
+      0: "Female"
+      
+ 
+#----------------- preprocessing stats -----------------
+alignment_stats_bar_plot:
+  grouping: ["msex", "age_bin_3_groups"]
+  number_of_reads: 10000
+
+
+#------------------ plots and tables ------------------
+create_binned_human_age:
+   property_to_be_binned: "age_death"
+   number_of_bins: 3
+
+metadata_overview_tables:
+  combinations:
+    - SampleID:
+        g: ["msex", "age_bin_3_groups"]
+        pooling: []
+
+diff_exp_human:
+  log_list: ["_log2", "_log10"]
+  adjustment: BH
+  comparisons:
+    - age_bin_3_groups:
+        g: ["92", "71"]
+        subset: []
+    - age_bin_3_groups:
+        g: ["92", "71"]
+        subset: [msex, 1]
+    - age_bin_3_groups:
+        g: ["92", "71"]
+        subset: [msex, 0]
+
+deregulation_mirna_human_heatmap_plot: 
+  bin_params:
+    property_to_be_binned: "age_death"
+    number_of_bins: 3
+  comparisons:
+    - age_bin_3_groups:
+        g: ["92", "71"]
+        subset: [msex, 1]
+    - age_bin_3_groups:
+        g: ["92", "71"]
+        subset: [msex, 0]
+  params:
+    - diff_log: _log2
+    - fc_th: 1.5
+    - sig_lvl: 0.05
+
+umap:
+  top_list: ["all", "100", "50"]
+  neighbors: [5,10,25] # [5 -> 50]
+  min_dist: [0.1,0.25] # [0.01 -> 0.5]
+  metric: [euclidean,correlation]
+  init: [random] # [random,spectral]
+  seed: [42]
+  norm: [raw,std]
+  properties: 
+    - p1: [msex] # colour
+    - p2: [age_bin_3_groups]
+
+coefficient_of_variation:
+  tissues: "msex"
+  top_list: [100, 75, 50, 25]
+
+tissue_specificity_index:
+  tissues: "msex"
+  top_list: [100, 75, 50, 25]
+
+volcano_scatter_plot:
+  diff_log: _log2
+  parameters:
+    updownregulated: 1.5
+    significance: 0.05
+    mineffectsize: 0.5
+  comparisons_human:
+    - age_bin_3_groups:
+        g: ["92", "71"]
+        subset: []
+    - age_bin_3_groups:
+        g: ["92", "71"]
+        subset: [msex, 1]
+    - age_bin_3_groups:
+        g: ["92", "71"]
+        subset: [msex, 0]
+
+volcano_human_scatter_plot_manual:
+  diff_log: _log2
+  parameters:
+    updownregulated: 1.5
+    significance: 0.05
+    mineffectsize: 0.5
+  manual_plots_parameters:
+    heighlight_features: "data/age_correlated_corr_th=0.5_cor.csv"
+    plot_nrows: 1
+    plot_ncols: 2
+    plot_height: 3
+    plot_width: 6
+  comparisons_human:
+    - age_bin_3_groups:
+        g: ["92", "71"]
+        subset: [msex, 1]
+    - age_bin_3_groups:
+        g: ["92", "71"]
+        subset: [msex, 0]
+
+correlation_mirna_human_with_age_heatmap_plot:
+  split_prop:
+    #- age:
+    #    g1: ["disease_status", "0"]
+    #    g2: ["samples", "all"]
+    #- age:
+    #    g1: ["disease_status", "1"]
+    #    g2: ["samples", "all"]
+    - age:
+        g1: ["disease_status", "0"]
+        g2: ["samples", "male"]
+    #- age:
+    #    g1: ["disease_status", "1"]
+    #    g2: ["samples", "male"]
+    - age:
+        g1: ["disease_status", "0"]
+        g2: ["samples", "female"]
+    #- age:
+    #    g1: ["disease_status", "1"]
+    #    g2: ["samples", "female"]
+  corr_prop: "age_bin_10" #"age_death"
+  #colour_genes: "gene_pathway_colour_mapping.csv"
+  corr_params:
+    - method:spearman]
+    - adjustment: BH
+    - corr_th: [0.3]
+    - sig_lvl: [0.05]

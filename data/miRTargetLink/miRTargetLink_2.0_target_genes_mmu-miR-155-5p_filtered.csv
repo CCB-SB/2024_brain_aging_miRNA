@@ -1,0 +1,110 @@
+miRNA	Target / Target pathway	Support	Source	Experiment(s)	Reference - PMID
+mmu-miR-155-5p	Cebpb	Functional MTI	MIRT000740	Western blot, Luciferase reporter assay	19520806
+mmu-miR-155-5p	Rhoa	Functional MTI	MIRT000949	qRT-PCR, Luciferase reporter assay, Western blot	18794355
+mmu-miR-155-5p	Fadd	Functional MTI	MIRT002346	Luciferase reporter assay, qRT-PCR, Western blot	23797321
+mmu-miR-155-5p	Ripk1	Functional MTI	MIRT002345	GFP reporter assay, Luciferase reporter assay	17911593
+mmu-miR-155-5p	Fadd	Functional MTI	MIRT002346	GFP reporter assay, Luciferase reporter assay	17911593
+mmu-miR-155-5p	Ikbke	Functional MTI	MIRT002347	GFP reporter assay, Luciferase reporter assay	17911593
+mmu-miR-155-5p	Ikbke	Functional MTI (Weak)	MIRT002347	Flow, Immunoblot, Microarray, qRT-PCR	23603793
+mmu-miR-155-5p	Trp53inp1	Functional MTI	MIRT002348	Western blot, Luciferase reporter assay	17911264
+mmu-miR-155-5p	Jarid2	Functional MTI (Weak)	MIRT002395	quantitative PCR	18055230
+mmu-miR-155-5p	Jarid2	Functional MTI (Weak)	MIRT002395	Flow, Immunoblot, Microarray, qRT-PCR	23603793
+mmu-miR-155-5p	Jarid2	Functional MTI (Weak)	MIRT002395	Microarray, qRT-PCR, protein array	27447824
+mmu-miR-155-5p	Rheb	Functional MTI (Weak)	MIRT002397	quantitative PCR	18055230
+mmu-miR-155-5p	Rheb	Functional MTI	MIRT002397	Luciferase reporter assay, Western blot, qRT-PCR	24130493
+mmu-miR-155-5p	Myb	Functional MTI (Weak)	MIRT002398	quantitative PCR	18055230
+mmu-miR-155-5p	Socs1	Functional MTI	MIRT003034	Luciferase reporter assay, qRT-PCR	19699171
+mmu-miR-155-5p	Aicda	Functional MTI (Weak)	MIRT003804	"Immunoblot, qRT-PCR, qRT-PCR;Other"	18455451
+mmu-miR-155-5p	Aicda	Functional MTI	MIRT003804	Luciferase reporter assay, qRT-PCR, Reporter assay	18450484
+mmu-miR-155-5p	Abhd16a	Functional MTI (Weak)	MIRT003842	Microarray, qRT-PCR, protein array	27447824
+mmu-miR-155-5p	Socs1	Functional MTI	MIRT003034	Luciferase reporter assay, Western blot	19144316
+mmu-miR-155-5p	Abhd16a	Functional MTI (Weak)	MIRT003842	quantitative PCR	18055230
+mmu-miR-155-5p	Socs1	Functional MTI (Weak)	MIRT003034	Immunoblot	20937844
+mmu-miR-155-5p	Maf	Functional MTI	MIRT003922	Luciferase reporter assay, Microarray, qRT-PCR, Western blot	17463290
+mmu-miR-155-5p	Maf	Functional MTI (Weak)	MIRT003922	Microarray, qRT-PCR, protein array	27447824
+mmu-miR-155-5p	Socs1	Functional MTI	MIRT003034	Luciferase reporter assay	22634176
+mmu-miR-155-5p	Socs1	Functional MTI	MIRT003034	ELISA, Flow, Western blot	23091595
+mmu-miR-155-5p	Socs1	Functional MTI	MIRT003034	Luciferase reporter assay, qRT-PCR, Western blot	27843203
+mmu-miR-155-5p	Inpp5d	Functional MTI	MIRT004407	Western blot, Luciferase reporter assay	19520806
+mmu-miR-155-5p	Sfpi1	Functional MTI	MIRT003973	"Luciferase reporter assay, Reporter assay;Other"	18055230
+mmu-miR-155-5p	Inpp5d	Functional MTI	MIRT004407	Reporter assay	20435894
+mmu-miR-155-5p	Inpp5d	Functional MTI (Weak)	MIRT004407	Microarray	23603793
+mmu-miR-155-5p	Inpp5d	Functional MTI	MIRT004407	qRT-PCR, Western blot	24937178
+mmu-miR-155-5p	Inpp5d	Functional MTI	MIRT004407	Immunohistochemistry, In situ hybridization, Luciferase reporter assay, qRT-PCR, Western blot	24522920
+mmu-miR-155-5p	Fgf7	Functional MTI	MIRT004288	Luciferase reporter assay	19701459
+mmu-miR-155-5p	Inpp5d	Functional MTI (Weak)	MIRT004407	Flow, Immunoblot, qRT-PCR	23422749
+mmu-miR-155-5p	Inpp5d	Functional MTI	MIRT004407	Luciferase reporter assay	26828700
+mmu-miR-155-5p	Inpp5d	Functional MTI (Weak)	MIRT004407	Microarray, qRT-PCR, protein array	27447824
+mmu-miR-155-5p	Tab2	Functional MTI	MIRT004521	Luciferase reporter assay	19193853
+mmu-miR-155-5p	Tab2	Functional MTI (Weak)	MIRT004521	Microarray	23603793
+mmu-miR-155-5p	Pea15a	Functional MTI	MIRT005497	Immunohistochemistry, Luciferase reporter assay, qRT-PCR	21247879
+mmu-miR-155-5p	S1pr1	Functional MTI (Weak)	MIRT438544	qRT-PCR	25024218
+mmu-miR-155-5p	Fos	Functional MTI	MIRT006092	Immunofluorescence, Luciferase reporter assay, Microarray, qRT-PCR, Western blot	21385848
+mmu-miR-155-5p	Tspan14	Functional MTI	MIRT006204	Luciferase reporter assay, Microarray, qRT-PCR, Western blot	22509021
+mmu-miR-155-5p	Tspan14	Functional MTI (Weak)	MIRT006204	Flow, Immunoblot, Microarray, qRT-PCR	23603793
+mmu-miR-155-5p	Tspan14	Functional MTI (Weak)	MIRT006204	Microarray, qRT-PCR, protein array	27447824
+mmu-miR-155-5p	Lpin1	Functional MTI	MIRT006205	Luciferase reporter assay, Microarray, qRT-PCR, Western blot	22509021
+mmu-miR-155-5p	Pmaip1	Functional MTI	MIRT006206	Luciferase reporter assay, Microarray, qRT-PCR, Western blot	22509021
+mmu-miR-155-5p	Pmaip1	Functional MTI	MIRT006206	ChIP-seq, Luciferase reporter assay	23572582
+mmu-miR-155-5p	Hdac4	Functional MTI	MIRT053785	Immunoblot, Luciferase reporter assay, Microarray, qRT-PCR	23169640
+mmu-miR-155-5p	Nr1h3	Functional MTI	MIRT054233	FACS, Immunohistochemistry, In situ hybridization, Luciferase reporter assay, Microarray, qRT-PCR, Western blot	23991091
+mmu-miR-155-5p	Agtrap	Functional MTI (Weak)	MIRT054576	qRT-PCR	23717629
+mmu-miR-155-5p	Cd209a	Functional MTI	MIRT437509	Western blot	23252865
+mmu-miR-155-5p	Mapk1	Functional MTI (Weak)	MIRT437847	Flow, Immunoblot, qRT-PCR	23422749
+mmu-miR-155-5p	Akt1	Functional MTI (Weak)	MIRT437848	Flow, Immunoblot, qRT-PCR	23422749
+mmu-miR-155-5p	CISH	Functional MTI	MIRT437902	Luciferase reporter assay, Microarray, qRT-PCR, Western blot	24778118
+mmu-miR-155-5p	Cldn1	Functional MTI	MIRT007369	Luciferase reporter assay, Northern blot, qRT-PCR	23523916
+mmu-miR-155-5p	Inadl	Functional MTI (Weak)	MIRT053256	Flow, Immunoblot, Microarray, qRT-PCR	23603793
+mmu-miR-155-5p	Zfp652	Functional MTI (Weak)	MIRT053257	Flow, Immunoblot, Microarray, qRT-PCR	23603793
+mmu-miR-155-5p	Bach1	Functional MTI (Weak)	MIRT053258	Flow, Immunoblot, Microarray, qRT-PCR	23603793
+mmu-miR-155-5p	Bach1	Functional MTI (Weak)	MIRT053258	Microarray, qRT-PCR, protein array	27447824
+mmu-miR-155-5p	Hbp1	Functional MTI (Weak)	MIRT053259	Flow, Immunoblot, Microarray, qRT-PCR	23603793
+mmu-miR-155-5p	Jhdm1d	Functional MTI (Weak)	MIRT053260	Flow, Immunoblot, Microarray, qRT-PCR	23603793
+mmu-miR-155-5p	Sgk3	Functional MTI (Weak)	MIRT053261	Flow, Immunoblot, Microarray, qRT-PCR	23603793
+mmu-miR-155-5p	Fam105a	Functional MTI (Weak)	MIRT053262	Flow, Immunoblot, Microarray, qRT-PCR	23603793
+mmu-miR-155-5p	Arid4a	Functional MTI (Weak)	MIRT053263	Flow, Immunoblot, Microarray, qRT-PCR	23603793
+mmu-miR-155-5p	Rictor	Functional MTI (Weak)	MIRT053264	Flow, Immunoblot, Microarray, qRT-PCR	23603793
+mmu-miR-155-5p	Rictor	Functional MTI (Weak)	MIRT053264	qRT-PCR	25024218
+mmu-miR-155-5p	Ski	Functional MTI (Weak)	MIRT053265	Flow, Immunoblot, Microarray, qRT-PCR	23603793
+mmu-miR-155-5p	Ets1	Functional MTI (Weak)	MIRT053266	Flow, Immunoblot, Microarray, qRT-PCR	23603793
+mmu-miR-155-5p	Znrf3	Functional MTI (Weak)	MIRT053267	Flow, Immunoblot, Microarray, qRT-PCR	23603793
+mmu-miR-155-5p	Tle4	Functional MTI (Weak)	MIRT053268	Flow, Immunoblot, Microarray, qRT-PCR	23603793
+mmu-miR-155-5p	Brwd1	Functional MTI (Weak)	MIRT053269	Flow, Immunoblot, Microarray, qRT-PCR	23603793
+mmu-miR-155-5p	Lcor	Functional MTI (Weak)	MIRT053270	Flow, Immunoblot, Microarray, qRT-PCR	23603793
+mmu-miR-155-5p	Sdcbp	Functional MTI (Weak)	MIRT053271	Flow, Immunoblot, Microarray, qRT-PCR	23603793
+mmu-miR-155-5p	Mier3	Functional MTI (Weak)	MIRT053272	Flow, Immunoblot, Microarray, qRT-PCR	23603793
+mmu-miR-155-5p	Mr1	Functional MTI (Weak)	MIRT053273	Flow, Immunoblot, Microarray, qRT-PCR	23603793
+mmu-miR-155-5p	Rora	Functional MTI (Weak)	MIRT053274	Microarray	23603793
+mmu-miR-155-5p	Csnk1g2	Functional MTI (Weak)	MIRT053275	Microarray	23603793
+mmu-miR-155-5p	Zfp236	Functional MTI (Weak)	MIRT053276	Microarray	23603793
+mmu-miR-155-5p	Mef2a	Functional MTI (Weak)	MIRT053277	Microarray	23603793
+mmu-miR-155-5p	Kras	Functional MTI (Weak)	MIRT053278	Microarray	23603793
+mmu-miR-155-5p	Wbp1l	Functional MTI (Weak)	MIRT053279	Microarray	23603793
+mmu-miR-155-5p	Gsk3b	Functional MTI	MIRT438898	Luciferase reporter assay, Microarray, qRT-PCR, Western blot	23648819
+mmu-miR-155-5p	Zfp322a	Functional MTI (Weak)	MIRT594199	HITS-CLIP	23142080
+mmu-miR-155-5p	Msi2	Functional MTI (Weak)	MIRT582386	HITS-CLIP	25083871
+mmu-miR-155-5p	Camta1	Functional MTI (Weak)	MIRT594685	HITS-CLIP	23142080
+mmu-miR-155-5p	Mfsd6	Functional MTI (Weak)	MIRT594337	HITS-CLIP	23142080
+mmu-miR-155-5p	Ccnh	Functional MTI (Weak)	MIRT594511	HITS-CLIP	23142080
+mmu-miR-155-5p	Osr1	Functional MTI (Weak)	MIRT594301	HITS-CLIP	23142080
+mmu-miR-155-5p	Rnf6	Functional MTI (Weak)	MIRT595675	HITS-CLIP	23142080
+mmu-miR-155-5p	Cpd	Functional MTI (Weak)	MIRT595016	HITS-CLIP	23142080
+mmu-miR-155-5p	Nwd2	Functional MTI (Weak)	MIRT594709	HITS-CLIP	23142080
+mmu-miR-155-5p	Etv3	Functional MTI (Weak)	MIRT595145	HITS-CLIP	23142080
+mmu-miR-155-5p	Chrna2	Functional MTI (Weak)	MIRT604235	HITS-CLIP	21258322
+mmu-miR-155-5p	Opa1	Functional MTI (Weak)	MIRT597951	HITS-CLIP	21258322
+mmu-miR-155-5p	Isoc1	Functional MTI (Weak)	MIRT598551	HITS-CLIP	21258322
+mmu-miR-155-5p	Mafb	Functional MTI (Weak)	MIRT733791	Microarray, qRT-PCR, protein array	27447824
+mmu-miR-155-5p	Arntl	Functional MTI	MIRT733348	qRT-PCR, Western blot	25995365
+mmu-miR-155-5p	Csnk1a1	Functional MTI	MIRT731267	Luciferase reporter assay	26828700
+mmu-miR-155-5p	Ptprj	Functional MTI (Weak)	MIRT733792	Microarray, qRT-PCR, protein array	27447824
+mmu-miR-155-5p	Il6ra	Functional MTI (Weak)	MIRT733793	Microarray, qRT-PCR, protein array	27447824
+mmu-miR-155-5p	Gpr65	Functional MTI (Weak)	MIRT733794	Microarray, qRT-PCR, protein array	27447824
+mmu-miR-155-5p	Tcf7l2	Functional MTI (Weak)	MIRT733795	Microarray, qRT-PCR, protein array	27447824
+mmu-miR-155-5p	Prkar1b	Functional MTI (Weak)	MIRT733796	Microarray, qRT-PCR, protein array	27447824
+mmu-miR-155-5p	Rcbtb2	Functional MTI (Weak)	MIRT733797	Microarray, qRT-PCR, protein array	27447824
+mmu-miR-155-5p	Enpp1	Functional MTI (Weak)	MIRT733798	Microarray, qRT-PCR, protein array	27447824
+mmu-miR-155-5p	SOCS1	Functional MTI	MIRT734704	ELISA, qRT-PCR, Western blot	27817193
+mmu-miR-155-5p	Glul	Functional MTI (Weak)	MIRT733799	Microarray, qRT-PCR, protein array	27447824
+mmu-miR-155-5p	F13a1	Functional MTI (Weak)	MIRT733800	Microarray, qRT-PCR, protein array	27447824
+mmu-miR-155-5p	Rhod	Functional MTI (Weak)	MIRT791211	HITS-CLIP	28735896

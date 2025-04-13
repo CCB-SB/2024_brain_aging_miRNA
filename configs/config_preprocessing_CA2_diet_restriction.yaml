@@ -1,0 +1,37 @@
+### GENERAL SETTINGS
+mapping_info: data/mapping_infos/mapping_vs_mm10_mis1_CA1_CA2.csv #../../data_CA1_CA2/mapping_infos/mapping_vs_mm10_mis1.csv
+#cleaning_stats: ../../data_CA1_CA2/mapping_infos/cleaning_stats.csv
+#rna_composition_mapped: ../../data_CA1_CA2/mapping_infos/overall_composition.detailed_mod.mapped_perc.csv
+#rna_composition_total: ../../data_CA1_CA2/mapping_infos/overall_composition.detailed_mod.total_perc.csv
+
+results_folder: preprocessing
+
+#--------------------- modules --------------------
+
+# _CA1
+modules: [ 
+  preprocessing,
+] 
+
+#---------- common parameter and colours ----------
+common:
+  input:
+    preprocesing_data_folder: raw_data/data
+    annotation_data_folder: data/annotations
+    data_sub_set: CA2_diet_restriction
+    rna_class_list: ["miRNA"]
+    norm: ["rpmm_norm"]
+  parameters:
+    set_seed: 42
+
+
+#----------------- preprocessing -----------------
+preprocessing:
+  log_list: [2, 10]
+  min_detection_list: [5]
+  number_of_reads: 2e6
+  detection_rate_list: [0.1]
+  filter_variable: "brain_region"
+  id_col: SampleID
+  fastq_filename_col: fastq_name
+

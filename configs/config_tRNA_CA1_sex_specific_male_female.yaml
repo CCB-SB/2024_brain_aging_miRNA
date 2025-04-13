@@ -1,0 +1,412 @@
+### GENERAL SETTINGS
+feature_list: data/miRNA_list.csv
+mapping_info: data/mapping_infos/mapping_vs_mm10_mis1_CA1_CA2.csv
+#cleaning_stats: ../../data_CA1_CA2/mapping_infos/cleaning_stats.csv
+#rna_composition_mapped: ../../data_CA1_CA2/mapping_infos/overall_composition.detailed_mod.mapped_perc.csv
+#rna_composition_total: ../../data_CA1_CA2/mapping_infos/overall_composition.detailed_mod.total_perc.csv
+
+results_folder: results/results_rpmm
+
+#--------------------- modules --------------------
+# additionnal modules: diff_exp_values_table, mirna_expression_median_violin_plot, pathway_analysis_results_heatmap_plots, halushka_violin_plots, make_publication_folder
+
+# make publication folder
+# modules: [
+#     make_publication_folder,
+# ]
+
+# CA1
+modules: [ 
+ mirna_expression_over_time_box_bar_plot_male_female,
+] 
+
+
+#---------- common parameter and colours ----------
+common:
+  input:
+    raw_data_folder: raw_data/data
+    annotation_data_folder: data/annotations
+    
+    data_sub_set_male: CA1_aging_male
+    data_sub_set_female: CA1_aging_without_age=26m_28m_female
+
+    rna_class: tRNA 
+    feature_column: RNA
+    feature_filtering: filtered
+    norm: rpmm_norm
+    detection_group: brain_region
+    detection_rate: 10p
+    identifier_column: SampleID
+  parameters:
+    set_seed: 42
+  plots:
+    dpi: 600
+    font_family: "Arial"
+    image_height: 6
+    image_width: 9
+    image_units: cm
+    font_size: 9
+    font_size_header: 12
+
+colors:
+  - direction:
+      up: "#E09900"
+      up_light: "#E9BD5B"
+      light: "#F4F5F5"
+      down_light: "#91C2AB"
+      down: "#488468"
+      pos: "#E09900"
+      neg: "#488468"
+  - brain_region:
+      cc: "#1c93d1" 
+      cer: "#e41e27"
+      cor: "#15a750"  
+      cp: "#7962a4" 
+      ent: "#f2932d"
+      hi: "#fad326"  
+      hi2: "#231f1f" 
+      hy: "#70c2eb" 
+      med: "#f1aaa6"
+      #mid: "#063804"
+      olf: "#c6bbd5" 
+      plx: "#f6c589" 
+      pon: "#b3b8c0" 
+      svz: "#ede29d"   
+      th: "#b65376" 
+      vis: "#ef98c1"  
+  - brain_region_text:
+      cc: "#ffffff" 
+      cer: "#ffffff" 
+      cor: "#ffffff" 
+      cp: "#ffffff" 
+      ent: "#000000" 
+      hi: "#000000" 
+      hi2: "#ffffff" 
+      hy: "#000000" 
+      med: "#000000"
+      #mid: "#000000"
+      olf: "#000000" 
+      plx: "#000000" 
+      pon: "#000000"  
+      svz: "#000000"    
+      th: "#ffffff" 
+      vis: "#000000" 
+  #- cohort:
+  #    CA1: "#24580E"
+  #    CA2: "#8b2222"
+  - sex:
+      Male: "#4dc8bf"
+      Female: "#7b5aa6"
+      #nan: "#000000"
+  - sex_text:
+      Male: "#000000"
+      Female: "#ffffff" 
+  - age:
+      #3: "#dd3226"
+      #12: "#faae61"
+      #15: "#fce091"
+      #18: "#e1f3fa"
+      ##19: "#e1f3fa"
+      #21: "#acdbec"
+      #26: "#4576b6"
+      #28: "#323995"
+      ##nan: "#000000"
+      3: "#C74132"
+      12: "#EFB16E"
+      15: "#F7E19B"
+      18: "#E4F2F9"
+      21: "#B5DAEA"
+      26: "#5175B1"
+      28: "#333990"
+  - plate:
+      P23: "#238200"
+      P24: "#5A9100"
+      P25: "#919F00"
+      P26: "#C8AD00"
+      P27: "#FFBB00"
+      P28: "#FE8C16"
+      P29: "#FC5C2C"
+      P30: "#CC4670"
+      P31: "#9C2FB3"
+      P32: "#755DC6"
+      P33: "#4E8AD9"
+      P34: "#27B8EC"
+      P35: "#00E5FF"
+  - RNA: 
+      piRNA: "#9f4e07"
+      mRNA: "#c37012"
+      lncRNA: "#e1a458"
+      miRNA: "#98c27c"
+      snoRNA: "#6baf6b"
+      snRNA: "#399852"
+      tRNA: "#1f743a"
+      rRNA: "#01592f"
+      scaRNA: "#003c24"
+      circRNA: ""
+  - clusters:
+      I: ["#CC6827"]
+      II: ["#25578E"]
+      III: ["#A5261C"]
+      IV: ["#3A7E27"]
+      V: ["#6D4B98"]
+
+xticks_names:
+  - categories:
+      brain_region_capital: "Brain region"
+      brain_region: "brain region"
+      age_capital: "Age (month)"
+      age: "age (month)"
+  - age:
+      3: "3m"
+      12: "12m"
+      15: "15m"
+      18: "18m"
+      21: "21m"
+      26: "26m"
+      28: "28m"
+  - brain_region:
+      cc: "cc"
+      cer: "cer"
+      cor: "cor"
+      cp: "cp"
+      ent: "ent"
+      hi: "hi ant."
+      hi2: "hi post."
+      hy: "hy"
+      med: "med"
+      olf: "olf"
+      plx: "plx"
+      pon: "pon"
+      svz: "svz"
+      th: "th"
+      vis: "vis"
+
+
+#----------------- preprocessing stats -----------------
+
+
+#------------------ plots and tables ------------------
+deregulated_comparison_tissue_heatmap_male_female:
+  diff_log: _log2
+  thresholds:
+    fc: 1.5
+    adj_p_value: 0.05
+    num_dereg_combinations_th: [1] # for how many combinations in a tissue has the features to be deregulated
+    num_dereg_tissues_th: [2] # global features (for how many tissues is the features deregulated)
+  props: 
+    - p1: ["brain_region", "age"]
+
+correlation_comp_age_heatmap_plot_table_male_female:
+  method: [spearman]
+  adjustment: BH
+  corr_th: [0.5]
+  props: 
+    - p1: ["brain_region", "age"]
+
+candidate_comparison_venn_plot:
+  diff_exp_props:
+    num_dereg_combinations_th: [1]
+    num_dereg_tissues_th: [2]
+  corr_props:
+    method: [spearman]
+    corr_th: [0.5]
+    num_corr_tissues_th: [2] 
+  hclust_props:
+    subset: "CA1_age=3m_12m_15m_male"
+    method: ["cv_zscore"]
+    top: [50] 
+    zscores_th: [0.5]
+  props: 
+    - p1: ["brain_region", "age"]
+  tissue_specific:
+    plot_nrows: 3   # CA1_without_age=26m_28m: 3    # CA1: 3
+    plot_ncols: 4   # CA1_without_age=26m_28m: 4    # CA1: 4
+  all_features:
+    plot_nrows: 3   # CA1_without_age=26m_28m: 3    # CA1: 3
+    plot_ncols: 5   # CA1_without_age=26m_28m: 5    # CA1: 5
+    
+candidate_comparison_venn_plot_v2:
+  diff_exp_props:
+    num_dereg_combinations_th: [1]
+    num_dereg_tissues_th: [2]
+  corr_props:
+    method: [spearman]
+    corr_th: [0.5]
+    num_corr_tissues_th: [2] 
+  hclust_props:
+    subset: "CA1_age=3m_12m_15m_male"
+    method: ["cv_zscore"]
+    top: [50] 
+    zscores_th: [0.5]
+  props: 
+    - p1: ["brain_region", "age"]
+  tissue_specific:
+    plot_nrows: 3   # CA1_without_age=26m_28m: 3    # CA1: 3
+    plot_ncols: 4   # CA1_without_age=26m_28m: 4    # CA1: 4
+  all_features:
+    plot_nrows: 3   # CA1_without_age=26m_28m: 3    # CA1: 3
+    plot_ncols: 5   # CA1_without_age=26m_28m: 5    # CA1: 5
+    
+candidate_comparison_scatter_plot_tissue_split_male_female:
+  diff_exp_props:
+    num_dereg_combinations_th: [1]
+    num_dereg_tissues_th: [2]
+  corr_props:
+    method: [spearman]
+    corr_th: [0.5]
+    num_corr_tissues_th: [2] 
+  hclust_props:
+    subset: "CA1_age=3m_12m_15m"
+    method: ["cv_zscore"]
+    top: [50] 
+    zscores_th: [0.5]
+  props: 
+    - p1: ["brain_region", "age"]
+
+mirna_expression_median_bar_box_plot:
+  parameters:
+    diff_log: "_log2"
+    comb_group: "brain_region"
+    polynom_degree: 2
+  files: 
+    #- [../../data_CA1/without_mid/sncrna-pipeline-input_CA1/quantification/miRNA_filtered_quantification_rpmm_norm.detection_rate_10p_per_brain_region.csv]
+    - [data/tRNA_list.csv]
+  features:
+    - [mmu-miR-9-3p, mmu-miR-9-5p]
+
+mirna_expression_over_time_box_bar_plot:
+  parameters:
+    corr_methods: ["spearman"]
+    diff_log: "_log2"
+    sig_niveau: 0.05
+    fc_th: 1.5
+    comp_group: "age"
+    plot_group: "brain_region"
+    polynom_degree: 2
+  # manual_plots_parameters:
+  #   feature_male: mmu-miR-9-5p
+  #   feature_female: mmu-miR-9-5p
+  #   tissues_male: [cc, cer, cp, ent, hi, hi2, hy, plx, svz, th, vis]  # miR-9-5p: [cc, cer, cp, ent, hi, hi2, hy, plx, svz, th, vis] #[med, cor, olf]
+  #   tissues_female: [cc, cer, cp, ent, hi, hi2, hy, plx, svz, th, vis]  # miR-9-5p: [cc, cer, cp, ent, hi, hi2, hy, plx, svz, th, vis] #[med, cor, olf] 
+  #   plot_layout_male: [4, 3] # miR-9-5p: [4, 3] #[1, 3]
+  #   plot_layout_female: [4, 3] # miR-9-5p: [4, 3] #[1, 3]
+  #   plot_size: [14, 18] # miR-9-5p: [4, 18] #[14, 18]
+  ##manual_plots_parameters:
+  ##  feature_male: mmu-miR-146a-5p
+  ##  feature_female: mmu-miR-146a-5p
+  ##  tissues_male: [cor, cc, th] #[svz, th, cc]
+  ##  tissues_female: [cor, cc, th] #[th, plx, cor] 
+  ##  plot_layout: [1, 6]
+  ##  plot_size: [4, 22]
+  # manual_plots_parameters:
+  #  feature_male: mmu-miR-5100
+  #  feature_female: mmu-miR-5100
+  #  tissues_male: [cc, cor, cer, cp, ent, hi, hi2, hy, med, olf, plx, pon, svz, th, vis]
+  #  tissues_female: [cc, cor, cer, cp, ent, hi, hi2, hy, med, olf, plx, pon, svz, th, vis] 
+  #  plot_layout_male: [5, 3]
+  #  plot_layout_female: [5, 3]
+  #  plot_size: [18, 18]
+  # tRNA
+  manual_plots_parameters:
+    - p1: 
+        feature_male: tRNA-Glu-TTC-1-1
+        feature_female: tRNA-Glu-TTC-1-1
+        tissues_male: [cor, th, plx] # tRNA-Glu-TTC-1-1: [cc, cer, cp, ent, hi, hi2, hy, med, olf, pon, svz, vis] #[cor, th, plx]
+        tissues_female: [cor, th, plx] # tRNA-Glu-TTC-1-1: [cc, cer, cp, ent, hi, hi2, hy, med, olf, pon, svz, vis] #[cor, th, plx] 
+        plot_layout_male: [1, 3] # tRNA-Glu-TTC-1-1: [4, 3] [1, 3]
+        plot_layout_female: [1, 3] # tRNA-Glu-TTC-1-1: [4, 3] [1, 3]
+        plot_size: [4, 18] #tRNA-Glu-TTC-1-1: [14, 18] [4, 18]
+
+mirna_expression_per_time_over_brain_region_box_bar_plot:
+  parameters:
+    diff_log: "_log2"
+    comb_group: "brain_region"
+    plot_group: "age"
+    plot_nrows: 2 # CA1: 2 CA1_without_age=26m_28m: 1
+    plot_ncols: 4 # CA1: 4 CA1_without_age=26m_28m: 5
+  files: 
+    #- [../../data_CA1/without_mid/sncrna-pipeline-input_CA1/quantification/miRNA_filtered_quantification_rpmm_norm.detection_rate_10p_per_brain_region.csv]
+    - [data/tRNA_list.csv]
+  features:
+    - [mmu-miR-9-3p, mmu-miR-9-5p]
+
+#coefficient_of_variation:
+#  tissues: "brain_region"
+#  top_list: [100, 75, 50, 25]
+
+#tissue_specificity_index:
+#  tissues: "brain_region"
+#  top_list: [100, 75, 50, 25]
+
+hclust_expression_brain_region_for_mirna_list_zscores_heatmap_plot_male_female:
+  prop: brain_region 
+  diff_log: _log10
+  method: ["cv_zscore", "tsi_zscore"]
+  top_list: [25, 50, 75, 100] # target: [25, 50]
+  zscore_th: [0.25, 0.5] 
+  hclust_params:
+    scale: row
+    method: complete
+    dist_method: euclidean
+    seed: [42]
+    number_of_cluster: 4 # 3
+
+hclust_expression_brain_region_for_mirna_list_zscores_venn_plot_male_female:
+ prop: brain_region 
+ method: ["cv_zscore", "tsi_zscore"]
+ top_list: [25, 50, 75, 100] # target: [25, 50]
+ zscore_th: [0.25, 0.5] 
+
+candidate_comparison_venn_plot_cluster_split:
+  diff_exp_props:
+    num_dereg_combinations_th: [1]
+    num_dereg_tissues_th: [2]
+  corr_props:
+    method: [spearman]
+    corr_th: [0.5]
+    num_corr_tissues_th: [2] 
+  hclust_props:
+    subset: "CA1_age=3m_12m_15m"
+    method: ["cv_zscore"]
+    top: [50] 
+    zscores_th: [0.5]
+  props: 
+    - p1: ["brain_region", "age"]
+  plot_layout:
+    nrow: 1
+    ncol: 4
+
+# correlation_comp_age_per_rna_class_male_female_scatter_plot:
+#   props: ["brain_region", "age"]
+#   method: [pearson,spearman]
+#   corr_th: [0.5]
+#   adjustment: BH
+#   adj_p_value: 0.05
+#   rna_class: tRNA
+#   plot_size: 
+#     image_height: 6
+#     image_width: 6
+
+
+candidate_comparison_venn_plot_cluster_split_male_female:
+  diff_exp_props:
+    num_dereg_combinations_th: [1]
+    num_dereg_tissues_th: [2]
+  corr_props:
+    method: [spearman]
+    corr_th: [0.5]
+    num_corr_tissues_th: [2] 
+  hclust_props:
+    subset: "CA1_age=3m_12m_15m_male"
+    method: ["cv_zscore"]
+    top: [50] 
+    zscores_th: [0.5]
+  props: 
+    - p1: ["brain_region", "age"]
+  tissue_specific:
+    plot_nrows: 3   # CA1_without_age=26m_28m: 3    # CA1: 3
+    plot_ncols: 4   # CA1_without_age=26m_28m: 4    # CA1: 4
+  all_features:
+    plot_nrows: 3   # CA1_without_age=26m_28m: 3    # CA1: 3
+    plot_ncols: 5   # CA1_without_age=26m_28m: 5    # CA1: 5
+    

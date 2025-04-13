@@ -1,0 +1,480 @@
+V1	Pool number	Sample ID	Barcode Number	SampleID	sampleID	cohort	ID	brain_region	mouse_ID	fastq_names	plate	brain_region_long	age	sex
+2	BA1	CA1_olf_2	2	CA1_olf_2	BulkSeq_olf_2	CA1	CA1_olf_2	olf	2	BA1_CA1_olf_2_1	P23	Olfactory bulb	26	Male
+3	BA1	CA1_olf_3	3	CA1_olf_3	BulkSeq_olf_3	CA1	CA1_olf_3	olf	3	BA1_CA1_olf_3_1	P23	Olfactory bulb	12	Male
+5	BA1	CA1_olf_5	13	CA1_olf_5	BulkSeq_olf_5	CA1	CA1_olf_5	olf	5	BA1_CA1_olf_5_1	P23	Olfactory bulb	26	Male
+6	BA1	CA1_olf_6	14	CA1_olf_6	BulkSeq_olf_6	CA1	CA1_olf_6	olf	6	BA1_CA1_olf_6_1	P23	Olfactory bulb	12	Male
+8	BA1	CA1_olf_8	16	CA1_olf_8	BulkSeq_olf_8	CA1	CA1_olf_8	olf	8	BA1_CA1_olf_8_1	P23	Olfactory bulb	26	Male
+9	BA1	CA1_cor_22	25	CA1_cor_22	BulkSeq_cor_22	CA1	CA1_cor_22	cor	22	BA1_CA1_cor_22_1	P23	Motor cortex	15	Male
+10	BA1	CA1_cor_23	26	CA1_cor_23	BulkSeq_cor_23	CA1	CA1_cor_23	cor	23	BA1_CA1_cor_23_1	P23	Motor cortex	18	Male
+11	BA1	CA1_cor_24	27	CA1_cor_24	BulkSeq_cor_24	CA1	CA1_cor_24	cor	24	BA1_CA1_cor_24_1	P23	Motor cortex	21	Male
+12	BA1	CA1_cor_25	28	CA1_cor_25	BulkSeq_cor_25	CA1	CA1_cor_25	cor	25	BA1_CA1_cor_25_1	P23	Motor cortex	3	Male
+13	BA1	CA1_cor_26	29	CA1_cor_26	BulkSeq_cor_26	CA1	CA1_cor_26	cor	26	BA1_CA1_cor_26_1	P23	Motor cortex	15	Male
+14	BA1	CA1_cor_27	30	CA1_cor_27	BulkSeq_cor_27	CA1	CA1_cor_27	cor	27	BA1_CA1_cor_27_1	P23	Motor cortex	18	Male
+15	BA1	CA1_cor_28	31	CA1_cor_28	BulkSeq_cor_28	CA1	CA1_cor_28	cor	28	BA1_CA1_cor_28_1	P23	Motor cortex	21	Male
+16	BA1	CA1_cor_29	32	CA1_cor_29	BulkSeq_cor_29	CA1	CA1_cor_29	cor	29	BA1_CA1_cor_29_1	P23	Motor cortex	3	Male
+17	BA2	CA1_olf_17	1	CA1_olf_17	BulkSeq_olf_17	CA1	CA1_olf_17	olf	17	BA2_CA1_olf_17_1	P23	Olfactory bulb	3	Male
+18	BA2	CA1_olf_18	2	CA1_olf_18	BulkSeq_olf_18	CA1	CA1_olf_18	olf	18	BA2_CA1_olf_18_1	P23	Olfactory bulb	15	Male
+19	BA2	CA1_olf_19	3	CA1_olf_19	BulkSeq_olf_19	CA1	CA1_olf_19	olf	19	BA2_CA1_olf_19_1	P23	Olfactory bulb	18	Male
+20	BA2	CA1_olf_20	4	CA1_olf_20	BulkSeq_olf_20	CA1	CA1_olf_20	olf	20	BA2_CA1_olf_20_1	P23	Olfactory bulb	21	Male
+21	BA2	CA1_olf_21	13	CA1_olf_21	BulkSeq_olf_21	CA1	CA1_olf_21	olf	21	BA2_CA1_olf_21_1	P23	Olfactory bulb	3	Male
+22	BA2	CA1_olf_22	14	CA1_olf_22	BulkSeq_olf_22	CA1	CA1_olf_22	olf	22	BA2_CA1_olf_22_1	P23	Olfactory bulb	15	Male
+23	BA2	CA1_olf_23	15	CA1_olf_23	BulkSeq_olf_23	CA1	CA1_olf_23	olf	23	BA2_CA1_olf_23_1	P23	Olfactory bulb	18	Male
+24	BA2	CA1_olf_24	16	CA1_olf_24	BulkSeq_olf_24	CA1	CA1_olf_24	olf	24	BA2_CA1_olf_24_1	P23	Olfactory bulb	21	Male
+25	BA2	CA1_cor_30	25	CA1_cor_30	BulkSeq_cor_30	CA1	CA1_cor_30	cor	30	BA2_CA1_cor_30_1	P23	Motor cortex	15	Male
+26	BA2	CA1_cor_31	26	CA1_cor_31	BulkSeq_cor_31	CA1	CA1_cor_31	cor	31	BA2_CA1_cor_31_1	P23	Motor cortex	18	Male
+27	BA2	CA1_cor_32	27	CA1_cor_32	BulkSeq_cor_32	CA1	CA1_cor_32	cor	32	BA2_CA1_cor_32_1	P23	Motor cortex	21	Male
+28	BA2	CA1_cor_33	28	CA1_cor_33	BulkSeq_cor_33	CA1	CA1_cor_33	cor	33	BA2_CA1_cor_33_1	P23	Motor cortex	3	Male
+29	BA2	CA1_cor_34	29	CA1_cor_34	BulkSeq_cor_34	CA1	CA1_cor_34	cor	34	BA2_CA1_cor_34_1	P23	Motor cortex	15	Male
+30	BA2	CA1_cor_35	30	CA1_cor_35	BulkSeq_cor_35	CA1	CA1_cor_35	cor	35	BA2_CA1_cor_35_1	P23	Motor cortex	18	Male
+31	BA2	CA1_cor_36	31	CA1_cor_36	BulkSeq_cor_36	CA1	CA1_cor_36	cor	36	BA2_CA1_cor_36_1	P23	Motor cortex	21	Male
+33	BA3	CA1_olf_33	1	CA1_olf_33	BulkSeq_olf_33	CA1	CA1_olf_33	olf	33	BA3_CA1_olf_33_1	P23	Olfactory bulb	3	Male
+34	BA3	CA1_olf_34	2	CA1_olf_34	BulkSeq_olf_34	CA1	CA1_olf_34	olf	34	BA3_CA1_olf_34_1	P23	Olfactory bulb	15	Male
+35	BA3	CA1_olf_35	3	CA1_olf_35	BulkSeq_olf_35	CA1	CA1_olf_35	olf	35	BA3_CA1_olf_35_1	P23	Olfactory bulb	18	Male
+36	BA3	CA1_olf_36	4	CA1_olf_36	BulkSeq_olf_36	CA1	CA1_olf_36	olf	36	BA3_CA1_olf_36_1	P23	Olfactory bulb	21	Male
+57	BA4	CA1_olf_57	25	CA1_olf_57	BulkSeq_olf_57	CA1	CA1_olf_57	olf	57	BA4_CA1_olf_57_1	P23	Olfactory bulb	28	Male
+58	BA4	CA1_olf_58	26	CA1_olf_58	BulkSeq_olf_58	CA1	CA1_olf_58	olf	58	BA4_CA1_olf_58_1	P23	Olfactory bulb	28	Male
+59	BA4	CA1_olf_59	27	CA1_olf_59	BulkSeq_olf_59	CA1	CA1_olf_59	olf	59	BA4_CA1_olf_59_1	P23	Olfactory bulb	28	Male
+61	BA4	CA1_cor_2	29	CA1_cor_2	BulkSeq_cor_2	CA1	CA1_cor_2	cor	2	BA4_CA1_cor_2_1	P23	Motor cortex	26	Male
+62	BA4	CA1_cor_3	30	CA1_cor_3	BulkSeq_cor_3	CA1	CA1_cor_3	cor	3	BA4_CA1_cor_3_1	P23	Motor cortex	12	Male
+64	BA4	CA1_cor_5	32	CA1_cor_5	BulkSeq_cor_5	CA1	CA1_cor_5	cor	5	BA4_CA1_cor_5_1	P23	Motor cortex	26	Male
+65	BA5	CA1_olf_9	1	CA1_olf_9	BulkSeq_olf_9	CA1	CA1_olf_9	olf	9	BA5_CA1_olf_9_1	P23	Olfactory bulb	12	Male
+67	BA5	CA1_olf_11	3	CA1_olf_11	BulkSeq_olf_11	CA1	CA1_olf_11	olf	11	BA5_CA1_olf_11_1	P23	Olfactory bulb	26	Male
+70	BA5	CA1_olf_14	14	CA1_olf_14	BulkSeq_olf_14	CA1	CA1_olf_14	olf	14	BA5_CA1_olf_14_1	P23	Olfactory bulb	26	Male
+71	BA5	CA1_olf_15	15	CA1_olf_15	BulkSeq_olf_15	CA1	CA1_olf_15	olf	15	BA5_CA1_olf_15_1	P23	Olfactory bulb	12	Male
+72	BA5	CA1_olf_16	16	CA1_olf_16	BulkSeq_olf_16	CA1	CA1_olf_16	olf	16	BA5_CA1_olf_16_1	P23	Olfactory bulb	21	Male
+73	BA5	CA1_cor_6	25	CA1_cor_6	BulkSeq_cor_6	CA1	CA1_cor_6	cor	6	BA5_CA1_cor_6_1	P23	Motor cortex	12	Male
+75	BA5	CA1_cor_8	27	CA1_cor_8	BulkSeq_cor_8	CA1	CA1_cor_8	cor	8	BA5_CA1_cor_8_1	P23	Motor cortex	26	Male
+76	BA5	CA1_cor_9	28	CA1_cor_9	BulkSeq_cor_9	CA1	CA1_cor_9	cor	9	BA5_CA1_cor_9_1	P23	Motor cortex	12	Male
+78	BA5	CA1_cor_11	30	CA1_cor_11	BulkSeq_cor_11	CA1	CA1_cor_11	cor	11	BA5_CA1_cor_11_1	P23	Motor cortex	26	Male
+79	BA5	CA1_cor_12	31	CA1_cor_12	BulkSeq_cor_12	CA1	CA1_cor_12	cor	12	BA5_CA1_cor_12_1	P23	Motor cortex	12	Male
+81	BA6	CA1_olf_25	1	CA1_olf_25	BulkSeq_olf_25	CA1	CA1_olf_25	olf	25	BA6_CA1_olf_25_1	P23	Olfactory bulb	3	Male
+82	BA6	CA1_olf_26	2	CA1_olf_26	BulkSeq_olf_26	CA1	CA1_olf_26	olf	26	BA6_CA1_olf_26_1	P23	Olfactory bulb	15	Male
+83	BA6	CA1_olf_27	3	CA1_olf_27	BulkSeq_olf_27	CA1	CA1_olf_27	olf	27	BA6_CA1_olf_27_1	P23	Olfactory bulb	18	Male
+84	BA6	CA1_olf_28	4	CA1_olf_28	BulkSeq_olf_28	CA1	CA1_olf_28	olf	28	BA6_CA1_olf_28_1	P23	Olfactory bulb	21	Male
+85	BA6	CA1_olf_29	13	CA1_olf_29	BulkSeq_olf_29	CA1	CA1_olf_29	olf	29	BA6_CA1_olf_29_1	P23	Olfactory bulb	3	Male
+86	BA6	CA1_olf_30	14	CA1_olf_30	BulkSeq_olf_30	CA1	CA1_olf_30	olf	30	BA6_CA1_olf_30_1	P23	Olfactory bulb	15	Male
+87	BA6	CA1_olf_31	15	CA1_olf_31	BulkSeq_olf_31	CA1	CA1_olf_31	olf	31	BA6_CA1_olf_31_1	P23	Olfactory bulb	18	Male
+88	BA6	CA1_olf_32	16	CA1_olf_32	BulkSeq_olf_32	CA1	CA1_olf_32	olf	32	BA6_CA1_olf_32_1	P23	Olfactory bulb	21	Male
+89	BA6	CA1_cor_14	25	CA1_cor_14	BulkSeq_cor_14	CA1	CA1_cor_14	cor	14	BA6_CA1_cor_14_1	P23	Motor cortex	26	Male
+90	BA6	CA1_cor_15	26	CA1_cor_15	BulkSeq_cor_15	CA1	CA1_cor_15	cor	15	BA6_CA1_cor_15_1	P23	Motor cortex	12	Male
+91	BA6	CA1_cor_16	27	CA1_cor_16	BulkSeq_cor_16	CA1	CA1_cor_16	cor	16	BA6_CA1_cor_16_1	P23	Motor cortex	21	Male
+92	BA6	CA1_cor_17	28	CA1_cor_17	BulkSeq_cor_17	CA1	CA1_cor_17	cor	17	BA6_CA1_cor_17_1	P23	Motor cortex	3	Male
+93	BA6	CA1_cor_18	29	CA1_cor_18	BulkSeq_cor_18	CA1	CA1_cor_18	cor	18	BA6_CA1_cor_18_1	P23	Motor cortex	15	Male
+94	BA6	CA1_cor_19	30	CA1_cor_19	BulkSeq_cor_19	CA1	CA1_cor_19	cor	19	BA6_CA1_cor_19_1	P23	Motor cortex	18	Male
+95	BA6	CA1_cor_20	31	CA1_cor_20	BulkSeq_cor_20	CA1	CA1_cor_20	cor	20	BA6_CA1_cor_20_1	P23	Motor cortex	21	Male
+96	BA6	CA1_cor_21	32	CA1_cor_21	BulkSeq_cor_21	CA1	CA1_cor_21	cor	21	BA6_CA1_cor_21_1	P23	Motor cortex	3	Male
+116	BA8	CA1_cor_57	4	CA1_cor_57	BulkSeq_cor_57	CA1	CA1_cor_57	cor	57	BA8_CA1_cor_57_1	P24	Motor cortex	28	Male
+117	BA8	CA1_cor_58	13	CA1_cor_58	BulkSeq_cor_58	CA1	CA1_cor_58	cor	58	BA8_CA1_cor_58_1	P24	Motor cortex	28	Male
+118	BA8	CA1_cor_59	14	CA1_cor_59	BulkSeq_cor_59	CA1	CA1_cor_59	cor	59	BA8_CA1_cor_59_1	P24	Motor cortex	28	Male
+120	BA8	CA1_cp_2	16	CA1_cp_2	BulkSeq_cp_2	CA1	CA1_cp_2	cp	2	BA8_CA1_cp_2_1	P24	Caudate putamen	26	Male
+121	BA8	CA1_cp_3	25	CA1_cp_3	BulkSeq_cp_3	CA1	CA1_cp_3	cp	3	BA8_CA1_cp_3_1	P24	Caudate putamen	12	Male
+123	BA8	CA1_cp_5	27	CA1_cp_5	BulkSeq_cp_5	CA1	CA1_cp_5	cp	5	BA8_CA1_cp_5_1	P24	Caudate putamen	26	Male
+124	BA8	CA1_cp_6	28	CA1_cp_6	BulkSeq_cp_6	CA1	CA1_cp_6	cp	6	BA8_CA1_cp_6_1	P24	Caudate putamen	12	Male
+126	BA8	CA1_cp_8	30	CA1_cp_8	BulkSeq_cp_8	CA1	CA1_cp_8	cp	8	BA8_CA1_cp_8_1	P24	Caudate putamen	26	Male
+127	BA8	CA1_cp_9	31	CA1_cp_9	BulkSeq_cp_9	CA1	CA1_cp_9	cp	9	BA8_CA1_cp_9_1	P24	Caudate putamen	12	Male
+129	BA9	CA1_cp_11	1	CA1_cp_11	BulkSeq_cp_11	CA1	CA1_cp_11	cp	11	BA9_CA1_cp_11_1	P24	Caudate putamen	26	Male
+130	BA9	CA1_cp_12	2	CA1_cp_12	BulkSeq_cp_12	CA1	CA1_cp_12	cp	12	BA9_CA1_cp_12_1	P24	Caudate putamen	12	Male
+132	BA9	CA1_cp_14	4	CA1_cp_14	BulkSeq_cp_14	CA1	CA1_cp_14	cp	14	BA9_CA1_cp_14_1	P24	Caudate putamen	26	Male
+133	BA9	CA1_cp_15	13	CA1_cp_15	BulkSeq_cp_15	CA1	CA1_cp_15	cp	15	BA9_CA1_cp_15_1	P24	Caudate putamen	12	Male
+134	BA9	CA1_cp_16	14	CA1_cp_16	BulkSeq_cp_16	CA1	CA1_cp_16	cp	16	BA9_CA1_cp_16_1	P24	Caudate putamen	21	Male
+135	BA9	CA1_cp_17	15	CA1_cp_17	BulkSeq_cp_17	CA1	CA1_cp_17	cp	17	BA9_CA1_cp_17_1	P24	Caudate putamen	3	Male
+136	BA9	CA1_cp_18	16	CA1_cp_18	BulkSeq_cp_18	CA1	CA1_cp_18	cp	18	BA9_CA1_cp_18_1	P24	Caudate putamen	15	Male
+137	BA9	CA1_cp_19	25	CA1_cp_19	BulkSeq_cp_19	CA1	CA1_cp_19	cp	19	BA9_CA1_cp_19_1	P24	Caudate putamen	18	Male
+138	BA9	CA1_cp_20	26	CA1_cp_20	BulkSeq_cp_20	CA1	CA1_cp_20	cp	20	BA9_CA1_cp_20_1	P24	Caudate putamen	21	Male
+139	BA9	CA1_cp_21	27	CA1_cp_21	BulkSeq_cp_21	CA1	CA1_cp_21	cp	21	BA9_CA1_cp_21_1	P24	Caudate putamen	3	Male
+140	BA9	CA1_cp_22	28	CA1_cp_22	BulkSeq_cp_22	CA1	CA1_cp_22	cp	22	BA9_CA1_cp_22_1	P24	Caudate putamen	15	Male
+141	BA9	CA1_cp_23	29	CA1_cp_23	BulkSeq_cp_23	CA1	CA1_cp_23	cp	23	BA9_CA1_cp_23_1	P24	Caudate putamen	18	Male
+142	BA9	CA1_cp_24	30	CA1_cp_24	BulkSeq_cp_24	CA1	CA1_cp_24	cp	24	BA9_CA1_cp_24_1	P24	Caudate putamen	21	Male
+144	BA9	CA1_cp_26	32	CA1_cp_26	BulkSeq_cp_26	CA1	CA1_cp_26	cp	26	BA9_CA1_cp_26_1	P24	Caudate putamen	15	Male
+146	BA10	CA1_cp_27	2	CA1_cp_27	BulkSeq_cp_27	CA1	CA1_cp_27	cp	27	BA10_CA1_cp_27_1	P24	Caudate putamen	18	Male
+147	BA10	CA1_cp_28	3	CA1_cp_28	BulkSeq_cp_28	CA1	CA1_cp_28	cp	28	BA10_CA1_cp_28_1	P24	Caudate putamen	21	Male
+148	BA10	CA1_cp_29	4	CA1_cp_29	BulkSeq_cp_29	CA1	CA1_cp_29	cp	29	BA10_CA1_cp_29_1	P24	Caudate putamen	3	Male
+149	BA10	CA1_cp_30	13	CA1_cp_30	BulkSeq_cp_30	CA1	CA1_cp_30	cp	30	BA10_CA1_cp_30_1	P24	Caudate putamen	15	Male
+150	BA10	CA1_cp_31	14	CA1_cp_31	BulkSeq_cp_31	CA1	CA1_cp_31	cp	31	BA10_CA1_cp_31_1	P24	Caudate putamen	18	Male
+151	BA10	CA1_cp_32	15	CA1_cp_32	BulkSeq_cp_32	CA1	CA1_cp_32	cp	32	BA10_CA1_cp_32_1	P24	Caudate putamen	21	Male
+152	BA10	CA1_cp_33	16	CA1_cp_33	BulkSeq_cp_33	CA1	CA1_cp_33	cp	33	BA10_CA1_cp_33_1	P24	Caudate putamen	3	Male
+153	BA10	CA1_cp_35	25	CA1_cp_35	BulkSeq_cp_35	CA1	CA1_cp_35	cp	35	BA10_CA1_cp_35_1	P24	Caudate putamen	18	Male
+154	BA10	CA1_cp_36	26	CA1_cp_36	BulkSeq_cp_36	CA1	CA1_cp_36	cp	36	BA10_CA1_cp_36_1	P24	Caudate putamen	21	Male
+175	BA11	CA1_cp_57	31	CA1_cp_57	BulkSeq_cp_57	CA1	CA1_cp_57	cp	57	BA11_CA1_cp_57_1	P24	Caudate putamen	28	Male
+176	BA11	CA1_cp_58	32	CA1_cp_58	BulkSeq_cp_58	CA1	CA1_cp_58	cp	58	BA11_CA1_cp_58_1	P24	Caudate putamen	28	Male
+177	BA12	CA1_cp_59	1	CA1_cp_59	BulkSeq_cp_59	CA1	CA1_cp_59	cp	59	BA12_CA1_cp_59_1	P24	Caudate putamen	28	Male
+179	BA12	CA1_svz_2	3	CA1_svz_2	BulkSeq_svz_2	CA1	CA1_svz_2	svz	2	BA12_CA1_svz_2_1	P24	Subventricular zone	26	Male
+180	BA12	CA1_svz_3	4	CA1_svz_3	BulkSeq_svz_3	CA1	CA1_svz_3	svz	3	BA12_CA1_svz_3_1	P24	Subventricular zone	12	Male
+182	BA12	CA1_svz_5	14	CA1_svz_5	BulkSeq_svz_5	CA1	CA1_svz_5	svz	5	BA12_CA1_svz_5_1	P24	Subventricular zone	26	Male
+183	BA12	CA1_svz_6	15	CA1_svz_6	BulkSeq_svz_6	CA1	CA1_svz_6	svz	6	BA12_CA1_svz_6_1	P24	Subventricular zone	12	Male
+186	BA12	CA1_svz_9	26	CA1_svz_9	BulkSeq_svz_9	CA1	CA1_svz_9	svz	9	BA12_CA1_svz_9_1	P24	Subventricular zone	12	Male
+188	BA12	CA1_svz_11	28	CA1_svz_11	BulkSeq_svz_11	CA1	CA1_svz_11	svz	11	BA12_CA1_svz_11_1	P24	Subventricular zone	26	Male
+189	BA12	CA1_svz_12	29	CA1_svz_12	BulkSeq_svz_12	CA1	CA1_svz_12	svz	12	BA12_CA1_svz_12_1	P24	Subventricular zone	12	Male
+191	BA12	CA1_svz_14	31	CA1_svz_14	BulkSeq_svz_14	CA1	CA1_svz_14	svz	14	BA12_CA1_svz_14_1	P24	Subventricular zone	26	Male
+192	BA12	CA1_svz_15	32	CA1_svz_15	BulkSeq_svz_15	CA1	CA1_svz_15	svz	15	BA12_CA1_svz_15_1	P24	Subventricular zone	12	Male
+193	BA13	CA1_svz_16	1	CA1_svz_16	BulkSeq_svz_16	CA1	CA1_svz_16	svz	16	BA13_CA1_svz_16_1	P25	Subventricular zone	21	Male
+194	BA13	CA1_svz_17	2	CA1_svz_17	BulkSeq_svz_17	CA1	CA1_svz_17	svz	17	BA13_CA1_svz_17_1	P25	Subventricular zone	3	Male
+195	BA13	CA1_svz_18	3	CA1_svz_18	BulkSeq_svz_18	CA1	CA1_svz_18	svz	18	BA13_CA1_svz_18_1	P25	Subventricular zone	15	Male
+196	BA13	CA1_svz_19	4	CA1_svz_19	BulkSeq_svz_19	CA1	CA1_svz_19	svz	19	BA13_CA1_svz_19_1	P25	Subventricular zone	18	Male
+197	BA13	CA1_svz_20	13	CA1_svz_20	BulkSeq_svz_20	CA1	CA1_svz_20	svz	20	BA13_CA1_svz_20_1	P25	Subventricular zone	21	Male
+198	BA13	CA1_svz_21	14	CA1_svz_21	BulkSeq_svz_21	CA1	CA1_svz_21	svz	21	BA13_CA1_svz_21_1	P25	Subventricular zone	3	Male
+199	BA13	CA1_svz_22	15	CA1_svz_22	BulkSeq_svz_22	CA1	CA1_svz_22	svz	22	BA13_CA1_svz_22_1	P25	Subventricular zone	15	Male
+200	BA13	CA1_svz_23	16	CA1_svz_23	BulkSeq_svz_23	CA1	CA1_svz_23	svz	23	BA13_CA1_svz_23_1	P25	Subventricular zone	18	Male
+201	BA13	CA1_svz_24	25	CA1_svz_24	BulkSeq_svz_24	CA1	CA1_svz_24	svz	24	BA13_CA1_svz_24_1	P25	Subventricular zone	21	Male
+202	BA13	CA1_svz_25	26	CA1_svz_25	BulkSeq_svz_25	CA1	CA1_svz_25	svz	25	BA13_CA1_svz_25_1	P25	Subventricular zone	3	Male
+203	BA13	CA1_svz_26	27	CA1_svz_26	BulkSeq_svz_26	CA1	CA1_svz_26	svz	26	BA13_CA1_svz_26_1	P25	Subventricular zone	15	Male
+204	BA13	CA1_svz_27	28	CA1_svz_27	BulkSeq_svz_27	CA1	CA1_svz_27	svz	27	BA13_CA1_svz_27_1	P25	Subventricular zone	18	Male
+205	BA13	CA1_svz_28	29	CA1_svz_28	BulkSeq_svz_28	CA1	CA1_svz_28	svz	28	BA13_CA1_svz_28_1	P25	Subventricular zone	21	Male
+206	BA13	CA1_svz_29	30	CA1_svz_29	BulkSeq_svz_29	CA1	CA1_svz_29	svz	29	BA13_CA1_svz_29_1	P25	Subventricular zone	3	Male
+207	BA13	CA1_svz_30	31	CA1_svz_30	BulkSeq_svz_30	CA1	CA1_svz_30	svz	30	BA13_CA1_svz_30_1	P25	Subventricular zone	15	Male
+208	BA13	CA1_svz_31	32	CA1_svz_31	BulkSeq_svz_31	CA1	CA1_svz_31	svz	31	BA13_CA1_svz_31_1	P25	Subventricular zone	18	Male
+209	BA14	CA1_svz_32	1	CA1_svz_32	BulkSeq_svz_32	CA1	CA1_svz_32	svz	32	BA14_CA1_svz_32_1	P25	Subventricular zone	21	Male
+210	BA14	CA1_svz_33	2	CA1_svz_33	BulkSeq_svz_33	CA1	CA1_svz_33	svz	33	BA14_CA1_svz_33_1	P25	Subventricular zone	3	Male
+211	BA14	CA1_svz_34	3	CA1_svz_34	BulkSeq_svz_34	CA1	CA1_svz_34	svz	34	BA14_CA1_svz_34_1	P25	Subventricular zone	15	Male
+212	BA14	CA1_svz_35	4	CA1_svz_35	BulkSeq_svz_35	CA1	CA1_svz_35	svz	35	BA14_CA1_svz_35_1	P25	Subventricular zone	18	Male
+213	BA14	CA1_svz_36	13	CA1_svz_36	BulkSeq_svz_36	CA1	CA1_svz_36	svz	36	BA14_CA1_svz_36_1	P25	Subventricular zone	21	Male
+234	BA15	CA1_svz_57	26	CA1_svz_57	BulkSeq_svz_57	CA1	CA1_svz_57	svz	57	BA15_CA1_svz_57_1	P25	Subventricular zone	28	Male
+235	BA15	CA1_svz_58	27	CA1_svz_58	BulkSeq_svz_58	CA1	CA1_svz_58	svz	58	BA15_CA1_svz_58_1	P25	Subventricular zone	28	Male
+236	BA15	CA1_svz_59	28	CA1_svz_59	BulkSeq_svz_59	CA1	CA1_svz_59	svz	59	BA15_CA1_svz_59_1	P25	Subventricular zone	28	Male
+237	BA15	CA1_cc_3	31	CA1_cc_3	BulkSeq_cc_3	CA1	CA1_cc_3	cc	3	BA15_CA1_cc_3_1	P25	Corpus callosum	12	Male
+239	BA16	CA1_cc_5	1	CA1_cc_5	BulkSeq_cc_5	CA1	CA1_cc_5	cc	5	BA16_CA1_cc_5_1	P25	Corpus callosum	26	Male
+240	BA16	CA1_cc_6	2	CA1_cc_6	BulkSeq_cc_6	CA1	CA1_cc_6	cc	6	BA16_CA1_cc_6_1	P25	Corpus callosum	12	Male
+242	BA16	CA1_cc_8	4	CA1_cc_8	BulkSeq_cc_8	CA1	CA1_cc_8	cc	8	BA16_CA1_cc_8_1	P25	Corpus callosum	26	Male
+243	BA16	CA1_cc_9	13	CA1_cc_9	BulkSeq_cc_9	CA1	CA1_cc_9	cc	9	BA16_CA1_cc_9_1	P25	Corpus callosum	12	Male
+245	BA16	CA1_cc_11	15	CA1_cc_11	BulkSeq_cc_11	CA1	CA1_cc_11	cc	11	BA16_CA1_cc_11_1	P25	Corpus callosum	26	Male
+246	BA16	CA1_cc_12	16	CA1_cc_12	BulkSeq_cc_12	CA1	CA1_cc_12	cc	12	BA16_CA1_cc_12_1	P25	Corpus callosum	12	Male
+248	BA16	CA1_cc_14	26	CA1_cc_14	BulkSeq_cc_14	CA1	CA1_cc_14	cc	14	BA16_CA1_cc_14_1	P25	Corpus callosum	26	Male
+249	BA16	CA1_cc_15	27	CA1_cc_15	BulkSeq_cc_15	CA1	CA1_cc_15	cc	15	BA16_CA1_cc_15_1	P25	Corpus callosum	12	Male
+250	BA16	CA1_cc_16	28	CA1_cc_16	BulkSeq_cc_16	CA1	CA1_cc_16	cc	16	BA16_CA1_cc_16_1	P25	Corpus callosum	21	Male
+251	BA16	CA1_cc_17	29	CA1_cc_17	BulkSeq_cc_17	CA1	CA1_cc_17	cc	17	BA16_CA1_cc_17_1	P25	Corpus callosum	3	Male
+252	BA16	CA1_cc_18	30	CA1_cc_18	BulkSeq_cc_18	CA1	CA1_cc_18	cc	18	BA16_CA1_cc_18_1	P25	Corpus callosum	15	Male
+253	BA16	CA1_cc_19	31	CA1_cc_19	BulkSeq_cc_19	CA1	CA1_cc_19	cc	19	BA16_CA1_cc_19_1	P25	Corpus callosum	18	Male
+254	BA16	CA1_cc_20	32	CA1_cc_20	BulkSeq_cc_20	CA1	CA1_cc_20	cc	20	BA16_CA1_cc_20_1	P25	Corpus callosum	21	Male
+255	BA17	CA1_cc_21	1	CA1_cc_21	BulkSeq_cc_21	CA1	CA1_cc_21	cc	21	BA17_CA1_cc_21_1	P25	Corpus callosum	3	Male
+256	BA17	CA1_cc_22	2	CA1_cc_22	BulkSeq_cc_22	CA1	CA1_cc_22	cc	22	BA17_CA1_cc_22_1	P25	Corpus callosum	15	Male
+257	BA17	CA1_cc_23	3	CA1_cc_23	BulkSeq_cc_23	CA1	CA1_cc_23	cc	23	BA17_CA1_cc_23_1	P25	Corpus callosum	18	Male
+258	BA17	CA1_cc_24	4	CA1_cc_24	BulkSeq_cc_24	CA1	CA1_cc_24	cc	24	BA17_CA1_cc_24_1	P25	Corpus callosum	21	Male
+259	BA17	CA1_cc_25	13	CA1_cc_25	BulkSeq_cc_25	CA1	CA1_cc_25	cc	25	BA17_CA1_cc_25_1	P25	Corpus callosum	3	Male
+260	BA17	CA1_cc_26	14	CA1_cc_26	BulkSeq_cc_26	CA1	CA1_cc_26	cc	26	BA17_CA1_cc_26_1	P25	Corpus callosum	15	Male
+261	BA17	CA1_cc_27	15	CA1_cc_27	BulkSeq_cc_27	CA1	CA1_cc_27	cc	27	BA17_CA1_cc_27_1	P25	Corpus callosum	18	Male
+262	BA17	CA1_cc_28	16	CA1_cc_28	BulkSeq_cc_28	CA1	CA1_cc_28	cc	28	BA17_CA1_cc_28_1	P25	Corpus callosum	21	Male
+263	BA17	CA1_cc_29	25	CA1_cc_29	BulkSeq_cc_29	CA1	CA1_cc_29	cc	29	BA17_CA1_cc_29_1	P25	Corpus callosum	3	Male
+264	BA17	CA1_cc_30	26	CA1_cc_30	BulkSeq_cc_30	CA1	CA1_cc_30	cc	30	BA17_CA1_cc_30_1	P25	Corpus callosum	15	Male
+265	BA17	CA1_cc_31	27	CA1_cc_31	BulkSeq_cc_31	CA1	CA1_cc_31	cc	31	BA17_CA1_cc_31_1	P25	Corpus callosum	18	Male
+266	BA17	CA1_cc_32	28	CA1_cc_32	BulkSeq_cc_32	CA1	CA1_cc_32	cc	32	BA17_CA1_cc_32_1	P25	Corpus callosum	21	Male
+267	BA17	CA1_cc_33	29	CA1_cc_33	BulkSeq_cc_33	CA1	CA1_cc_33	cc	33	BA17_CA1_cc_33_1	P25	Corpus callosum	3	Male
+268	BA17	CA1_cc_34	30	CA1_cc_34	BulkSeq_cc_34	CA1	CA1_cc_34	cc	34	BA17_CA1_cc_34_1	P25	Corpus callosum	15	Male
+269	BA17	CA1_cc_35	31	CA1_cc_35	BulkSeq_cc_35	CA1	CA1_cc_35	cc	35	BA17_CA1_cc_35_1	P25	Corpus callosum	18	Male
+270	BA17	CA1_cc_36	32	CA1_cc_36	BulkSeq_cc_36	CA1	CA1_cc_36	cc	36	BA17_CA1_cc_36_1	P25	Corpus callosum	21	Male
+291	BA19	CA1_cc_57	13	CA1_cc_57	BulkSeq_cc_57	CA1	CA1_cc_57	cc	57	BA19_CA1_cc_57_1	P26	Corpus callosum	28	Male
+292	BA19	CA1_cc_58	14	CA1_cc_58	BulkSeq_cc_58	CA1	CA1_cc_58	cc	58	BA19_CA1_cc_58_1	P26	Corpus callosum	28	Male
+293	BA19	CA1_cc_59	15	CA1_cc_59	BulkSeq_cc_59	CA1	CA1_cc_59	cc	59	BA19_CA1_cc_59_1	P26	Corpus callosum	28	Male
+295	BA19	CA1_hi_2	25	CA1_hi_2	BulkSeq_hi_2	CA1	CA1_hi_2	hi	2	BA19_CA1_hi_2_1	P26	Hippocampus (anterior)	26	Male
+296	BA19	CA1_th_3	26	CA1_th_3	BulkSeq_th_3	CA1	CA1_th_3	th	3	BA19_CA1_th_3_1	P26	Thalamus	12	Male
+298	BA19	CA1_th_5	28	CA1_th_5	BulkSeq_th_5	CA1	CA1_th_5	th	5	BA19_CA1_th_5_1	P26	Thalamus	26	Male
+299	BA19	CA1_th_6	29	CA1_th_6	BulkSeq_th_6	CA1	CA1_th_6	th	6	BA19_CA1_th_6_1	P26	Thalamus	12	Male
+301	BA19	CA1_th_8	31	CA1_th_8	BulkSeq_th_8	CA1	CA1_th_8	th	8	BA19_CA1_th_8_1	P26	Thalamus	26	Male
+302	BA19	CA1_th_9	32	CA1_th_9	BulkSeq_th_9	CA1	CA1_th_9	th	9	BA19_CA1_th_9_1	P26	Thalamus	12	Male
+304	BA20	CA1_th_11	2	CA1_th_11	BulkSeq_th_11	CA1	CA1_th_11	th	11	BA20_CA1_th_11_1	P26	Thalamus	26	Male
+305	BA20	CA1_th_12	3	CA1_th_12	BulkSeq_th_12	CA1	CA1_th_12	th	12	BA20_CA1_th_12_1	P26	Thalamus	12	Male
+307	BA20	CA1_th_14	13	CA1_th_14	BulkSeq_th_14	CA1	CA1_th_14	th	14	BA20_CA1_th_14_1	P26	Thalamus	26	Male
+308	BA20	CA1_th_15	14	CA1_th_15	BulkSeq_th_15	CA1	CA1_th_15	th	15	BA20_CA1_th_15_1	P26	Thalamus	12	Male
+309	BA20	CA1_th_16	15	CA1_th_16	BulkSeq_th_16	CA1	CA1_th_16	th	16	BA20_CA1_th_16_1	P26	Thalamus	21	Male
+310	BA20	CA1_th_17	16	CA1_th_17	BulkSeq_th_17	CA1	CA1_th_17	th	17	BA20_CA1_th_17_1	P26	Thalamus	3	Male
+311	BA20	CA1_th_58	25	CA1_th_58	BulkSeq_th_58	CA1	CA1_th_58	th	58	BA20_CA1_th_58_1	P26	Thalamus	28	Male
+312	BA20	CA1_th_59	26	CA1_th_59	BulkSeq_th_59	CA1	CA1_th_59	th	59	BA20_CA1_th_59_1	P26	Thalamus	28	Male
+314	BA20	CA1_th_2	28	CA1_th_2	BulkSeq_th_2	CA1	CA1_th_2	th	2	BA20_CA1_th_2_1	P26	Thalamus	26	Male
+315	BA20	CA1_hy_3	29	CA1_hy_3	BulkSeq_hy_3	CA1	CA1_hy_3	hy	3	BA20_CA1_hy_3_1	P26	Hypothalamus	12	Male
+317	BA20	CA1_hy_5	31	CA1_hy_5	BulkSeq_hy_5	CA1	CA1_hy_5	hy	5	BA20_CA1_hy_5_1	P26	Hypothalamus	26	Male
+318	BA20	CA1_hy_6	32	CA1_hy_6	BulkSeq_hy_6	CA1	CA1_hy_6	hy	6	BA20_CA1_hy_6_1	P26	Hypothalamus	12	Male
+319	BA21	CA1_th_18	1	CA1_th_18	BulkSeq_th_18	CA1	CA1_th_18	th	18	BA21_CA1_th_18_1	P26	Thalamus	15	Male
+320	BA21	CA1_th_19	2	CA1_th_19	BulkSeq_th_19	CA1	CA1_th_19	th	19	BA21_CA1_th_19_1	P26	Thalamus	18	Male
+321	BA21	CA1_th_20	3	CA1_th_20	BulkSeq_th_20	CA1	CA1_th_20	th	20	BA21_CA1_th_20_1	P26	Thalamus	21	Male
+322	BA21	CA1_th_21	4	CA1_th_21	BulkSeq_th_21	CA1	CA1_th_21	th	21	BA21_CA1_th_21_1	P26	Thalamus	3	Male
+323	BA21	CA1_th_22	13	CA1_th_22	BulkSeq_th_22	CA1	CA1_th_22	th	22	BA21_CA1_th_22_1	P26	Thalamus	15	Male
+324	BA21	CA1_th_23	14	CA1_th_23	BulkSeq_th_23	CA1	CA1_th_23	th	23	BA21_CA1_th_23_1	P26	Thalamus	18	Male
+325	BA21	CA1_th_24	15	CA1_th_24	BulkSeq_th_24	CA1	CA1_th_24	th	24	BA21_CA1_th_24_1	P26	Thalamus	21	Male
+326	BA21	CA1_th_25	16	CA1_th_25	BulkSeq_th_25	CA1	CA1_th_25	th	25	BA21_CA1_th_25_1	P26	Thalamus	3	Male
+327	BA21	CA1_th_26	25	CA1_th_26	BulkSeq_th_26	CA1	CA1_th_26	th	26	BA21_CA1_th_26_1	P26	Thalamus	15	Male
+328	BA21	CA1_th_27	26	CA1_th_27	BulkSeq_th_27	CA1	CA1_th_27	th	27	BA21_CA1_th_27_1	P26	Thalamus	18	Male
+329	BA21	CA1_th_28	27	CA1_th_28	BulkSeq_th_28	CA1	CA1_th_28	th	28	BA21_CA1_th_28_1	P26	Thalamus	21	Male
+330	BA21	CA1_th_29	28	CA1_th_29	BulkSeq_th_29	CA1	CA1_th_29	th	29	BA21_CA1_th_29_1	P26	Thalamus	3	Male
+331	BA21	CA1_th_30	29	CA1_th_30	BulkSeq_th_30	CA1	CA1_th_30	th	30	BA21_CA1_th_30_1	P26	Thalamus	15	Male
+332	BA21	CA1_th_31	30	CA1_th_31	BulkSeq_th_31	CA1	CA1_th_31	th	31	BA21_CA1_th_31_1	P26	Thalamus	18	Male
+333	BA21	CA1_th_32	31	CA1_th_32	BulkSeq_th_32	CA1	CA1_th_32	th	32	BA21_CA1_th_32_1	P26	Thalamus	21	Male
+334	BA21	CA1_th_33	32	CA1_th_33	BulkSeq_th_33	CA1	CA1_th_33	th	33	BA21_CA1_th_33_1	P26	Thalamus	3	Male
+335	BA22	CA1_th_34	1	CA1_th_34	BulkSeq_th_34	CA1	CA1_th_34	th	34	BA22_CA1_th_34_1	P26	Thalamus	15	Male
+336	BA22	CA1_th_35	2	CA1_th_35	BulkSeq_th_35	CA1	CA1_th_35	th	35	BA22_CA1_th_35_1	P26	Thalamus	18	Male
+337	BA22	CA1_th_36	3	CA1_th_36	BulkSeq_th_36	CA1	CA1_th_36	th	36	BA22_CA1_th_36_1	P26	Thalamus	21	Male
+358	BA23	CA1_th_57	16	CA1_th_57	BulkSeq_th_57	CA1	CA1_th_57	th	57	BA23_CA1_th_57_1	P26	Thalamus	28	Male
+376	BA24	CA1_hy_11	26	CA1_hy_11	BulkSeq_hy_11	CA1	CA1_hy_11	hy	11	BA24_CA1_hy_11_1	P26	Hypothalamus	26	Male
+377	BA24	CA1_hy_12	27	CA1_hy_12	BulkSeq_hy_12	CA1	CA1_hy_12	hy	12	BA24_CA1_hy_12_1	P26	Hypothalamus	12	Male
+379	BA24	CA1_hy_14	29	CA1_hy_14	BulkSeq_hy_14	CA1	CA1_hy_14	hy	14	BA24_CA1_hy_14_1	P26	Hypothalamus	26	Male
+383	BA25	CA1_hy_31	1	CA1_hy_31	BulkSeq_hy_31	CA1	CA1_hy_31	hy	31	BA25_CA1_hy_31_1	P27	Hypothalamus	18	Male
+384	BA25	CA1_hy_32	2	CA1_hy_32	BulkSeq_hy_32	CA1	CA1_hy_32	hy	32	BA25_CA1_hy_32_1	P27	Hypothalamus	21	Male
+385	BA25	CA1_hy_33	3	CA1_hy_33	BulkSeq_hy_33	CA1	CA1_hy_33	hy	33	BA25_CA1_hy_33_1	P27	Hypothalamus	3	Male
+386	BA25	CA1_hy_34	4	CA1_hy_34	BulkSeq_hy_34	CA1	CA1_hy_34	hy	34	BA25_CA1_hy_34_1	P27	Hypothalamus	15	Male
+387	BA25	CA1_hy_35	13	CA1_hy_35	BulkSeq_hy_35	CA1	CA1_hy_35	hy	35	BA25_CA1_hy_35_1	P27	Hypothalamus	18	Male
+388	BA25	CA1_hy_36	14	CA1_hy_36	BulkSeq_hy_36	CA1	CA1_hy_36	hy	36	BA25_CA1_hy_36_1	P27	Hypothalamus	21	Male
+392	BA25	CA1_hi_5	26	CA1_hi_5	BulkSeq_hi_5	CA1	CA1_hi_5	hi	5	BA25_CA1_hi_5_1	P27	Hippocampus (anterior)	26	Male
+393	BA25	CA1_hi_6	27	CA1_hi_6	BulkSeq_hi_6	CA1	CA1_hi_6	hi	6	BA25_CA1_hi_6_1	P27	Hippocampus (anterior)	12	Male
+395	BA25	CA1_hi_8	29	CA1_hi_8	BulkSeq_hi_8	CA1	CA1_hi_8	hi	8	BA25_CA1_hi_8_1	P27	Hippocampus (anterior)	26	Male
+396	BA25	CA1_hi_9	30	CA1_hi_9	BulkSeq_hi_9	CA1	CA1_hi_9	hi	9	BA25_CA1_hi_9_1	P27	Hippocampus (anterior)	12	Male
+398	BA25	CA1_hi_11	32	CA1_hi_11	BulkSeq_hi_11	CA1	CA1_hi_11	hi	11	BA25_CA1_hi_11_1	P27	Hippocampus (anterior)	26	Male
+407	BA26	CA1_hi_12	25	CA1_hi_12	BulkSeq_hi_12	CA1	CA1_hi_12	hi	12	BA26_CA1_hi_12_1	P27	Hippocampus (anterior)	12	Male
+409	BA26	CA1_hi_14	27	CA1_hi_14	BulkSeq_hi_14	CA1	CA1_hi_14	hi	14	BA26_CA1_hi_14_1	P27	Hippocampus (anterior)	26	Male
+410	BA26	CA1_hi_15	28	CA1_hi_15	BulkSeq_hi_15	CA1	CA1_hi_15	hi	15	BA26_CA1_hi_15_1	P27	Hippocampus (anterior)	12	Male
+411	BA26	CA1_hi_16	29	CA1_hi_16	BulkSeq_hi_16	CA1	CA1_hi_16	hi	16	BA26_CA1_hi_16_1	P27	Hippocampus (anterior)	21	Male
+412	BA26	CA1_hi_17	30	CA1_hi_17	BulkSeq_hi_17	CA1	CA1_hi_17	hi	17	BA26_CA1_hi_17_1	P27	Hippocampus (anterior)	3	Male
+413	BA26	CA1_hi_18	31	CA1_hi_18	BulkSeq_hi_18	CA1	CA1_hi_18	hi	18	BA26_CA1_hi_18_1	P27	Hippocampus (anterior)	15	Male
+414	BA26	CA1_hi_19	32	CA1_hi_19	BulkSeq_hi_19	CA1	CA1_hi_19	hi	19	BA26_CA1_hi_19_1	P27	Hippocampus (anterior)	18	Male
+423	BA27	CA1_hi_20	25	CA1_hi_20	BulkSeq_hi_20	CA1	CA1_hi_20	hi	20	BA27_CA1_hi_20_1	P27	Hippocampus (anterior)	21	Male
+424	BA27	CA1_hi_21	26	CA1_hi_21	BulkSeq_hi_21	CA1	CA1_hi_21	hi	21	BA27_CA1_hi_21_1	P27	Hippocampus (anterior)	3	Male
+425	BA27	CA1_hi_22	27	CA1_hi_22	BulkSeq_hi_22	CA1	CA1_hi_22	hi	22	BA27_CA1_hi_22_1	P27	Hippocampus (anterior)	15	Male
+426	BA27	CA1_hi_23	28	CA1_hi_23	BulkSeq_hi_23	CA1	CA1_hi_23	hi	23	BA27_CA1_hi_23_1	P27	Hippocampus (anterior)	18	Male
+427	BA27	CA1_hi_24	29	CA1_hi_24	BulkSeq_hi_24	CA1	CA1_hi_24	hi	24	BA27_CA1_hi_24_1	P27	Hippocampus (anterior)	21	Male
+428	BA27	CA1_hi_25	30	CA1_hi_25	BulkSeq_hi_25	CA1	CA1_hi_25	hi	25	BA27_CA1_hi_25_1	P27	Hippocampus (anterior)	3	Male
+429	BA27	CA1_hi_26	31	CA1_hi_26	BulkSeq_hi_26	CA1	CA1_hi_26	hi	26	BA27_CA1_hi_26_1	P27	Hippocampus (anterior)	15	Male
+430	BA27	CA1_hi_27	32	CA1_hi_27	BulkSeq_hi_27	CA1	CA1_hi_27	hi	27	BA27_CA1_hi_27_1	P27	Hippocampus (anterior)	18	Male
+433	BA28	CA1_hy_57	3	CA1_hy_57	BulkSeq_hy_57	CA1	CA1_hy_57	hy	57	BA28_CA1_hy_57_1	P27	Hypothalamus	28	Male
+434	BA28	CA1_hy_58	4	CA1_hy_58	BulkSeq_hy_58	CA1	CA1_hy_58	hy	58	BA28_CA1_hy_58_1	P27	Hypothalamus	28	Male
+435	BA28	CA1_hy_59	13	CA1_hy_59	BulkSeq_hy_59	CA1	CA1_hy_59	hy	59	BA28_CA1_hy_59_1	P27	Hypothalamus	28	Male
+437	BA28	CA1_hy_2	15	CA1_hy_2	BulkSeq_hy_2	CA1	CA1_hy_2	hy	2	BA28_CA1_hy_2_1	P27	Hypothalamus	26	Male
+438	BA28	CA1_hi_28	16	CA1_hi_28	BulkSeq_hi_28	CA1	CA1_hi_28	hi	28	BA28_CA1_hi_28_1	P27	Hippocampus (anterior)	21	Male
+439	BA28	CA1_hi_29	25	CA1_hi_29	BulkSeq_hi_29	CA1	CA1_hi_29	hi	29	BA28_CA1_hi_29_1	P27	Hippocampus (anterior)	3	Male
+440	BA28	CA1_hi_30	26	CA1_hi_30	BulkSeq_hi_30	CA1	CA1_hi_30	hi	30	BA28_CA1_hi_30_1	P27	Hippocampus (anterior)	15	Male
+441	BA28	CA1_hi_31	27	CA1_hi_31	BulkSeq_hi_31	CA1	CA1_hi_31	hi	31	BA28_CA1_hi_31_1	P27	Hippocampus (anterior)	18	Male
+442	BA28	CA1_hi_32	28	CA1_hi_32	BulkSeq_hi_32	CA1	CA1_hi_32	hi	32	BA28_CA1_hi_32_1	P27	Hippocampus (anterior)	21	Male
+443	BA28	CA1_hi_33	29	CA1_hi_33	BulkSeq_hi_33	CA1	CA1_hi_33	hi	33	BA28_CA1_hi_33_1	P27	Hippocampus (anterior)	3	Male
+444	BA28	CA1_hi_34	30	CA1_hi_34	BulkSeq_hi_34	CA1	CA1_hi_34	hi	34	BA28_CA1_hi_34_1	P27	Hippocampus (anterior)	15	Male
+447	BA29	CA1_hi_36	1	CA1_hi_36	BulkSeq_hi_36	CA1	CA1_hi_36	hi	36	BA29_CA1_hi_36_1	P27	Hippocampus (anterior)	21	Male
+456	BA29	CA1_plx_2	26	CA1_plx_2	BulkSeq_plx_2	CA1	CA1_plx_2	plx	2	BA29_CA1_plx_2_1	P27	Choroid Plexus	26	Male
+457	BA29	CA1_plx_3	27	CA1_plx_3	BulkSeq_plx_3	CA1	CA1_plx_3	plx	3	BA29_CA1_plx_3_1	P27	Choroid Plexus	12	Male
+459	BA29	CA1_plx_5	29	CA1_plx_5	BulkSeq_plx_5	CA1	CA1_plx_5	plx	5	BA29_CA1_plx_5_1	P27	Choroid Plexus	26	Male
+460	BA29	CA1_plx_6	30	CA1_plx_6	BulkSeq_plx_6	CA1	CA1_plx_6	plx	6	BA29_CA1_plx_6_1	P27	Choroid Plexus	12	Male
+462	BA29	CA1_plx_8	32	CA1_plx_8	BulkSeq_plx_8	CA1	CA1_plx_8	plx	8	BA29_CA1_plx_8_1	P27	Choroid Plexus	26	Male
+476	BA30	CA1_hi_57	30	CA1_hi_57	BulkSeq_hi_57	CA1	CA1_hi_57	hi	57	BA30_CA1_hi_57_1	P27	Hippocampus (anterior)	28	Male
+478	BA30	CA1_hi_59	32	CA1_hi_59	BulkSeq_hi_59	CA1	CA1_hi_59	hi	59	BA30_CA1_hi_59_1	P27	Hippocampus (anterior)	28	Male
+479	BA31	CA1_plx_9	1	CA1_plx_9	BulkSeq_plx_9	CA1	CA1_plx_9	plx	9	BA31_CA1_plx_9_1	P28	Choroid Plexus	12	Male
+481	BA31	CA1_plx_11	3	CA1_plx_11	BulkSeq_plx_11	CA1	CA1_plx_11	plx	11	BA31_CA1_plx_11_1	P28	Choroid Plexus	26	Male
+482	BA31	CA1_plx_12	4	CA1_plx_12	BulkSeq_plx_12	CA1	CA1_plx_12	plx	12	BA31_CA1_plx_12_1	P28	Choroid Plexus	12	Male
+484	BA31	CA1_plx_14	14	CA1_plx_14	BulkSeq_plx_14	CA1	CA1_plx_14	plx	14	BA31_CA1_plx_14_1	P28	Choroid Plexus	26	Male
+485	BA31	CA1_plx_15	15	CA1_plx_15	BulkSeq_plx_15	CA1	CA1_plx_15	plx	15	BA31_CA1_plx_15_1	P28	Choroid Plexus	12	Male
+486	BA31	CA1_plx_16	16	CA1_plx_16	BulkSeq_plx_16	CA1	CA1_plx_16	plx	16	BA31_CA1_plx_16_1	P28	Choroid Plexus	21	Male
+487	BA31	CA1_plx_57	25	CA1_plx_57	BulkSeq_plx_57	CA1	CA1_plx_57	plx	57	BA31_CA1_plx_57_1	P28	Choroid Plexus	28	Male
+488	BA31	CA1_plx_58	26	CA1_plx_58	BulkSeq_plx_58	CA1	CA1_plx_58	plx	58	BA31_CA1_plx_58_1	P28	Choroid Plexus	28	Male
+489	BA31	CA1_plx_59	27	CA1_plx_59	BulkSeq_plx_59	CA1	CA1_plx_59	plx	59	BA31_CA1_plx_59_1	P28	Choroid Plexus	28	Male
+491	BA31	CA1_hi2_2	29	CA1_hi2_2	BulkSeq_hi2_2	CA1	CA1_hi2_2	hi2	2	BA31_CA1_hi2_2_1	P28	Hippocampus (posterior)	26	Male
+492	BA31	CA1_vis_3	30	CA1_vis_3	BulkSeq_vis_3	CA1	CA1_vis_3	vis	3	BA31_CA1_vis_3_1	P28	Visual Cortex	12	Male
+494	BA31	CA1_hi2_5	32	CA1_hi2_5	BulkSeq_hi2_5	CA1	CA1_hi2_5	hi2	5	BA31_CA1_hi2_5_1	P28	Hippocampus (posterior)	26	Male
+495	BA32	CA1_plx_17	1	CA1_plx_17	BulkSeq_plx_17	CA1	CA1_plx_17	plx	17	BA32_CA1_plx_17_1	P28	Choroid Plexus	3	Male
+496	BA32	CA1_plx_18	2	CA1_plx_18	BulkSeq_plx_18	CA1	CA1_plx_18	plx	18	BA32_CA1_plx_18_1	P28	Choroid Plexus	15	Male
+497	BA32	CA1_plx_19	3	CA1_plx_19	BulkSeq_plx_19	CA1	CA1_plx_19	plx	19	BA32_CA1_plx_19_1	P28	Choroid Plexus	18	Male
+498	BA32	CA1_plx_20	4	CA1_plx_20	BulkSeq_plx_20	CA1	CA1_plx_20	plx	20	BA32_CA1_plx_20_1	P28	Choroid Plexus	21	Male
+499	BA32	CA1_plx_21	13	CA1_plx_21	BulkSeq_plx_21	CA1	CA1_plx_21	plx	21	BA32_CA1_plx_21_1	P28	Choroid Plexus	3	Male
+500	BA32	CA1_plx_23	14	CA1_plx_23	BulkSeq_plx_23	CA1	CA1_plx_23	plx	23	BA32_CA1_plx_23_1	P28	Choroid Plexus	18	Male
+501	BA32	CA1_plx_22	15	CA1_plx_22	BulkSeq_plx_22	CA1	CA1_plx_22	plx	22	BA32_CA1_plx_22_1	P28	Choroid Plexus	15	Male
+502	BA32	CA1_plx_24	16	CA1_plx_24	BulkSeq_plx_24	CA1	CA1_plx_24	plx	24	BA32_CA1_plx_24_1	P28	Choroid Plexus	21	Male
+503	BA32	CA1_hi2_6	25	CA1_hi2_6	BulkSeq_hi2_6	CA1	CA1_hi2_6	hi2	6	BA32_CA1_hi2_6_1	P28	Hippocampus (posterior)	12	Male
+505	BA32	CA1_hi2_8	27	CA1_hi2_8	BulkSeq_hi2_8	CA1	CA1_hi2_8	hi2	8	BA32_CA1_hi2_8_1	P28	Hippocampus (posterior)	26	Male
+506	BA32	CA1_hi2_9	28	CA1_hi2_9	BulkSeq_hi2_9	CA1	CA1_hi2_9	hi2	9	BA32_CA1_hi2_9_1	P28	Hippocampus (posterior)	12	Male
+508	BA32	CA1_hi2_11	30	CA1_hi2_11	BulkSeq_hi2_11	CA1	CA1_hi2_11	hi2	11	BA32_CA1_hi2_11_1	P28	Hippocampus (posterior)	26	Male
+509	BA32	CA1_hi2_12	31	CA1_hi2_12	BulkSeq_hi2_12	CA1	CA1_hi2_12	hi2	12	BA32_CA1_hi2_12_1	P28	Hippocampus (posterior)	12	Male
+511	BA33	CA1_plx_25	1	CA1_plx_25	BulkSeq_plx_25	CA1	CA1_plx_25	plx	25	BA33_CA1_plx_25_1	P28	Choroid Plexus	3	Male
+512	BA33	CA1_plx_26	2	CA1_plx_26	BulkSeq_plx_26	CA1	CA1_plx_26	plx	26	BA33_CA1_plx_26_1	P28	Choroid Plexus	15	Male
+513	BA33	CA1_plx_27	3	CA1_plx_27	BulkSeq_plx_27	CA1	CA1_plx_27	plx	27	BA33_CA1_plx_27_1	P28	Choroid Plexus	18	Male
+514	BA33	CA1_plx_28	4	CA1_plx_28	BulkSeq_plx_28	CA1	CA1_plx_28	plx	28	BA33_CA1_plx_28_1	P28	Choroid Plexus	21	Male
+515	BA33	CA1_plx_29	13	CA1_plx_29	BulkSeq_plx_29	CA1	CA1_plx_29	plx	29	BA33_CA1_plx_29_1	P28	Choroid Plexus	3	Male
+516	BA33	CA1_plx_30	14	CA1_plx_30	BulkSeq_plx_30	CA1	CA1_plx_30	plx	30	BA33_CA1_plx_30_1	P28	Choroid Plexus	15	Male
+517	BA33	CA1_plx_31	15	CA1_plx_31	BulkSeq_plx_31	CA1	CA1_plx_31	plx	31	BA33_CA1_plx_31_1	P28	Choroid Plexus	18	Male
+518	BA33	CA1_plx_32	16	CA1_plx_32	BulkSeq_plx_32	CA1	CA1_plx_32	plx	32	BA33_CA1_plx_32_1	P28	Choroid Plexus	21	Male
+519	BA33	CA1_hi2_14	25	CA1_hi2_14	BulkSeq_hi2_14	CA1	CA1_hi2_14	hi2	14	BA33_CA1_hi2_14_1	P28	Hippocampus (posterior)	26	Male
+520	BA33	CA1_hi2_15	26	CA1_hi2_15	BulkSeq_hi2_15	CA1	CA1_hi2_15	hi2	15	BA33_CA1_hi2_15_1	P28	Hippocampus (posterior)	12	Male
+521	BA33	CA1_hi2_16	27	CA1_hi2_16	BulkSeq_hi2_16	CA1	CA1_hi2_16	hi2	16	BA33_CA1_hi2_16_1	P28	Hippocampus (posterior)	21	Male
+522	BA33	CA1_hi2_17	28	CA1_hi2_17	BulkSeq_hi2_17	CA1	CA1_hi2_17	hi2	17	BA33_CA1_hi2_17_1	P28	Hippocampus (posterior)	3	Male
+523	BA33	CA1_hi2_18	29	CA1_hi2_18	BulkSeq_hi2_18	CA1	CA1_hi2_18	hi2	18	BA33_CA1_hi2_18_1	P28	Hippocampus (posterior)	15	Male
+524	BA33	CA1_hi2_19	30	CA1_hi2_19	BulkSeq_hi2_19	CA1	CA1_hi2_19	hi2	19	BA33_CA1_hi2_19_1	P28	Hippocampus (posterior)	18	Male
+525	BA33	CA1_hi2_20	31	CA1_hi2_20	BulkSeq_hi2_20	CA1	CA1_hi2_20	hi2	20	BA33_CA1_hi2_20_1	P28	Hippocampus (posterior)	21	Male
+526	BA33	CA1_hi2_21	32	CA1_hi2_21	BulkSeq_hi2_21	CA1	CA1_hi2_21	hi2	21	BA33_CA1_hi2_21_1	P28	Hippocampus (posterior)	3	Male
+527	BA34	CA1_plx_33	1	CA1_plx_33	BulkSeq_plx_33	CA1	CA1_plx_33	plx	33	BA34_CA1_plx_33_1	P28	Choroid Plexus	3	Male
+528	BA34	CA1_plx_34	2	CA1_plx_34	BulkSeq_plx_34	CA1	CA1_plx_34	plx	34	BA34_CA1_plx_34_1	P28	Choroid Plexus	15	Male
+529	BA34	CA1_plx_35	3	CA1_plx_35	BulkSeq_plx_35	CA1	CA1_plx_35	plx	35	BA34_CA1_plx_35_1	P28	Choroid Plexus	18	Male
+530	BA34	CA1_plx_36	4	CA1_plx_36	BulkSeq_plx_36	CA1	CA1_plx_36	plx	36	BA34_CA1_plx_36_1	P28	Choroid Plexus	21	Male
+535	BA34	CA1_hi2_22	25	CA1_hi2_22	BulkSeq_hi2_22	CA1	CA1_hi2_22	hi2	22	BA34_CA1_hi2_22_1	P28	Hippocampus (posterior)	15	Male
+536	BA34	CA1_hi2_23	26	CA1_hi2_23	BulkSeq_hi2_23	CA1	CA1_hi2_23	hi2	23	BA34_CA1_hi2_23_1	P28	Hippocampus (posterior)	18	Male
+537	BA34	CA1_hi2_24	27	CA1_hi2_24	BulkSeq_hi2_24	CA1	CA1_hi2_24	hi2	24	BA34_CA1_hi2_24_1	P28	Hippocampus (posterior)	21	Male
+538	BA34	CA1_hi2_25	28	CA1_hi2_25	BulkSeq_hi2_25	CA1	CA1_hi2_25	hi2	25	BA34_CA1_hi2_25_1	P28	Hippocampus (posterior)	3	Male
+539	BA34	CA1_hi2_26	29	CA1_hi2_26	BulkSeq_hi2_26	CA1	CA1_hi2_26	hi2	26	BA34_CA1_hi2_26_1	P28	Hippocampus (posterior)	15	Male
+540	BA34	CA1_hi2_27	30	CA1_hi2_27	BulkSeq_hi2_27	CA1	CA1_hi2_27	hi2	27	BA34_CA1_hi2_27_1	P28	Hippocampus (posterior)	18	Male
+541	BA34	CA1_hi2_28	31	CA1_hi2_28	BulkSeq_hi2_28	CA1	CA1_hi2_28	hi2	28	BA34_CA1_hi2_28_1	P28	Hippocampus (posterior)	21	Male
+542	BA34	CA1_hi2_29	32	CA1_hi2_29	BulkSeq_hi2_29	CA1	CA1_hi2_29	hi2	29	BA34_CA1_hi2_29_1	P28	Hippocampus (posterior)	3	Male
+551	BA35	CA1_hi2_30	25	CA1_hi2_30	BulkSeq_hi2_30	CA1	CA1_hi2_30	hi2	30	BA35_CA1_hi2_30_1	P28	Hippocampus (posterior)	15	Male
+552	BA35	CA1_hi2_31	26	CA1_hi2_31	BulkSeq_hi2_31	CA1	CA1_hi2_31	hi2	31	BA35_CA1_hi2_31_1	P28	Hippocampus (posterior)	18	Male
+553	BA35	CA1_hi2_32	27	CA1_hi2_32	BulkSeq_hi2_32	CA1	CA1_hi2_32	hi2	32	BA35_CA1_hi2_32_1	P28	Hippocampus (posterior)	21	Male
+554	BA35	CA1_hi2_33	28	CA1_hi2_33	BulkSeq_hi2_33	CA1	CA1_hi2_33	hi2	33	BA35_CA1_hi2_33_1	P28	Hippocampus (posterior)	3	Male
+555	BA35	CA1_hi2_34	29	CA1_hi2_34	BulkSeq_hi2_34	CA1	CA1_hi2_34	hi2	34	BA35_CA1_hi2_34_1	P28	Hippocampus (posterior)	15	Male
+556	BA35	CA1_hi2_35	30	CA1_hi2_35	BulkSeq_hi2_35	CA1	CA1_hi2_35	hi2	35	BA35_CA1_hi2_35_1	P28	Hippocampus (posterior)	18	Male
+557	BA35	CA1_hi2_36	31	CA1_hi2_36	BulkSeq_hi2_36	CA1	CA1_hi2_36	hi2	36	BA35_CA1_hi2_36_1	P28	Hippocampus (posterior)	21	Male
+583	BA37	CA1_vis_27	25	CA1_vis_27	BulkSeq_vis_27	CA1	CA1_vis_27	vis	27	BA37_CA1_vis_27_1	P29	Visual Cortex	18	Male
+584	BA37	CA1_vis_28	26	CA1_vis_28	BulkSeq_vis_28	CA1	CA1_vis_28	vis	28	BA37_CA1_vis_28_1	P29	Visual Cortex	21	Male
+585	BA37	CA1_vis_29	27	CA1_vis_29	BulkSeq_vis_29	CA1	CA1_vis_29	vis	29	BA37_CA1_vis_29_1	P29	Visual Cortex	3	Male
+586	BA37	CA1_vis_30	28	CA1_vis_30	BulkSeq_vis_30	CA1	CA1_vis_30	vis	30	BA37_CA1_vis_30_1	P29	Visual Cortex	15	Male
+587	BA37	CA1_vis_31	29	CA1_vis_31	BulkSeq_vis_31	CA1	CA1_vis_31	vis	31	BA37_CA1_vis_31_1	P29	Visual Cortex	18	Male
+588	BA37	CA1_vis_32	30	CA1_vis_32	BulkSeq_vis_32	CA1	CA1_vis_32	vis	32	BA37_CA1_vis_32_1	P29	Visual Cortex	21	Male
+589	BA37	CA1_vis_33	31	CA1_vis_33	BulkSeq_vis_33	CA1	CA1_vis_33	vis	33	BA37_CA1_vis_33_1	P29	Visual Cortex	3	Male
+590	BA37	CA1_vis_34	32	CA1_vis_34	BulkSeq_vis_34	CA1	CA1_vis_34	vis	34	BA37_CA1_vis_34_1	P29	Visual Cortex	15	Male
+594	BA38	CA1_hi2_57	4	CA1_hi2_57	BulkSeq_hi2_57	CA1	CA1_hi2_57	hi2	57	BA38_CA1_hi2_57_1	P29	Hippocampus (posterior)	28	Male
+595	BA38	CA1_hi2_58	13	CA1_hi2_58	BulkSeq_hi2_58	CA1	CA1_hi2_58	hi2	58	BA38_CA1_hi2_58_1	P29	Hippocampus (posterior)	28	Male
+596	BA38	CA1_hi2_59	14	CA1_hi2_59	BulkSeq_hi2_59	CA1	CA1_hi2_59	hi2	59	BA38_CA1_hi2_59_1	P29	Hippocampus (posterior)	28	Male
+598	BA38	CA1_vis_2	16	CA1_vis_2	BulkSeq_vis_2	CA1	CA1_vis_2	vis	2	BA38_CA1_vis_2_1	P29	Visual Cortex	26	Male
+599	BA38	CA1_vis_35	25	CA1_vis_35	BulkSeq_vis_35	CA1	CA1_vis_35	vis	35	BA38_CA1_vis_35_1	P29	Visual Cortex	18	Male
+600	BA38	CA1_vis_36	26	CA1_vis_36	BulkSeq_vis_36	CA1	CA1_vis_36	vis	36	BA38_CA1_vis_36_1	P29	Visual Cortex	21	Male
+607	BA39	CA1_hi2_3	1	CA1_hi2_3	BulkSeq_hi2_3	CA1	CA1_hi2_3	hi2	3	BA39_CA1_hi2_3_1	P29	Hippocampus (posterior)	12	Male
+608	BA39	CA1_vis_5	3	CA1_vis_5	BulkSeq_vis_5	CA1	CA1_vis_5	vis	5	BA39_CA1_vis_5_1	P29	Visual Cortex	26	Male
+609	BA39	CA1_vis_6	4	CA1_vis_6	BulkSeq_vis_6	CA1	CA1_vis_6	vis	6	BA39_CA1_vis_6_1	P29	Visual Cortex	12	Male
+611	BA39	CA1_vis_8	14	CA1_vis_8	BulkSeq_vis_8	CA1	CA1_vis_8	vis	8	BA39_CA1_vis_8_1	P29	Visual Cortex	26	Male
+622	BA40	CA1_vis_11	1	CA1_vis_11	BulkSeq_vis_11	CA1	CA1_vis_11	vis	11	BA40_CA1_vis_11_1	P29	Visual Cortex	26	Male
+624	BA40	CA1_vis_14	4	CA1_vis_14	BulkSeq_vis_14	CA1	CA1_vis_14	vis	14	BA40_CA1_vis_14_1	P29	Visual Cortex	26	Male
+625	BA40	CA1_vis_15	13	CA1_vis_15	BulkSeq_vis_15	CA1	CA1_vis_15	vis	15	BA40_CA1_vis_15_1	P29	Visual Cortex	12	Male
+626	BA40	CA1_vis_16	14	CA1_vis_16	BulkSeq_vis_16	CA1	CA1_vis_16	vis	16	BA40_CA1_vis_16_1	P29	Visual Cortex	21	Male
+627	BA40	CA1_vis_17	15	CA1_vis_17	BulkSeq_vis_17	CA1	CA1_vis_17	vis	17	BA40_CA1_vis_17_1	P29	Visual Cortex	3	Male
+628	BA40	CA1_vis_18	16	CA1_vis_18	BulkSeq_vis_18	CA1	CA1_vis_18	vis	18	BA40_CA1_vis_18_1	P29	Visual Cortex	15	Male
+629	BA40	CA1_vis_59	25	CA1_vis_59	BulkSeq_vis_59	CA1	CA1_vis_59	vis	59	BA40_CA1_vis_59_1	P29	Visual Cortex	28	Male
+631	BA40	CA1_ent_3	28	CA1_ent_3	BulkSeq_ent_3	CA1	CA1_ent_3	ent	3	BA40_CA1_ent_3_1	P29	Entorhinal cortex	12	Male
+632	BA40	CA1_ent_5	30	CA1_ent_5	BulkSeq_ent_5	CA1	CA1_ent_5	ent	5	BA40_CA1_ent_5_1	P29	Entorhinal cortex	26	Male
+633	BA40	CA1_ent_6	31	CA1_ent_6	BulkSeq_ent_6	CA1	CA1_ent_6	ent	6	BA40_CA1_ent_6_1	P29	Entorhinal cortex	12	Male
+635	BA41	CA1_vis_19	1	CA1_vis_19	BulkSeq_vis_19	CA1	CA1_vis_19	vis	19	BA41_CA1_vis_19_1	P29	Visual Cortex	18	Male
+636	BA41	CA1_vis_20	2	CA1_vis_20	BulkSeq_vis_20	CA1	CA1_vis_20	vis	20	BA41_CA1_vis_20_1	P29	Visual Cortex	21	Male
+637	BA41	CA1_vis_21	3	CA1_vis_21	BulkSeq_vis_21	CA1	CA1_vis_21	vis	21	BA41_CA1_vis_21_1	P29	Visual Cortex	3	Male
+638	BA41	CA1_vis_22	4	CA1_vis_22	BulkSeq_vis_22	CA1	CA1_vis_22	vis	22	BA41_CA1_vis_22_1	P29	Visual Cortex	15	Male
+639	BA41	CA1_vis_23	13	CA1_vis_23	BulkSeq_vis_23	CA1	CA1_vis_23	vis	23	BA41_CA1_vis_23_1	P29	Visual Cortex	18	Male
+640	BA41	CA1_vis_24	14	CA1_vis_24	BulkSeq_vis_24	CA1	CA1_vis_24	vis	24	BA41_CA1_vis_24_1	P29	Visual Cortex	21	Male
+641	BA41	CA1_vis_25	15	CA1_vis_25	BulkSeq_vis_25	CA1	CA1_vis_25	vis	25	BA41_CA1_vis_25_1	P29	Visual Cortex	3	Male
+642	BA41	CA1_vis_26	16	CA1_vis_26	BulkSeq_vis_26	CA1	CA1_vis_26	vis	26	BA41_CA1_vis_26_1	P29	Visual Cortex	15	Male
+643	BA41	CA1_ent_8	25	CA1_ent_8	BulkSeq_ent_8	CA1	CA1_ent_8	ent	8	BA41_CA1_ent_8_1	P29	Entorhinal cortex	26	Male
+644	BA41	CA1_ent_9	26	CA1_ent_9	BulkSeq_ent_9	CA1	CA1_ent_9	ent	9	BA41_CA1_ent_9_1	P29	Entorhinal cortex	12	Male
+646	BA41	CA1_ent_11	28	CA1_ent_11	BulkSeq_ent_11	CA1	CA1_ent_11	ent	11	BA41_CA1_ent_11_1	P29	Entorhinal cortex	26	Male
+647	BA41	CA1_ent_12	29	CA1_ent_12	BulkSeq_ent_12	CA1	CA1_ent_12	ent	12	BA41_CA1_ent_12_1	P29	Entorhinal cortex	12	Male
+649	BA41	CA1_ent_14	31	CA1_ent_14	BulkSeq_ent_14	CA1	CA1_ent_14	ent	14	BA41_CA1_ent_14_1	P29	Entorhinal cortex	26	Male
+650	BA41	CA1_ent_15	32	CA1_ent_15	BulkSeq_ent_15	CA1	CA1_ent_15	ent	15	BA41_CA1_ent_15_1	P29	Entorhinal cortex	12	Male
+657	BA42	CA1_vis_57	15	CA1_vis_57	BulkSeq_vis_57	CA1	CA1_vis_57	vis	57	BA42_CA1_vis_57_1	P29	Visual Cortex	28	Male
+658	BA42	CA1_vis_58	16	CA1_vis_58	BulkSeq_vis_58	CA1	CA1_vis_58	vis	58	BA42_CA1_vis_58_1	P29	Visual Cortex	28	Male
+659	BA42	CA1_ent_16	25	CA1_ent_16	BulkSeq_ent_16	CA1	CA1_ent_16	ent	16	BA42_CA1_ent_16_1	P29	Entorhinal cortex	21	Male
+660	BA42	CA1_ent_17	26	CA1_ent_17	BulkSeq_ent_17	CA1	CA1_ent_17	ent	17	BA42_CA1_ent_17_1	P29	Entorhinal cortex	3	Male
+661	BA42	CA1_ent_18	27	CA1_ent_18	BulkSeq_ent_18	CA1	CA1_ent_18	ent	18	BA42_CA1_ent_18_1	P29	Entorhinal cortex	15	Male
+662	BA42	CA1_ent_19	28	CA1_ent_19	BulkSeq_ent_19	CA1	CA1_ent_19	ent	19	BA42_CA1_ent_19_1	P29	Entorhinal cortex	18	Male
+663	BA42	CA1_ent_20	29	CA1_ent_20	BulkSeq_ent_20	CA1	CA1_ent_20	ent	20	BA42_CA1_ent_20_1	P29	Entorhinal cortex	21	Male
+664	BA42	CA1_ent_21	30	CA1_ent_21	BulkSeq_ent_21	CA1	CA1_ent_21	ent	21	BA42_CA1_ent_21_1	P29	Entorhinal cortex	3	Male
+665	BA42	CA1_ent_22	31	CA1_ent_22	BulkSeq_ent_22	CA1	CA1_ent_22	ent	22	BA42_CA1_ent_22_1	P29	Entorhinal cortex	15	Male
+666	BA42	CA1_ent_23	32	CA1_ent_23	BulkSeq_ent_23	CA1	CA1_ent_23	ent	23	BA42_CA1_ent_23_1	P29	Entorhinal cortex	18	Male
+667	BA43	CA1_ent_24	1	CA1_ent_24	BulkSeq_ent_24	CA1	CA1_ent_24	ent	24	BA43_CA1_ent_24_1	P30	Entorhinal cortex	21	Male
+668	BA43	CA1_ent_25	2	CA1_ent_25	BulkSeq_ent_25	CA1	CA1_ent_25	ent	25	BA43_CA1_ent_25_1	P30	Entorhinal cortex	3	Male
+669	BA43	CA1_ent_26	3	CA1_ent_26	BulkSeq_ent_26	CA1	CA1_ent_26	ent	26	BA43_CA1_ent_26_1	P30	Entorhinal cortex	15	Male
+670	BA43	CA1_ent_27	4	CA1_ent_27	BulkSeq_ent_27	CA1	CA1_ent_27	ent	27	BA43_CA1_ent_27_1	P30	Entorhinal cortex	18	Male
+671	BA43	CA1_ent_28	13	CA1_ent_28	BulkSeq_ent_28	CA1	CA1_ent_28	ent	28	BA43_CA1_ent_28_1	P30	Entorhinal cortex	21	Male
+672	BA43	CA1_ent_29	14	CA1_ent_29	BulkSeq_ent_29	CA1	CA1_ent_29	ent	29	BA43_CA1_ent_29_1	P30	Entorhinal cortex	3	Male
+673	BA43	CA1_ent_30	15	CA1_ent_30	BulkSeq_ent_30	CA1	CA1_ent_30	ent	30	BA43_CA1_ent_30_1	P30	Entorhinal cortex	15	Male
+683	BA44	CA1_ent_32	1	CA1_ent_32	BulkSeq_ent_32	CA1	CA1_ent_32	ent	32	BA44_CA1_ent_32_1	P30	Entorhinal cortex	21	Male
+684	BA44	CA1_ent_33	2	CA1_ent_33	BulkSeq_ent_33	CA1	CA1_ent_33	ent	33	BA44_CA1_ent_33_1	P30	Entorhinal cortex	3	Male
+685	BA44	CA1_ent_34	3	CA1_ent_34	BulkSeq_ent_34	CA1	CA1_ent_34	ent	34	BA44_CA1_ent_34_1	P30	Entorhinal cortex	15	Male
+686	BA44	CA1_ent_35	4	CA1_ent_35	BulkSeq_ent_35	CA1	CA1_ent_35	ent	35	BA44_CA1_ent_35_1	P30	Entorhinal cortex	18	Male
+687	BA44	CA1_ent_36	13	CA1_ent_36	BulkSeq_ent_36	CA1	CA1_ent_36	ent	36	BA44_CA1_ent_36_1	P30	Entorhinal cortex	21	Male
+708	BA45	CA1_ent_57	26	CA1_ent_57	BulkSeq_ent_57	CA1	CA1_ent_57	ent	57	BA45_CA1_ent_57_1	P30	Entorhinal cortex	28	Male
+739	BA47	CA1_hy_15	25	CA1_hy_15	BulkSeq_hy_15	CA1	CA1_hy_15	hy	15	BA47_CA1_hy_15_1	P30	Hypothalamus	12	Male
+740	BA47	CA1_hy_16	26	CA1_hy_16	BulkSeq_hy_16	CA1	CA1_hy_16	hy	16	BA47_CA1_hy_16_1	P30	Hypothalamus	21	Male
+741	BA47	CA1_hy_17	27	CA1_hy_17	BulkSeq_hy_17	CA1	CA1_hy_17	hy	17	BA47_CA1_hy_17_1	P30	Hypothalamus	3	Male
+742	BA47	CA1_hy_18	28	CA1_hy_18	BulkSeq_hy_18	CA1	CA1_hy_18	hy	18	BA47_CA1_hy_18_1	P30	Hypothalamus	15	Male
+743	BA47	CA1_hy_19	29	CA1_hy_19	BulkSeq_hy_19	CA1	CA1_hy_19	hy	19	BA47_CA1_hy_19_1	P30	Hypothalamus	18	Male
+744	BA47	CA1_hy_20	30	CA1_hy_20	BulkSeq_hy_20	CA1	CA1_hy_20	hy	20	BA47_CA1_hy_20_1	P30	Hypothalamus	21	Male
+745	BA47	CA1_hy_21	31	CA1_hy_21	BulkSeq_hy_21	CA1	CA1_hy_21	hy	21	BA47_CA1_hy_21_1	P30	Hypothalamus	3	Male
+746	BA47	CA1_hy_22	32	CA1_hy_22	BulkSeq_hy_22	CA1	CA1_hy_22	hy	22	BA47_CA1_hy_22_1	P30	Hypothalamus	15	Male
+755	BA48	CA1_hy_23	25	CA1_hy_23	BulkSeq_hy_23	CA1	CA1_hy_23	hy	23	BA48_CA1_hy_23_1	P30	Hypothalamus	18	Male
+756	BA48	CA1_hy_24	26	CA1_hy_24	BulkSeq_hy_24	CA1	CA1_hy_24	hy	24	BA48_CA1_hy_24_1	P30	Hypothalamus	21	Male
+757	BA48	CA1_hy_25	27	CA1_hy_25	BulkSeq_hy_25	CA1	CA1_hy_25	hy	25	BA48_CA1_hy_25_1	P30	Hypothalamus	3	Male
+758	BA48	CA1_hy_26	28	CA1_hy_26	BulkSeq_hy_26	CA1	CA1_hy_26	hy	26	BA48_CA1_hy_26_1	P30	Hypothalamus	15	Male
+759	BA48	CA1_hy_27	29	CA1_hy_27	BulkSeq_hy_27	CA1	CA1_hy_27	hy	27	BA48_CA1_hy_27_1	P30	Hypothalamus	18	Male
+760	BA48	CA1_hy_28	30	CA1_hy_28	BulkSeq_hy_28	CA1	CA1_hy_28	hy	28	BA48_CA1_hy_28_1	P30	Hypothalamus	21	Male
+761	BA48	CA1_hy_29	31	CA1_hy_29	BulkSeq_hy_29	CA1	CA1_hy_29	hy	29	BA48_CA1_hy_29_1	P30	Hypothalamus	3	Male
+762	BA48	CA1_hy_30	32	CA1_hy_30	BulkSeq_hy_30	CA1	CA1_hy_30	hy	30	BA48_CA1_hy_30_1	P30	Hypothalamus	15	Male
+787	BA50	CA1_pon_2	25	CA1_pon_2	BulkSeq_pon_2	CA1	CA1_pon_2	pon	2	BA50_CA1_pon_2_1	P31	Pons	26	Male
+788	BA50	CA1_pon_3	26	CA1_pon_3	BulkSeq_pon_3	CA1	CA1_pon_3	pon	3	BA50_CA1_pon_3_1	P31	Pons	12	Male
+790	BA50	CA1_pon_5	28	CA1_pon_5	BulkSeq_pon_5	CA1	CA1_pon_5	pon	5	BA50_CA1_pon_5_1	P31	Pons	26	Male
+791	BA50	CA1_pon_6	29	CA1_pon_6	BulkSeq_pon_6	CA1	CA1_pon_6	pon	6	BA50_CA1_pon_6_1	P31	Pons	12	Male
+793	BA50	CA1_pon_8	31	CA1_pon_8	BulkSeq_pon_8	CA1	CA1_pon_8	pon	8	BA50_CA1_pon_8_1	P31	Pons	26	Male
+794	BA50	CA1_pon_9	32	CA1_pon_9	BulkSeq_pon_9	CA1	CA1_pon_9	pon	9	BA50_CA1_pon_9_1	P31	Pons	12	Male
+797	BA51	CA1_pon_12	3	CA1_pon_12	BulkSeq_pon_12	CA1	CA1_pon_12	pon	12	BA51_CA1_pon_12_1	P31	Pons	12	Male
+799	BA51	CA1_pon_14	13	CA1_pon_14	BulkSeq_pon_14	CA1	CA1_pon_14	pon	14	BA51_CA1_pon_14_1	P31	Pons	26	Male
+800	BA51	CA1_pon_15	14	CA1_pon_15	BulkSeq_pon_15	CA1	CA1_pon_15	pon	15	BA51_CA1_pon_15_1	P31	Pons	12	Male
+801	BA51	CA1_pon_16	15	CA1_pon_16	BulkSeq_pon_16	CA1	CA1_pon_16	pon	16	BA51_CA1_pon_16_1	P31	Pons	21	Male
+802	BA51	CA1_pon_17	16	CA1_pon_17	BulkSeq_pon_17	CA1	CA1_pon_17	pon	17	BA51_CA1_pon_17_1	P31	Pons	3	Male
+803	BA51	CA1_pon_58	25	CA1_pon_58	BulkSeq_pon_58	CA1	CA1_pon_58	pon	58	BA51_CA1_pon_58_1	P31	Pons	28	Male
+804	BA51	CA1_pon_59	26	CA1_pon_59	BulkSeq_pon_59	CA1	CA1_pon_59	pon	59	BA51_CA1_pon_59_1	P31	Pons	28	Male
+806	BA51	CA1_cer_2	28	CA1_cer_2	BulkSeq_cer_2	CA1	CA1_cer_2	cer	2	BA51_CA1_cer_2_1	P31	Cerebellum	26	Male
+807	BA51	CA1_cer_3	29	CA1_cer_3	BulkSeq_cer_3	CA1	CA1_cer_3	cer	3	BA51_CA1_cer_3_1	P31	Cerebellum	12	Male
+809	BA51	CA1_cer_5	31	CA1_cer_5	BulkSeq_cer_5	CA1	CA1_cer_5	cer	5	BA51_CA1_cer_5_1	P31	Cerebellum	26	Male
+810	BA51	CA1_cer_6	32	CA1_cer_6	BulkSeq_cer_6	CA1	CA1_cer_6	cer	6	BA51_CA1_cer_6_1	P31	Cerebellum	12	Male
+811	BA52	CA1_pon_18	1	CA1_pon_18	BulkSeq_pon_18	CA1	CA1_pon_18	pon	18	BA52_CA1_pon_18_1	P31	Pons	15	Male
+812	BA52	CA1_pon_19	2	CA1_pon_19	BulkSeq_pon_19	CA1	CA1_pon_19	pon	19	BA52_CA1_pon_19_1	P31	Pons	18	Male
+813	BA52	CA1_pon_20	3	CA1_pon_20	BulkSeq_pon_20	CA1	CA1_pon_20	pon	20	BA52_CA1_pon_20_1	P31	Pons	21	Male
+814	BA52	CA1_pon_21	4	CA1_pon_21	BulkSeq_pon_21	CA1	CA1_pon_21	pon	21	BA52_CA1_pon_21_1	P31	Pons	3	Male
+815	BA52	CA1_pon_22	13	CA1_pon_22	BulkSeq_pon_22	CA1	CA1_pon_22	pon	22	BA52_CA1_pon_22_1	P31	Pons	15	Male
+816	BA52	CA1_pon_23	14	CA1_pon_23	BulkSeq_pon_23	CA1	CA1_pon_23	pon	23	BA52_CA1_pon_23_1	P31	Pons	18	Male
+817	BA52	CA1_pon_24	15	CA1_pon_24	BulkSeq_pon_24	CA1	CA1_pon_24	pon	24	BA52_CA1_pon_24_1	P31	Pons	21	Male
+818	BA52	CA1_pon_25	16	CA1_pon_25	BulkSeq_pon_25	CA1	CA1_pon_25	pon	25	BA52_CA1_pon_25_1	P31	Pons	3	Male
+820	BA52	CA1_cer_8	26	CA1_cer_8	BulkSeq_cer_8	CA1	CA1_cer_8	cer	8	BA52_CA1_cer_8_1	P31	Cerebellum	26	Male
+821	BA52	CA1_cer_9	27	CA1_cer_9	BulkSeq_cer_9	CA1	CA1_cer_9	cer	9	BA52_CA1_cer_9_1	P31	Cerebellum	12	Male
+823	BA52	CA1_cer_11	29	CA1_cer_11	BulkSeq_cer_11	CA1	CA1_cer_11	cer	11	BA52_CA1_cer_11_1	P31	Cerebellum	26	Male
+824	BA52	CA1_cer_12	30	CA1_cer_12	BulkSeq_cer_12	CA1	CA1_cer_12	cer	12	BA52_CA1_cer_12_1	P31	Cerebellum	12	Male
+826	BA52	CA1_cer_14	32	CA1_cer_14	BulkSeq_cer_14	CA1	CA1_cer_14	cer	14	BA52_CA1_cer_14_1	P31	Cerebellum	26	Male
+829	BA53	CA1_pon_28	3	CA1_pon_28	BulkSeq_pon_28	CA1	CA1_pon_28	pon	28	BA53_CA1_pon_28_1	P31	Pons	21	Male
+830	BA53	CA1_pon_29	4	CA1_pon_29	BulkSeq_pon_29	CA1	CA1_pon_29	pon	29	BA53_CA1_pon_29_1	P31	Pons	3	Male
+831	BA53	CA1_pon_30	13	CA1_pon_30	BulkSeq_pon_30	CA1	CA1_pon_30	pon	30	BA53_CA1_pon_30_1	P31	Pons	15	Male
+832	BA53	CA1_pon_31	14	CA1_pon_31	BulkSeq_pon_31	CA1	CA1_pon_31	pon	31	BA53_CA1_pon_31_1	P31	Pons	18	Male
+833	BA53	CA1_pon_32	15	CA1_pon_32	BulkSeq_pon_32	CA1	CA1_pon_32	pon	32	BA53_CA1_pon_32_1	P31	Pons	21	Male
+834	BA53	CA1_pon_33	16	CA1_pon_33	BulkSeq_pon_33	CA1	CA1_pon_33	pon	33	BA53_CA1_pon_33_1	P31	Pons	3	Male
+835	BA53	CA1_cer_15	25	CA1_cer_15	BulkSeq_cer_15	CA1	CA1_cer_15	cer	15	BA53_CA1_cer_15_1	P31	Cerebellum	12	Male
+836	BA53	CA1_cer_16	26	CA1_cer_16	BulkSeq_cer_16	CA1	CA1_cer_16	cer	16	BA53_CA1_cer_16_1	P31	Cerebellum	21	Male
+837	BA53	CA1_cer_17	27	CA1_cer_17	BulkSeq_cer_17	CA1	CA1_cer_17	cer	17	BA53_CA1_cer_17_1	P31	Cerebellum	3	Male
+838	BA53	CA1_cer_18	28	CA1_cer_18	BulkSeq_cer_18	CA1	CA1_cer_18	cer	18	BA53_CA1_cer_18_1	P31	Cerebellum	15	Male
+839	BA53	CA1_cer_19	29	CA1_cer_19	BulkSeq_cer_19	CA1	CA1_cer_19	cer	19	BA53_CA1_cer_19_1	P31	Cerebellum	18	Male
+840	BA53	CA1_cer_20	30	CA1_cer_20	BulkSeq_cer_20	CA1	CA1_cer_20	cer	20	BA53_CA1_cer_20_1	P31	Cerebellum	21	Male
+841	BA53	CA1_cer_21	31	CA1_cer_21	BulkSeq_cer_21	CA1	CA1_cer_21	cer	21	BA53_CA1_cer_21_1	P31	Cerebellum	3	Male
+845	BA54	CA1_pon_36	3	CA1_pon_36	BulkSeq_pon_36	CA1	CA1_pon_36	pon	36	BA54_CA1_pon_36_1	P31	Pons	21	Male
+851	BA54	CA1_cer_23	25	CA1_cer_23	BulkSeq_cer_23	CA1	CA1_cer_23	cer	23	BA54_CA1_cer_23_1	P31	Cerebellum	18	Male
+853	BA54	CA1_cer_25	27	CA1_cer_25	BulkSeq_cer_25	CA1	CA1_cer_25	cer	25	BA54_CA1_cer_25_1	P31	Cerebellum	3	Male
+854	BA54	CA1_cer_26	28	CA1_cer_26	BulkSeq_cer_26	CA1	CA1_cer_26	cer	26	BA54_CA1_cer_26_1	P31	Cerebellum	15	Male
+855	BA54	CA1_cer_27	29	CA1_cer_27	BulkSeq_cer_27	CA1	CA1_cer_27	cer	27	BA54_CA1_cer_27_1	P31	Cerebellum	18	Male
+856	BA54	CA1_cer_28	30	CA1_cer_28	BulkSeq_cer_28	CA1	CA1_cer_28	cer	28	BA54_CA1_cer_28_1	P31	Cerebellum	21	Male
+858	BA54	CA1_cer_30	32	CA1_cer_30	BulkSeq_cer_30	CA1	CA1_cer_30	cer	30	BA54_CA1_cer_30_1	P31	Cerebellum	15	Male
+869	BA55	CA1_cer_57	27	CA1_cer_57	BulkSeq_cer_57	CA1	CA1_cer_57	cer	57	BA55_CA1_cer_57_1	P32	Cerebellum	28	Male
+870	BA55	CA1_cer_58	28	CA1_cer_58	BulkSeq_cer_58	CA1	CA1_cer_58	cer	58	BA55_CA1_cer_58_1	P32	Cerebellum	28	Male
+871	BA55	CA1_cer_59	29	CA1_cer_59	BulkSeq_cer_59	CA1	CA1_cer_59	cer	59	BA55_CA1_cer_59_1	P32	Cerebellum	28	Male
+873	BA55	CA1_med_2	31	CA1_med_2	BulkSeq_med_2	CA1	CA1_med_2	med	2	BA55_CA1_med_2_1	P32	Medulla	26	Male
+874	BA55	CA1_med_3	32	CA1_med_3	BulkSeq_med_3	CA1	CA1_med_3	med	3	BA55_CA1_med_3_1	P32	Medulla	12	Male
+884	BA56	CA1_med_5	26	CA1_med_5	BulkSeq_med_5	CA1	CA1_med_5	med	5	BA56_CA1_med_5_1	P32	Medulla	26	Male
+885	BA56	CA1_med_6	27	CA1_med_6	BulkSeq_med_6	CA1	CA1_med_6	med	6	BA56_CA1_med_6_1	P32	Medulla	12	Male
+887	BA56	CA1_med_8	29	CA1_med_8	BulkSeq_med_8	CA1	CA1_med_8	med	8	BA56_CA1_med_8_1	P32	Medulla	26	Male
+888	BA56	CA1_med_9	30	CA1_med_9	BulkSeq_med_9	CA1	CA1_med_9	med	9	BA56_CA1_med_9_1	P32	Medulla	12	Male
+890	BA56	CA1_med_11	32	CA1_med_11	BulkSeq_med_11	CA1	CA1_med_11	med	11	BA56_CA1_med_11_1	P32	Medulla	26	Male
+891	BA57	CA1_med_12	1	CA1_med_12	BulkSeq_med_12	CA1	CA1_med_12	med	12	BA57_CA1_med_12_1	P32	Medulla	12	Male
+893	BA57	CA1_med_14	3	CA1_med_14	BulkSeq_med_14	CA1	CA1_med_14	med	14	BA57_CA1_med_14_1	P32	Medulla	26	Male
+894	BA57	CA1_med_15	4	CA1_med_15	BulkSeq_med_15	CA1	CA1_med_15	med	15	BA57_CA1_med_15_1	P32	Medulla	12	Male
+895	BA57	CA1_med_16	13	CA1_med_16	BulkSeq_med_16	CA1	CA1_med_16	med	16	BA57_CA1_med_16_1	P32	Medulla	21	Male
+896	BA57	CA1_med_17	14	CA1_med_17	BulkSeq_med_17	CA1	CA1_med_17	med	17	BA57_CA1_med_17_1	P32	Medulla	3	Male
+897	BA57	CA1_med_18	15	CA1_med_18	BulkSeq_med_18	CA1	CA1_med_18	med	18	BA57_CA1_med_18_1	P32	Medulla	15	Male
+898	BA57	CA1_med_19	16	CA1_med_19	BulkSeq_med_19	CA1	CA1_med_19	med	19	BA57_CA1_med_19_1	P32	Medulla	18	Male
+899	BA57	CA1_med_20	25	CA1_med_20	BulkSeq_med_20	CA1	CA1_med_20	med	20	BA57_CA1_med_20_1	P32	Medulla	21	Male
+900	BA57	CA1_med_21	26	CA1_med_21	BulkSeq_med_21	CA1	CA1_med_21	med	21	BA57_CA1_med_21_1	P32	Medulla	3	Male
+901	BA57	CA1_med_22	27	CA1_med_22	BulkSeq_med_22	CA1	CA1_med_22	med	22	BA57_CA1_med_22_1	P32	Medulla	15	Male
+902	BA57	CA1_med_23	28	CA1_med_23	BulkSeq_med_23	CA1	CA1_med_23	med	23	BA57_CA1_med_23_1	P32	Medulla	18	Male
+903	BA57	CA1_med_24	29	CA1_med_24	BulkSeq_med_24	CA1	CA1_med_24	med	24	BA57_CA1_med_24_1	P32	Medulla	21	Male
+904	BA57	CA1_med_25	30	CA1_med_25	BulkSeq_med_25	CA1	CA1_med_25	med	25	BA57_CA1_med_25_1	P32	Medulla	3	Male
+905	BA57	CA1_med_26	31	CA1_med_26	BulkSeq_med_26	CA1	CA1_med_26	med	26	BA57_CA1_med_26_1	P32	Medulla	15	Male
+906	BA57	CA1_med_27	32	CA1_med_27	BulkSeq_med_27	CA1	CA1_med_27	med	27	BA57_CA1_med_27_1	P32	Medulla	18	Male
+907	BA58	CA1_med_28	1	CA1_med_28	BulkSeq_med_28	CA1	CA1_med_28	med	28	BA58_CA1_med_28_1	P32	Medulla	21	Male
+908	BA58	CA1_med_29	2	CA1_med_29	BulkSeq_med_29	CA1	CA1_med_29	med	29	BA58_CA1_med_29_1	P32	Medulla	3	Male
+909	BA58	CA1_med_30	3	CA1_med_30	BulkSeq_med_30	CA1	CA1_med_30	med	30	BA58_CA1_med_30_1	P32	Medulla	15	Male
+910	BA58	CA1_med_31	4	CA1_med_31	BulkSeq_med_31	CA1	CA1_med_31	med	31	BA58_CA1_med_31_1	P32	Medulla	18	Male
+911	BA58	CA1_med_32	13	CA1_med_32	BulkSeq_med_32	CA1	CA1_med_32	med	32	BA58_CA1_med_32_1	P32	Medulla	21	Male
+912	BA58	CA1_med_33	14	CA1_med_33	BulkSeq_med_33	CA1	CA1_med_33	med	33	BA58_CA1_med_33_1	P32	Medulla	3	Male
+913	BA58	CA1_med_34	15	CA1_med_34	BulkSeq_med_34	CA1	CA1_med_34	med	34	BA58_CA1_med_34_1	P32	Medulla	15	Male
+914	BA58	CA1_med_35	16	CA1_med_35	BulkSeq_med_35	CA1	CA1_med_35	med	35	BA58_CA1_med_35_1	P32	Medulla	18	Male
+915	BA58	CA1_med_36	25	CA1_med_36	BulkSeq_med_36	CA1	CA1_med_36	med	36	BA58_CA1_med_36_1	P32	Medulla	21	Male
+936	BA59	CA1_med_57	30	CA1_med_57	BulkSeq_med_57	CA1	CA1_med_57	med	57	BA59_CA1_med_57_1	P32	Medulla	28	Male
+937	BA59	CA1_med_58	31	CA1_med_58	BulkSeq_med_58	CA1	CA1_med_58	med	58	BA59_CA1_med_58_1	P32	Medulla	28	Male
+938	BA59	CA1_med_59	32	CA1_med_59	BulkSeq_med_59	CA1	CA1_med_59	med	59	BA59_CA1_med_59_1	P32	Medulla	28	Male

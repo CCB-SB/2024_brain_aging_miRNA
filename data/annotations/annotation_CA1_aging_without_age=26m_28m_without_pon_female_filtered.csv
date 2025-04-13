@@ -1,0 +1,341 @@
+V1	Pool number	Sample ID	Barcode Number	SampleID	sampleID	cohort	ID	brain_region	mouse_ID	fastq_names	plate	brain_region_long	age	sex
+1	BA1	CA1_olf_1	1	CA1_olf_1	BulkSeq_olf_1	CA1	CA1_olf_1	olf	1	BA1_CA1_olf_1_1	P23	Olfactory bulb	12	Female
+4	BA1	CA1_olf_4	4	CA1_olf_4	BulkSeq_olf_4	CA1	CA1_olf_4	olf	4	BA1_CA1_olf_4_1	P23	Olfactory bulb	12	Female
+7	BA1	CA1_olf_7	15	CA1_olf_7	BulkSeq_olf_7	CA1	CA1_olf_7	olf	7	BA1_CA1_olf_7_1	P23	Olfactory bulb	12	Female
+32	BA2	CA1_cor_37	32	CA1_cor_37	BulkSeq_cor_37	CA1	CA1_cor_37	cor	37	BA2_CA1_cor_37_1	P23	Motor cortex	3	Female
+37	BA3	CA1_olf_37	13	CA1_olf_37	BulkSeq_olf_37	CA1	CA1_olf_37	olf	37	BA3_CA1_olf_37_1	P23	Olfactory bulb	3	Female
+38	BA3	CA1_olf_38	14	CA1_olf_38	BulkSeq_olf_38	CA1	CA1_olf_38	olf	38	BA3_CA1_olf_38_1	P23	Olfactory bulb	15	Female
+39	BA3	CA1_olf_39	15	CA1_olf_39	BulkSeq_olf_39	CA1	CA1_olf_39	olf	39	BA3_CA1_olf_39_1	P23	Olfactory bulb	18	Female
+40	BA3	CA1_olf_40	16	CA1_olf_40	BulkSeq_olf_40	CA1	CA1_olf_40	olf	40	BA3_CA1_olf_40_1	P23	Olfactory bulb	21	Female
+41	BA3	CA1_olf_41	25	CA1_olf_41	BulkSeq_olf_41	CA1	CA1_olf_41	olf	41	BA3_CA1_olf_41_1	P23	Olfactory bulb	3	Female
+42	BA3	CA1_olf_42	26	CA1_olf_42	BulkSeq_olf_42	CA1	CA1_olf_42	olf	42	BA3_CA1_olf_42_1	P23	Olfactory bulb	15	Female
+43	BA3	CA1_olf_43	27	CA1_olf_43	BulkSeq_olf_43	CA1	CA1_olf_43	olf	43	BA3_CA1_olf_43_1	P23	Olfactory bulb	18	Female
+44	BA3	CA1_olf_44	28	CA1_olf_44	BulkSeq_olf_44	CA1	CA1_olf_44	olf	44	BA3_CA1_olf_44_1	P23	Olfactory bulb	21	Female
+45	BA3	CA1_olf_45	29	CA1_olf_45	BulkSeq_olf_45	CA1	CA1_olf_45	olf	45	BA3_CA1_olf_45_1	P23	Olfactory bulb	3	Female
+46	BA3	CA1_olf_46	30	CA1_olf_46	BulkSeq_olf_46	CA1	CA1_olf_46	olf	46	BA3_CA1_olf_46_1	P23	Olfactory bulb	15	Female
+47	BA3	CA1_olf_47	31	CA1_olf_47	BulkSeq_olf_47	CA1	CA1_olf_47	olf	47	BA3_CA1_olf_47_1	P23	Olfactory bulb	18	Female
+48	BA3	CA1_olf_48	32	CA1_olf_48	BulkSeq_olf_48	CA1	CA1_olf_48	olf	48	BA3_CA1_olf_48_1	P23	Olfactory bulb	21	Female
+49	BA4	CA1_olf_49	1	CA1_olf_49	BulkSeq_olf_49	CA1	CA1_olf_49	olf	49	BA4_CA1_olf_49_1	P23	Olfactory bulb	3	Female
+50	BA4	CA1_olf_50	2	CA1_olf_50	BulkSeq_olf_50	CA1	CA1_olf_50	olf	50	BA4_CA1_olf_50_1	P23	Olfactory bulb	15	Female
+51	BA4	CA1_olf_51	3	CA1_olf_51	BulkSeq_olf_51	CA1	CA1_olf_51	olf	51	BA4_CA1_olf_51_1	P23	Olfactory bulb	18	Female
+52	BA4	CA1_olf_52	4	CA1_olf_52	BulkSeq_olf_52	CA1	CA1_olf_52	olf	52	BA4_CA1_olf_52_1	P23	Olfactory bulb	21	Female
+53	BA4	CA1_olf_53	13	CA1_olf_53	BulkSeq_olf_53	CA1	CA1_olf_53	olf	53	BA4_CA1_olf_53_1	P23	Olfactory bulb	3	Female
+54	BA4	CA1_olf_54	14	CA1_olf_54	BulkSeq_olf_54	CA1	CA1_olf_54	olf	54	BA4_CA1_olf_54_1	P23	Olfactory bulb	15	Female
+55	BA4	CA1_olf_55	15	CA1_olf_55	BulkSeq_olf_55	CA1	CA1_olf_55	olf	55	BA4_CA1_olf_55_1	P23	Olfactory bulb	18	Female
+56	BA4	CA1_olf_56	16	CA1_olf_56	BulkSeq_olf_56	CA1	CA1_olf_56	olf	56	BA4_CA1_olf_56_1	P23	Olfactory bulb	21	Female
+60	BA4	CA1_cor_1	28	CA1_cor_1	BulkSeq_cor_1	CA1	CA1_cor_1	cor	1	BA4_CA1_cor_1_1	P23	Motor cortex	12	Female
+63	BA4	CA1_cor_4	31	CA1_cor_4	BulkSeq_cor_4	CA1	CA1_cor_4	cor	4	BA4_CA1_cor_4_1	P23	Motor cortex	12	Female
+66	BA5	CA1_olf_10	2	CA1_olf_10	BulkSeq_olf_10	CA1	CA1_olf_10	olf	10	BA5_CA1_olf_10_1	P23	Olfactory bulb	12	Female
+69	BA5	CA1_olf_13	13	CA1_olf_13	BulkSeq_olf_13	CA1	CA1_olf_13	olf	13	BA5_CA1_olf_13_1	P23	Olfactory bulb	12	Female
+74	BA5	CA1_cor_7	26	CA1_cor_7	BulkSeq_cor_7	CA1	CA1_cor_7	cor	7	BA5_CA1_cor_7_1	P23	Motor cortex	12	Female
+77	BA5	CA1_cor_10	29	CA1_cor_10	BulkSeq_cor_10	CA1	CA1_cor_10	cor	10	BA5_CA1_cor_10_1	P23	Motor cortex	12	Female
+80	BA5	CA1_cor_13	32	CA1_cor_13	BulkSeq_cor_13	CA1	CA1_cor_13	cor	13	BA5_CA1_cor_13_1	P23	Motor cortex	12	Female
+97	BA7	CA1_cor_38	1	CA1_cor_38	BulkSeq_cor_38	CA1	CA1_cor_38	cor	38	BA7_CA1_cor_38_1	P24	Motor cortex	15	Female
+98	BA7	CA1_cor_39	2	CA1_cor_39	BulkSeq_cor_39	CA1	CA1_cor_39	cor	39	BA7_CA1_cor_39_1	P24	Motor cortex	18	Female
+99	BA7	CA1_cor_40	3	CA1_cor_40	BulkSeq_cor_40	CA1	CA1_cor_40	cor	40	BA7_CA1_cor_40_1	P24	Motor cortex	21	Female
+100	BA7	CA1_cor_41	4	CA1_cor_41	BulkSeq_cor_41	CA1	CA1_cor_41	cor	41	BA7_CA1_cor_41_1	P24	Motor cortex	3	Female
+101	BA7	CA1_cor_42	13	CA1_cor_42	BulkSeq_cor_42	CA1	CA1_cor_42	cor	42	BA7_CA1_cor_42_1	P24	Motor cortex	15	Female
+102	BA7	CA1_cor_43	14	CA1_cor_43	BulkSeq_cor_43	CA1	CA1_cor_43	cor	43	BA7_CA1_cor_43_1	P24	Motor cortex	18	Female
+103	BA7	CA1_cor_44	15	CA1_cor_44	BulkSeq_cor_44	CA1	CA1_cor_44	cor	44	BA7_CA1_cor_44_1	P24	Motor cortex	21	Female
+104	BA7	CA1_cor_45	16	CA1_cor_45	BulkSeq_cor_45	CA1	CA1_cor_45	cor	45	BA7_CA1_cor_45_1	P24	Motor cortex	3	Female
+105	BA7	CA1_cor_46	25	CA1_cor_46	BulkSeq_cor_46	CA1	CA1_cor_46	cor	46	BA7_CA1_cor_46_1	P24	Motor cortex	15	Female
+106	BA7	CA1_cor_47	26	CA1_cor_47	BulkSeq_cor_47	CA1	CA1_cor_47	cor	47	BA7_CA1_cor_47_1	P24	Motor cortex	18	Female
+107	BA7	CA1_cor_48	27	CA1_cor_48	BulkSeq_cor_48	CA1	CA1_cor_48	cor	48	BA7_CA1_cor_48_1	P24	Motor cortex	21	Female
+108	BA7	CA1_cor_49	28	CA1_cor_49	BulkSeq_cor_49	CA1	CA1_cor_49	cor	49	BA7_CA1_cor_49_1	P24	Motor cortex	3	Female
+109	BA7	CA1_cor_50	29	CA1_cor_50	BulkSeq_cor_50	CA1	CA1_cor_50	cor	50	BA7_CA1_cor_50_1	P24	Motor cortex	15	Female
+110	BA7	CA1_cor_51	30	CA1_cor_51	BulkSeq_cor_51	CA1	CA1_cor_51	cor	51	BA7_CA1_cor_51_1	P24	Motor cortex	18	Female
+111	BA7	CA1_cor_52	31	CA1_cor_52	BulkSeq_cor_52	CA1	CA1_cor_52	cor	52	BA7_CA1_cor_52_1	P24	Motor cortex	21	Female
+112	BA7	CA1_cor_53	32	CA1_cor_53	BulkSeq_cor_53	CA1	CA1_cor_53	cor	53	BA7_CA1_cor_53_1	P24	Motor cortex	3	Female
+113	BA8	CA1_cor_54	1	CA1_cor_54	BulkSeq_cor_54	CA1	CA1_cor_54	cor	54	BA8_CA1_cor_54_1	P24	Motor cortex	15	Female
+114	BA8	CA1_cor_55	2	CA1_cor_55	BulkSeq_cor_55	CA1	CA1_cor_55	cor	55	BA8_CA1_cor_55_1	P24	Motor cortex	18	Female
+115	BA8	CA1_cor_56	3	CA1_cor_56	BulkSeq_cor_56	CA1	CA1_cor_56	cor	56	BA8_CA1_cor_56_1	P24	Motor cortex	21	Female
+119	BA8	CA1_cp_1	15	CA1_cp_1	BulkSeq_cp_1	CA1	CA1_cp_1	cp	1	BA8_CA1_cp_1_1	P24	Caudate putamen	12	Female
+122	BA8	CA1_cp_4	26	CA1_cp_4	BulkSeq_cp_4	CA1	CA1_cp_4	cp	4	BA8_CA1_cp_4_1	P24	Caudate putamen	12	Female
+125	BA8	CA1_cp_7	29	CA1_cp_7	BulkSeq_cp_7	CA1	CA1_cp_7	cp	7	BA8_CA1_cp_7_1	P24	Caudate putamen	12	Female
+128	BA8	CA1_cp_10	32	CA1_cp_10	BulkSeq_cp_10	CA1	CA1_cp_10	cp	10	BA8_CA1_cp_10_1	P24	Caudate putamen	12	Female
+131	BA9	CA1_cp_13	3	CA1_cp_13	BulkSeq_cp_13	CA1	CA1_cp_13	cp	13	BA9_CA1_cp_13_1	P24	Caudate putamen	12	Female
+155	BA10	CA1_cp_37	27	CA1_cp_37	BulkSeq_cp_37	CA1	CA1_cp_37	cp	37	BA10_CA1_cp_37_1	P24	Caudate putamen	3	Female
+156	BA10	CA1_cp_38	28	CA1_cp_38	BulkSeq_cp_38	CA1	CA1_cp_38	cp	38	BA10_CA1_cp_38_1	P24	Caudate putamen	15	Female
+157	BA10	CA1_cp_39	29	CA1_cp_39	BulkSeq_cp_39	CA1	CA1_cp_39	cp	39	BA10_CA1_cp_39_1	P24	Caudate putamen	18	Female
+158	BA10	CA1_cp_40	30	CA1_cp_40	BulkSeq_cp_40	CA1	CA1_cp_40	cp	40	BA10_CA1_cp_40_1	P24	Caudate putamen	21	Female
+159	BA10	CA1_cp_41	31	CA1_cp_41	BulkSeq_cp_41	CA1	CA1_cp_41	cp	41	BA10_CA1_cp_41_1	P24	Caudate putamen	3	Female
+160	BA10	CA1_cp_42	32	CA1_cp_42	BulkSeq_cp_42	CA1	CA1_cp_42	cp	42	BA10_CA1_cp_42_1	P24	Caudate putamen	15	Female
+161	BA11	CA1_cp_43	1	CA1_cp_43	BulkSeq_cp_43	CA1	CA1_cp_43	cp	43	BA11_CA1_cp_43_1	P24	Caudate putamen	18	Female
+162	BA11	CA1_cp_44	2	CA1_cp_44	BulkSeq_cp_44	CA1	CA1_cp_44	cp	44	BA11_CA1_cp_44_1	P24	Caudate putamen	21	Female
+163	BA11	CA1_cp_45	3	CA1_cp_45	BulkSeq_cp_45	CA1	CA1_cp_45	cp	45	BA11_CA1_cp_45_1	P24	Caudate putamen	3	Female
+164	BA11	CA1_cp_46	4	CA1_cp_46	BulkSeq_cp_46	CA1	CA1_cp_46	cp	46	BA11_CA1_cp_46_1	P24	Caudate putamen	15	Female
+165	BA11	CA1_cp_47	13	CA1_cp_47	BulkSeq_cp_47	CA1	CA1_cp_47	cp	47	BA11_CA1_cp_47_1	P24	Caudate putamen	18	Female
+166	BA11	CA1_cp_48	14	CA1_cp_48	BulkSeq_cp_48	CA1	CA1_cp_48	cp	48	BA11_CA1_cp_48_1	P24	Caudate putamen	21	Female
+167	BA11	CA1_cp_49	15	CA1_cp_49	BulkSeq_cp_49	CA1	CA1_cp_49	cp	49	BA11_CA1_cp_49_1	P24	Caudate putamen	3	Female
+168	BA11	CA1_cp_50	16	CA1_cp_50	BulkSeq_cp_50	CA1	CA1_cp_50	cp	50	BA11_CA1_cp_50_1	P24	Caudate putamen	15	Female
+169	BA11	CA1_cp_51	25	CA1_cp_51	BulkSeq_cp_51	CA1	CA1_cp_51	cp	51	BA11_CA1_cp_51_1	P24	Caudate putamen	18	Female
+170	BA11	CA1_cp_52	26	CA1_cp_52	BulkSeq_cp_52	CA1	CA1_cp_52	cp	52	BA11_CA1_cp_52_1	P24	Caudate putamen	21	Female
+171	BA11	CA1_cp_53	27	CA1_cp_53	BulkSeq_cp_53	CA1	CA1_cp_53	cp	53	BA11_CA1_cp_53_1	P24	Caudate putamen	3	Female
+172	BA11	CA1_cp_54	28	CA1_cp_54	BulkSeq_cp_54	CA1	CA1_cp_54	cp	54	BA11_CA1_cp_54_1	P24	Caudate putamen	15	Female
+173	BA11	CA1_cp_55	29	CA1_cp_55	BulkSeq_cp_55	CA1	CA1_cp_55	cp	55	BA11_CA1_cp_55_1	P24	Caudate putamen	18	Female
+174	BA11	CA1_cp_56	30	CA1_cp_56	BulkSeq_cp_56	CA1	CA1_cp_56	cp	56	BA11_CA1_cp_56_1	P24	Caudate putamen	21	Female
+178	BA12	CA1_svz_1	2	CA1_svz_1	BulkSeq_svz_1	CA1	CA1_svz_1	svz	1	BA12_CA1_svz_1_1	P24	Subventricular zone	12	Female
+181	BA12	CA1_svz_4	13	CA1_svz_4	BulkSeq_svz_4	CA1	CA1_svz_4	svz	4	BA12_CA1_svz_4_1	P24	Subventricular zone	12	Female
+184	BA12	CA1_svz_7	16	CA1_svz_7	BulkSeq_svz_7	CA1	CA1_svz_7	svz	7	BA12_CA1_svz_7_1	P24	Subventricular zone	12	Female
+187	BA12	CA1_svz_10	27	CA1_svz_10	BulkSeq_svz_10	CA1	CA1_svz_10	svz	10	BA12_CA1_svz_10_1	P24	Subventricular zone	12	Female
+190	BA12	CA1_svz_13	30	CA1_svz_13	BulkSeq_svz_13	CA1	CA1_svz_13	svz	13	BA12_CA1_svz_13_1	P24	Subventricular zone	12	Female
+214	BA14	CA1_svz_37	14	CA1_svz_37	BulkSeq_svz_37	CA1	CA1_svz_37	svz	37	BA14_CA1_svz_37_1	P25	Subventricular zone	3	Female
+215	BA14	CA1_svz_38	15	CA1_svz_38	BulkSeq_svz_38	CA1	CA1_svz_38	svz	38	BA14_CA1_svz_38_1	P25	Subventricular zone	15	Female
+216	BA14	CA1_svz_39	16	CA1_svz_39	BulkSeq_svz_39	CA1	CA1_svz_39	svz	39	BA14_CA1_svz_39_1	P25	Subventricular zone	18	Female
+217	BA14	CA1_svz_40	25	CA1_svz_40	BulkSeq_svz_40	CA1	CA1_svz_40	svz	40	BA14_CA1_svz_40_1	P25	Subventricular zone	21	Female
+218	BA14	CA1_svz_41	26	CA1_svz_41	BulkSeq_svz_41	CA1	CA1_svz_41	svz	41	BA14_CA1_svz_41_1	P25	Subventricular zone	3	Female
+219	BA14	CA1_svz_42	27	CA1_svz_42	BulkSeq_svz_42	CA1	CA1_svz_42	svz	42	BA14_CA1_svz_42_1	P25	Subventricular zone	15	Female
+220	BA14	CA1_svz_43	28	CA1_svz_43	BulkSeq_svz_43	CA1	CA1_svz_43	svz	43	BA14_CA1_svz_43_1	P25	Subventricular zone	18	Female
+221	BA14	CA1_svz_44	29	CA1_svz_44	BulkSeq_svz_44	CA1	CA1_svz_44	svz	44	BA14_CA1_svz_44_1	P25	Subventricular zone	21	Female
+222	BA14	CA1_svz_45	30	CA1_svz_45	BulkSeq_svz_45	CA1	CA1_svz_45	svz	45	BA14_CA1_svz_45_1	P25	Subventricular zone	3	Female
+223	BA14	CA1_svz_46	31	CA1_svz_46	BulkSeq_svz_46	CA1	CA1_svz_46	svz	46	BA14_CA1_svz_46_1	P25	Subventricular zone	15	Female
+224	BA14	CA1_svz_47	32	CA1_svz_47	BulkSeq_svz_47	CA1	CA1_svz_47	svz	47	BA14_CA1_svz_47_1	P25	Subventricular zone	18	Female
+225	BA15	CA1_svz_48	1	CA1_svz_48	BulkSeq_svz_48	CA1	CA1_svz_48	svz	48	BA15_CA1_svz_48_1	P25	Subventricular zone	21	Female
+226	BA15	CA1_svz_49	2	CA1_svz_49	BulkSeq_svz_49	CA1	CA1_svz_49	svz	49	BA15_CA1_svz_49_1	P25	Subventricular zone	3	Female
+227	BA15	CA1_svz_50	3	CA1_svz_50	BulkSeq_svz_50	CA1	CA1_svz_50	svz	50	BA15_CA1_svz_50_1	P25	Subventricular zone	15	Female
+228	BA15	CA1_svz_51	4	CA1_svz_51	BulkSeq_svz_51	CA1	CA1_svz_51	svz	51	BA15_CA1_svz_51_1	P25	Subventricular zone	18	Female
+229	BA15	CA1_svz_52	13	CA1_svz_52	BulkSeq_svz_52	CA1	CA1_svz_52	svz	52	BA15_CA1_svz_52_1	P25	Subventricular zone	21	Female
+230	BA15	CA1_svz_53	14	CA1_svz_53	BulkSeq_svz_53	CA1	CA1_svz_53	svz	53	BA15_CA1_svz_53_1	P25	Subventricular zone	3	Female
+231	BA15	CA1_svz_54	15	CA1_svz_54	BulkSeq_svz_54	CA1	CA1_svz_54	svz	54	BA15_CA1_svz_54_1	P25	Subventricular zone	15	Female
+232	BA15	CA1_svz_55	16	CA1_svz_55	BulkSeq_svz_55	CA1	CA1_svz_55	svz	55	BA15_CA1_svz_55_1	P25	Subventricular zone	18	Female
+233	BA15	CA1_svz_56	25	CA1_svz_56	BulkSeq_svz_56	CA1	CA1_svz_56	svz	56	BA15_CA1_svz_56_1	P25	Subventricular zone	21	Female
+238	BA15	CA1_cc_4	32	CA1_cc_4	BulkSeq_cc_4	CA1	CA1_cc_4	cc	4	BA15_CA1_cc_4_1	P25	Corpus callosum	12	Female
+241	BA16	CA1_cc_7	3	CA1_cc_7	BulkSeq_cc_7	CA1	CA1_cc_7	cc	7	BA16_CA1_cc_7_1	P25	Corpus callosum	12	Female
+244	BA16	CA1_cc_10	14	CA1_cc_10	BulkSeq_cc_10	CA1	CA1_cc_10	cc	10	BA16_CA1_cc_10_1	P25	Corpus callosum	12	Female
+247	BA16	CA1_cc_13	25	CA1_cc_13	BulkSeq_cc_13	CA1	CA1_cc_13	cc	13	BA16_CA1_cc_13_1	P25	Corpus callosum	12	Female
+271	BA18	CA1_cc_37	1	CA1_cc_37	BulkSeq_cc_37	CA1	CA1_cc_37	cc	37	BA18_CA1_cc_37_1	P25	Corpus callosum	3	Female
+272	BA18	CA1_cc_38	2	CA1_cc_38	BulkSeq_cc_38	CA1	CA1_cc_38	cc	38	BA18_CA1_cc_38_1	P25	Corpus callosum	15	Female
+273	BA18	CA1_cc_39	3	CA1_cc_39	BulkSeq_cc_39	CA1	CA1_cc_39	cc	39	BA18_CA1_cc_39_1	P25	Corpus callosum	18	Female
+274	BA18	CA1_cc_40	4	CA1_cc_40	BulkSeq_cc_40	CA1	CA1_cc_40	cc	40	BA18_CA1_cc_40_1	P25	Corpus callosum	21	Female
+275	BA18	CA1_cc_41	13	CA1_cc_41	BulkSeq_cc_41	CA1	CA1_cc_41	cc	41	BA18_CA1_cc_41_1	P25	Corpus callosum	3	Female
+276	BA18	CA1_cc_42	14	CA1_cc_42	BulkSeq_cc_42	CA1	CA1_cc_42	cc	42	BA18_CA1_cc_42_1	P25	Corpus callosum	15	Female
+277	BA18	CA1_cc_43	15	CA1_cc_43	BulkSeq_cc_43	CA1	CA1_cc_43	cc	43	BA18_CA1_cc_43_1	P25	Corpus callosum	18	Female
+278	BA18	CA1_cc_44	16	CA1_cc_44	BulkSeq_cc_44	CA1	CA1_cc_44	cc	44	BA18_CA1_cc_44_1	P25	Corpus callosum	21	Female
+279	BA18	CA1_cc_45	25	CA1_cc_45	BulkSeq_cc_45	CA1	CA1_cc_45	cc	45	BA18_CA1_cc_45_1	P25	Corpus callosum	3	Female
+280	BA18	CA1_cc_46	26	CA1_cc_46	BulkSeq_cc_46	CA1	CA1_cc_46	cc	46	BA18_CA1_cc_46_1	P25	Corpus callosum	15	Female
+281	BA18	CA1_cc_47	27	CA1_cc_47	BulkSeq_cc_47	CA1	CA1_cc_47	cc	47	BA18_CA1_cc_47_1	P25	Corpus callosum	18	Female
+282	BA18	CA1_cc_48	28	CA1_cc_48	BulkSeq_cc_48	CA1	CA1_cc_48	cc	48	BA18_CA1_cc_48_1	P25	Corpus callosum	21	Female
+283	BA18	CA1_cc_49	29	CA1_cc_49	BulkSeq_cc_49	CA1	CA1_cc_49	cc	49	BA18_CA1_cc_49_1	P25	Corpus callosum	3	Female
+284	BA18	CA1_cc_50	30	CA1_cc_50	BulkSeq_cc_50	CA1	CA1_cc_50	cc	50	BA18_CA1_cc_50_1	P25	Corpus callosum	15	Female
+285	BA18	CA1_cc_51	31	CA1_cc_51	BulkSeq_cc_51	CA1	CA1_cc_51	cc	51	BA18_CA1_cc_51_1	P25	Corpus callosum	18	Female
+286	BA18	CA1_cc_52	32	CA1_cc_52	BulkSeq_cc_52	CA1	CA1_cc_52	cc	52	BA18_CA1_cc_52_1	P25	Corpus callosum	21	Female
+287	BA19	CA1_cc_53	1	CA1_cc_53	BulkSeq_cc_53	CA1	CA1_cc_53	cc	53	BA19_CA1_cc_53_1	P26	Corpus callosum	3	Female
+288	BA19	CA1_cc_54	2	CA1_cc_54	BulkSeq_cc_54	CA1	CA1_cc_54	cc	54	BA19_CA1_cc_54_1	P26	Corpus callosum	15	Female
+289	BA19	CA1_cc_55	3	CA1_cc_55	BulkSeq_cc_55	CA1	CA1_cc_55	cc	55	BA19_CA1_cc_55_1	P26	Corpus callosum	18	Female
+290	BA19	CA1_cc_56	4	CA1_cc_56	BulkSeq_cc_56	CA1	CA1_cc_56	cc	56	BA19_CA1_cc_56_1	P26	Corpus callosum	21	Female
+294	BA19	CA1_th_1	16	CA1_th_1	BulkSeq_th_1	CA1	CA1_th_1	th	1	BA19_CA1_th_1_1	P26	Thalamus	12	Female
+297	BA19	CA1_th_4	27	CA1_th_4	BulkSeq_th_4	CA1	CA1_th_4	th	4	BA19_CA1_th_4_1	P26	Thalamus	12	Female
+300	BA19	CA1_th_7	30	CA1_th_7	BulkSeq_th_7	CA1	CA1_th_7	th	7	BA19_CA1_th_7_1	P26	Thalamus	12	Female
+303	BA20	CA1_th_10	1	CA1_th_10	BulkSeq_th_10	CA1	CA1_th_10	th	10	BA20_CA1_th_10_1	P26	Thalamus	12	Female
+306	BA20	CA1_th_13	4	CA1_th_13	BulkSeq_th_13	CA1	CA1_th_13	th	13	BA20_CA1_th_13_1	P26	Thalamus	12	Female
+313	BA20	CA1_hy_1	27	CA1_hy_1	BulkSeq_hy_1	CA1	CA1_hy_1	hy	1	BA20_CA1_hy_1_1	P26	Hypothalamus	12	Female
+316	BA20	CA1_hy_4	30	CA1_hy_4	BulkSeq_hy_4	CA1	CA1_hy_4	hy	4	BA20_CA1_hy_4_1	P26	Hypothalamus	12	Female
+338	BA22	CA1_th_37	4	CA1_th_37	BulkSeq_th_37	CA1	CA1_th_37	th	37	BA22_CA1_th_37_1	P26	Thalamus	3	Female
+339	BA22	CA1_th_38	13	CA1_th_38	BulkSeq_th_38	CA1	CA1_th_38	th	38	BA22_CA1_th_38_1	P26	Thalamus	15	Female
+340	BA22	CA1_th_39	14	CA1_th_39	BulkSeq_th_39	CA1	CA1_th_39	th	39	BA22_CA1_th_39_1	P26	Thalamus	18	Female
+341	BA22	CA1_th_40	15	CA1_th_40	BulkSeq_th_40	CA1	CA1_th_40	th	40	BA22_CA1_th_40_1	P26	Thalamus	21	Female
+342	BA22	CA1_th_41	16	CA1_th_41	BulkSeq_th_41	CA1	CA1_th_41	th	41	BA22_CA1_th_41_1	P26	Thalamus	3	Female
+343	BA22	CA1_th_42	25	CA1_th_42	BulkSeq_th_42	CA1	CA1_th_42	th	42	BA22_CA1_th_42_1	P26	Thalamus	15	Female
+344	BA22	CA1_th_43	26	CA1_th_43	BulkSeq_th_43	CA1	CA1_th_43	th	43	BA22_CA1_th_43_1	P26	Thalamus	18	Female
+345	BA22	CA1_th_44	27	CA1_th_44	BulkSeq_th_44	CA1	CA1_th_44	th	44	BA22_CA1_th_44_1	P26	Thalamus	21	Female
+346	BA22	CA1_th_45	28	CA1_th_45	BulkSeq_th_45	CA1	CA1_th_45	th	45	BA22_CA1_th_45_1	P26	Thalamus	3	Female
+347	BA22	CA1_th_46	29	CA1_th_46	BulkSeq_th_46	CA1	CA1_th_46	th	46	BA22_CA1_th_46_1	P26	Thalamus	15	Female
+348	BA22	CA1_th_47	30	CA1_th_47	BulkSeq_th_47	CA1	CA1_th_47	th	47	BA22_CA1_th_47_1	P26	Thalamus	18	Female
+349	BA22	CA1_th_48	31	CA1_th_48	BulkSeq_th_48	CA1	CA1_th_48	th	48	BA22_CA1_th_48_1	P26	Thalamus	21	Female
+350	BA22	CA1_th_49	32	CA1_th_49	BulkSeq_th_49	CA1	CA1_th_49	th	49	BA22_CA1_th_49_1	P26	Thalamus	3	Female
+351	BA23	CA1_th_50	1	CA1_th_50	BulkSeq_th_50	CA1	CA1_th_50	th	50	BA23_CA1_th_50_1	P26	Thalamus	15	Female
+352	BA23	CA1_th_51	2	CA1_th_51	BulkSeq_th_51	CA1	CA1_th_51	th	51	BA23_CA1_th_51_1	P26	Thalamus	18	Female
+353	BA23	CA1_th_52	3	CA1_th_52	BulkSeq_th_52	CA1	CA1_th_52	th	52	BA23_CA1_th_52_1	P26	Thalamus	21	Female
+354	BA23	CA1_th_53	4	CA1_th_53	BulkSeq_th_53	CA1	CA1_th_53	th	53	BA23_CA1_th_53_1	P26	Thalamus	3	Female
+355	BA23	CA1_th_54	13	CA1_th_54	BulkSeq_th_54	CA1	CA1_th_54	th	54	BA23_CA1_th_54_1	P26	Thalamus	15	Female
+356	BA23	CA1_th_55	14	CA1_th_55	BulkSeq_th_55	CA1	CA1_th_55	th	55	BA23_CA1_th_55_1	P26	Thalamus	18	Female
+357	BA23	CA1_th_56	15	CA1_th_56	BulkSeq_th_56	CA1	CA1_th_56	th	56	BA23_CA1_th_56_1	P26	Thalamus	21	Female
+375	BA24	CA1_hy_10	25	CA1_hy_10	BulkSeq_hy_10	CA1	CA1_hy_10	hy	10	BA24_CA1_hy_10_1	P26	Hypothalamus	12	Female
+378	BA24	CA1_hy_13	28	CA1_hy_13	BulkSeq_hy_13	CA1	CA1_hy_13	hy	13	BA24_CA1_hy_13_1	P26	Hypothalamus	12	Female
+389	BA25	CA1_hy_37	15	CA1_hy_37	BulkSeq_hy_37	CA1	CA1_hy_37	hy	37	BA25_CA1_hy_37_1	P27	Hypothalamus	3	Female
+390	BA25	CA1_hy_38	16	CA1_hy_38	BulkSeq_hy_38	CA1	CA1_hy_38	hy	38	BA25_CA1_hy_38_1	P27	Hypothalamus	15	Female
+391	BA25	CA1_hi_4	25	CA1_hi_4	BulkSeq_hi_4	CA1	CA1_hi_4	hi	4	BA25_CA1_hi_4_1	P27	Hippocampus (anterior)	12	Female
+394	BA25	CA1_hi_7	28	CA1_hi_7	BulkSeq_hi_7	CA1	CA1_hi_7	hi	7	BA25_CA1_hi_7_1	P27	Hippocampus (anterior)	12	Female
+397	BA25	CA1_hi_10	31	CA1_hi_10	BulkSeq_hi_10	CA1	CA1_hi_10	hi	10	BA25_CA1_hi_10_1	P27	Hippocampus (anterior)	12	Female
+399	BA26	CA1_hy_39	1	CA1_hy_39	BulkSeq_hy_39	CA1	CA1_hy_39	hy	39	BA26_CA1_hy_39_1	P27	Hypothalamus	18	Female
+400	BA26	CA1_hy_40	2	CA1_hy_40	BulkSeq_hy_40	CA1	CA1_hy_40	hy	40	BA26_CA1_hy_40_1	P27	Hypothalamus	21	Female
+401	BA26	CA1_hy_41	3	CA1_hy_41	BulkSeq_hy_41	CA1	CA1_hy_41	hy	41	BA26_CA1_hy_41_1	P27	Hypothalamus	3	Female
+402	BA26	CA1_hy_42	4	CA1_hy_42	BulkSeq_hy_42	CA1	CA1_hy_42	hy	42	BA26_CA1_hy_42_1	P27	Hypothalamus	15	Female
+403	BA26	CA1_hy_43	13	CA1_hy_43	BulkSeq_hy_43	CA1	CA1_hy_43	hy	43	BA26_CA1_hy_43_1	P27	Hypothalamus	18	Female
+404	BA26	CA1_hy_44	14	CA1_hy_44	BulkSeq_hy_44	CA1	CA1_hy_44	hy	44	BA26_CA1_hy_44_1	P27	Hypothalamus	21	Female
+405	BA26	CA1_hy_45	15	CA1_hy_45	BulkSeq_hy_45	CA1	CA1_hy_45	hy	45	BA26_CA1_hy_45_1	P27	Hypothalamus	3	Female
+406	BA26	CA1_hy_46	16	CA1_hy_46	BulkSeq_hy_46	CA1	CA1_hy_46	hy	46	BA26_CA1_hy_46_1	P27	Hypothalamus	15	Female
+408	BA26	CA1_hi_13	26	CA1_hi_13	BulkSeq_hi_13	CA1	CA1_hi_13	hi	13	BA26_CA1_hi_13_1	P27	Hippocampus (anterior)	12	Female
+415	BA27	CA1_hy_47	1	CA1_hy_47	BulkSeq_hy_47	CA1	CA1_hy_47	hy	47	BA27_CA1_hy_47_1	P27	Hypothalamus	18	Female
+416	BA27	CA1_hy_48	2	CA1_hy_48	BulkSeq_hy_48	CA1	CA1_hy_48	hy	48	BA27_CA1_hy_48_1	P27	Hypothalamus	21	Female
+417	BA27	CA1_hy_49	3	CA1_hy_49	BulkSeq_hy_49	CA1	CA1_hy_49	hy	49	BA27_CA1_hy_49_1	P27	Hypothalamus	3	Female
+418	BA27	CA1_hy_50	4	CA1_hy_50	BulkSeq_hy_50	CA1	CA1_hy_50	hy	50	BA27_CA1_hy_50_1	P27	Hypothalamus	15	Female
+419	BA27	CA1_hy_51	13	CA1_hy_51	BulkSeq_hy_51	CA1	CA1_hy_51	hy	51	BA27_CA1_hy_51_1	P27	Hypothalamus	18	Female
+420	BA27	CA1_hy_52	14	CA1_hy_52	BulkSeq_hy_52	CA1	CA1_hy_52	hy	52	BA27_CA1_hy_52_1	P27	Hypothalamus	21	Female
+421	BA27	CA1_hy_53	15	CA1_hy_53	BulkSeq_hy_53	CA1	CA1_hy_53	hy	53	BA27_CA1_hy_53_1	P27	Hypothalamus	3	Female
+422	BA27	CA1_hy_54	16	CA1_hy_54	BulkSeq_hy_54	CA1	CA1_hy_54	hy	54	BA27_CA1_hy_54_1	P27	Hypothalamus	15	Female
+431	BA28	CA1_hy_55	1	CA1_hy_55	BulkSeq_hy_55	CA1	CA1_hy_55	hy	55	BA28_CA1_hy_55_1	P27	Hypothalamus	18	Female
+432	BA28	CA1_hy_56	2	CA1_hy_56	BulkSeq_hy_56	CA1	CA1_hy_56	hy	56	BA28_CA1_hy_56_1	P27	Hypothalamus	21	Female
+436	BA28	CA1_hi_1	14	CA1_hi_1	BulkSeq_hi_1	CA1	CA1_hi_1	hi	1	BA28_CA1_hi_1_1	P27	Hippocampus (anterior)	12	Female
+448	BA29	CA1_hi_37	2	CA1_hi_37	BulkSeq_hi_37	CA1	CA1_hi_37	hi	37	BA29_CA1_hi_37_1	P27	Hippocampus (anterior)	3	Female
+449	BA29	CA1_hi_38	3	CA1_hi_38	BulkSeq_hi_38	CA1	CA1_hi_38	hi	38	BA29_CA1_hi_38_1	P27	Hippocampus (anterior)	15	Female
+450	BA29	CA1_hi_39	4	CA1_hi_39	BulkSeq_hi_39	CA1	CA1_hi_39	hi	39	BA29_CA1_hi_39_1	P27	Hippocampus (anterior)	18	Female
+451	BA29	CA1_hi_40	13	CA1_hi_40	BulkSeq_hi_40	CA1	CA1_hi_40	hi	40	BA29_CA1_hi_40_1	P27	Hippocampus (anterior)	21	Female
+452	BA29	CA1_hi_41	14	CA1_hi_41	BulkSeq_hi_41	CA1	CA1_hi_41	hi	41	BA29_CA1_hi_41_1	P27	Hippocampus (anterior)	3	Female
+453	BA29	CA1_hi_42	15	CA1_hi_42	BulkSeq_hi_42	CA1	CA1_hi_42	hi	42	BA29_CA1_hi_42_1	P27	Hippocampus (anterior)	15	Female
+454	BA29	CA1_hi_43	16	CA1_hi_43	BulkSeq_hi_43	CA1	CA1_hi_43	hi	43	BA29_CA1_hi_43_1	P27	Hippocampus (anterior)	18	Female
+455	BA29	CA1_plx_1	25	CA1_plx_1	BulkSeq_plx_1	CA1	CA1_plx_1	plx	1	BA29_CA1_plx_1_1	P27	Choroid Plexus	12	Female
+458	BA29	CA1_hi2_4	28	CA1_hi2_4	BulkSeq_hi2_4	CA1	CA1_hi2_4	hi2	4	BA29_CA1_hi2_4_1	P27	Hippocampus (posterior)	12	Female
+461	BA29	CA1_plx_7	31	CA1_plx_7	BulkSeq_plx_7	CA1	CA1_plx_7	plx	7	BA29_CA1_plx_7_1	P27	Choroid Plexus	12	Female
+464	BA30	CA1_hi_45	2	CA1_hi_45	BulkSeq_hi_45	CA1	CA1_hi_45	hi	45	BA30_CA1_hi_45_1	P27	Hippocampus (anterior)	3	Female
+465	BA30	CA1_hi_46	3	CA1_hi_46	BulkSeq_hi_46	CA1	CA1_hi_46	hi	46	BA30_CA1_hi_46_1	P27	Hippocampus (anterior)	15	Female
+466	BA30	CA1_hi_47	4	CA1_hi_47	BulkSeq_hi_47	CA1	CA1_hi_47	hi	47	BA30_CA1_hi_47_1	P27	Hippocampus (anterior)	18	Female
+467	BA30	CA1_hi_48	13	CA1_hi_48	BulkSeq_hi_48	CA1	CA1_hi_48	hi	48	BA30_CA1_hi_48_1	P27	Hippocampus (anterior)	21	Female
+468	BA30	CA1_hi_49	14	CA1_hi_49	BulkSeq_hi_49	CA1	CA1_hi_49	hi	49	BA30_CA1_hi_49_1	P27	Hippocampus (anterior)	3	Female
+469	BA30	CA1_hi_50	15	CA1_hi_50	BulkSeq_hi_50	CA1	CA1_hi_50	hi	50	BA30_CA1_hi_50_1	P27	Hippocampus (anterior)	15	Female
+470	BA30	CA1_hi_51	16	CA1_hi_51	BulkSeq_hi_51	CA1	CA1_hi_51	hi	51	BA30_CA1_hi_51_1	P27	Hippocampus (anterior)	18	Female
+471	BA30	CA1_hi_52	25	CA1_hi_52	BulkSeq_hi_52	CA1	CA1_hi_52	hi	52	BA30_CA1_hi_52_1	P27	Hippocampus (anterior)	21	Female
+472	BA30	CA1_hi_53	26	CA1_hi_53	BulkSeq_hi_53	CA1	CA1_hi_53	hi	53	BA30_CA1_hi_53_1	P27	Hippocampus (anterior)	3	Female
+473	BA30	CA1_hi_54	27	CA1_hi_54	BulkSeq_hi_54	CA1	CA1_hi_54	hi	54	BA30_CA1_hi_54_1	P27	Hippocampus (anterior)	15	Female
+474	BA30	CA1_hi_55	28	CA1_hi_55	BulkSeq_hi_55	CA1	CA1_hi_55	hi	55	BA30_CA1_hi_55_1	P27	Hippocampus (anterior)	18	Female
+475	BA30	CA1_hi_56	29	CA1_hi_56	BulkSeq_hi_56	CA1	CA1_hi_56	hi	56	BA30_CA1_hi_56_1	P27	Hippocampus (anterior)	21	Female
+480	BA31	CA1_plx_10	2	CA1_plx_10	BulkSeq_plx_10	CA1	CA1_plx_10	plx	10	BA31_CA1_plx_10_1	P28	Choroid Plexus	12	Female
+483	BA31	CA1_plx_13	13	CA1_plx_13	BulkSeq_plx_13	CA1	CA1_plx_13	plx	13	BA31_CA1_plx_13_1	P28	Choroid Plexus	12	Female
+490	BA31	CA1_hi2_1	28	CA1_hi2_1	BulkSeq_hi2_1	CA1	CA1_hi2_1	hi2	1	BA31_CA1_hi2_1_1	P28	Hippocampus (posterior)	12	Female
+493	BA31	CA1_plx_4	31	CA1_plx_4	BulkSeq_plx_4	CA1	CA1_plx_4	plx	4	BA31_CA1_plx_4_1	P28	Choroid Plexus	12	Female
+504	BA32	CA1_hi2_7	26	CA1_hi2_7	BulkSeq_hi2_7	CA1	CA1_hi2_7	hi2	7	BA32_CA1_hi2_7_1	P28	Hippocampus (posterior)	12	Female
+507	BA32	CA1_hi2_10	29	CA1_hi2_10	BulkSeq_hi2_10	CA1	CA1_hi2_10	hi2	10	BA32_CA1_hi2_10_1	P28	Hippocampus (posterior)	12	Female
+510	BA32	CA1_hi2_13	32	CA1_hi2_13	BulkSeq_hi2_13	CA1	CA1_hi2_13	hi2	13	BA32_CA1_hi2_13_1	P28	Hippocampus (posterior)	12	Female
+531	BA34	CA1_plx_37	13	CA1_plx_37	BulkSeq_plx_37	CA1	CA1_plx_37	plx	37	BA34_CA1_plx_37_1	P28	Choroid Plexus	3	Female
+532	BA34	CA1_plx_38	14	CA1_plx_38	BulkSeq_plx_38	CA1	CA1_plx_38	plx	38	BA34_CA1_plx_38_1	P28	Choroid Plexus	15	Female
+533	BA34	CA1_plx_39	15	CA1_plx_39	BulkSeq_plx_39	CA1	CA1_plx_39	plx	39	BA34_CA1_plx_39_1	P28	Choroid Plexus	18	Female
+534	BA34	CA1_plx_40	16	CA1_plx_40	BulkSeq_plx_40	CA1	CA1_plx_40	plx	40	BA34_CA1_plx_40_1	P28	Choroid Plexus	21	Female
+543	BA35	CA1_plx_41	1	CA1_plx_41	BulkSeq_plx_41	CA1	CA1_plx_41	plx	41	BA35_CA1_plx_41_1	P28	Choroid Plexus	3	Female
+544	BA35	CA1_plx_42	2	CA1_plx_42	BulkSeq_plx_42	CA1	CA1_plx_42	plx	42	BA35_CA1_plx_42_1	P28	Choroid Plexus	15	Female
+545	BA35	CA1_plx_43	3	CA1_plx_43	BulkSeq_plx_43	CA1	CA1_plx_43	plx	43	BA35_CA1_plx_43_1	P28	Choroid Plexus	18	Female
+546	BA35	CA1_plx_44	4	CA1_plx_44	BulkSeq_plx_44	CA1	CA1_plx_44	plx	44	BA35_CA1_plx_44_1	P28	Choroid Plexus	21	Female
+547	BA35	CA1_plx_45	13	CA1_plx_45	BulkSeq_plx_45	CA1	CA1_plx_45	plx	45	BA35_CA1_plx_45_1	P28	Choroid Plexus	3	Female
+548	BA35	CA1_plx_46	14	CA1_plx_46	BulkSeq_plx_46	CA1	CA1_plx_46	plx	46	BA35_CA1_plx_46_1	P28	Choroid Plexus	15	Female
+549	BA35	CA1_plx_47	15	CA1_plx_47	BulkSeq_plx_47	CA1	CA1_plx_47	plx	47	BA35_CA1_plx_47_1	P28	Choroid Plexus	18	Female
+550	BA35	CA1_plx_48	16	CA1_plx_48	BulkSeq_plx_48	CA1	CA1_plx_48	plx	48	BA35_CA1_plx_48_1	P28	Choroid Plexus	21	Female
+558	BA35	CA1_hi2_37	32	CA1_hi2_37	BulkSeq_hi2_37	CA1	CA1_hi2_37	hi2	37	BA35_CA1_hi2_37_1	P28	Hippocampus (posterior)	3	Female
+559	BA36	CA1_plx_49	1	CA1_plx_49	BulkSeq_plx_49	CA1	CA1_plx_49	plx	49	BA36_CA1_plx_49_1	P28	Choroid Plexus	3	Female
+560	BA36	CA1_plx_50	2	CA1_plx_50	BulkSeq_plx_50	CA1	CA1_plx_50	plx	50	BA36_CA1_plx_50_1	P28	Choroid Plexus	15	Female
+561	BA36	CA1_plx_51	3	CA1_plx_51	BulkSeq_plx_51	CA1	CA1_plx_51	plx	51	BA36_CA1_plx_51_1	P28	Choroid Plexus	18	Female
+562	BA36	CA1_plx_52	4	CA1_plx_52	BulkSeq_plx_52	CA1	CA1_plx_52	plx	52	BA36_CA1_plx_52_1	P28	Choroid Plexus	21	Female
+563	BA36	CA1_plx_53	13	CA1_plx_53	BulkSeq_plx_53	CA1	CA1_plx_53	plx	53	BA36_CA1_plx_53_1	P28	Choroid Plexus	3	Female
+564	BA36	CA1_plx_54	14	CA1_plx_54	BulkSeq_plx_54	CA1	CA1_plx_54	plx	54	BA36_CA1_plx_54_1	P28	Choroid Plexus	15	Female
+565	BA36	CA1_plx_55	15	CA1_plx_55	BulkSeq_plx_55	CA1	CA1_plx_55	plx	55	BA36_CA1_plx_55_1	P28	Choroid Plexus	18	Female
+566	BA36	CA1_plx_56	16	CA1_plx_56	BulkSeq_plx_56	CA1	CA1_plx_56	plx	56	BA36_CA1_plx_56_1	P28	Choroid Plexus	21	Female
+567	BA36	CA1_hi2_38	25	CA1_hi2_38	BulkSeq_hi2_38	CA1	CA1_hi2_38	hi2	38	BA36_CA1_hi2_38_1	P28	Hippocampus (posterior)	15	Female
+568	BA36	CA1_hi2_39	26	CA1_hi2_39	BulkSeq_hi2_39	CA1	CA1_hi2_39	hi2	39	BA36_CA1_hi2_39_1	P28	Hippocampus (posterior)	18	Female
+569	BA36	CA1_hi2_40	27	CA1_hi2_40	BulkSeq_hi2_40	CA1	CA1_hi2_40	hi2	40	BA36_CA1_hi2_40_1	P28	Hippocampus (posterior)	21	Female
+570	BA36	CA1_hi2_41	28	CA1_hi2_41	BulkSeq_hi2_41	CA1	CA1_hi2_41	hi2	41	BA36_CA1_hi2_41_1	P28	Hippocampus (posterior)	3	Female
+571	BA36	CA1_hi2_42	29	CA1_hi2_42	BulkSeq_hi2_42	CA1	CA1_hi2_42	hi2	42	BA36_CA1_hi2_42_1	P28	Hippocampus (posterior)	15	Female
+572	BA36	CA1_hi2_43	30	CA1_hi2_43	BulkSeq_hi2_43	CA1	CA1_hi2_43	hi2	43	BA36_CA1_hi2_43_1	P28	Hippocampus (posterior)	18	Female
+573	BA36	CA1_hi2_44	31	CA1_hi2_44	BulkSeq_hi2_44	CA1	CA1_hi2_44	hi2	44	BA36_CA1_hi2_44_1	P28	Hippocampus (posterior)	21	Female
+574	BA36	CA1_hi2_45	32	CA1_hi2_45	BulkSeq_hi2_45	CA1	CA1_hi2_45	hi2	45	BA36_CA1_hi2_45_1	P28	Hippocampus (posterior)	3	Female
+575	BA37	CA1_hi2_46	1	CA1_hi2_46	BulkSeq_hi2_46	CA1	CA1_hi2_46	hi2	46	BA37_CA1_hi2_46_1	P29	Hippocampus (posterior)	15	Female
+576	BA37	CA1_hi2_47	2	CA1_hi2_47	BulkSeq_hi2_47	CA1	CA1_hi2_47	hi2	47	BA37_CA1_hi2_47_1	P29	Hippocampus (posterior)	18	Female
+577	BA37	CA1_hi2_48	3	CA1_hi2_48	BulkSeq_hi2_48	CA1	CA1_hi2_48	hi2	48	BA37_CA1_hi2_48_1	P29	Hippocampus (posterior)	21	Female
+578	BA37	CA1_hi2_49	4	CA1_hi2_49	BulkSeq_hi2_49	CA1	CA1_hi2_49	hi2	49	BA37_CA1_hi2_49_1	P29	Hippocampus (posterior)	3	Female
+579	BA37	CA1_hi2_50	13	CA1_hi2_50	BulkSeq_hi2_50	CA1	CA1_hi2_50	hi2	50	BA37_CA1_hi2_50_1	P29	Hippocampus (posterior)	15	Female
+580	BA37	CA1_hi2_51	14	CA1_hi2_51	BulkSeq_hi2_51	CA1	CA1_hi2_51	hi2	51	BA37_CA1_hi2_51_1	P29	Hippocampus (posterior)	18	Female
+581	BA37	CA1_hi2_52	15	CA1_hi2_52	BulkSeq_hi2_52	CA1	CA1_hi2_52	hi2	52	BA37_CA1_hi2_52_1	P29	Hippocampus (posterior)	21	Female
+582	BA37	CA1_hi2_53	16	CA1_hi2_53	BulkSeq_hi2_53	CA1	CA1_hi2_53	hi2	53	BA37_CA1_hi2_53_1	P29	Hippocampus (posterior)	3	Female
+591	BA38	CA1_hi2_54	1	CA1_hi2_54	BulkSeq_hi2_54	CA1	CA1_hi2_54	hi2	54	BA38_CA1_hi2_54_1	P29	Hippocampus (posterior)	15	Female
+592	BA38	CA1_hi2_55	2	CA1_hi2_55	BulkSeq_hi2_55	CA1	CA1_hi2_55	hi2	55	BA38_CA1_hi2_55_1	P29	Hippocampus (posterior)	18	Female
+593	BA38	CA1_hi2_56	3	CA1_hi2_56	BulkSeq_hi2_56	CA1	CA1_hi2_56	hi2	56	BA38_CA1_hi2_56_1	P29	Hippocampus (posterior)	21	Female
+597	BA38	CA1_vis_1	15	CA1_vis_1	BulkSeq_vis_1	CA1	CA1_vis_1	vis	1	BA38_CA1_vis_1_1	P29	Visual Cortex	12	Female
+601	BA38	CA1_vis_37	27	CA1_vis_37	BulkSeq_vis_37	CA1	CA1_vis_37	vis	37	BA38_CA1_vis_37_1	P29	Visual Cortex	3	Female
+602	BA38	CA1_vis_38	28	CA1_vis_38	BulkSeq_vis_38	CA1	CA1_vis_38	vis	38	BA38_CA1_vis_38_1	P29	Visual Cortex	15	Female
+603	BA38	CA1_vis_39	29	CA1_vis_39	BulkSeq_vis_39	CA1	CA1_vis_39	vis	39	BA38_CA1_vis_39_1	P29	Visual Cortex	18	Female
+604	BA38	CA1_vis_40	30	CA1_vis_40	BulkSeq_vis_40	CA1	CA1_vis_40	vis	40	BA38_CA1_vis_40_1	P29	Visual Cortex	21	Female
+605	BA38	CA1_vis_41	31	CA1_vis_41	BulkSeq_vis_41	CA1	CA1_vis_41	vis	41	BA38_CA1_vis_41_1	P29	Visual Cortex	3	Female
+606	BA38	CA1_vis_42	32	CA1_vis_42	BulkSeq_vis_42	CA1	CA1_vis_42	vis	42	BA38_CA1_vis_42_1	P29	Visual Cortex	15	Female
+610	BA39	CA1_vis_7	13	CA1_vis_7	BulkSeq_vis_7	CA1	CA1_vis_7	vis	7	BA39_CA1_vis_7_1	P29	Visual Cortex	12	Female
+613	BA39	CA1_vis_10	16	CA1_vis_10	BulkSeq_vis_10	CA1	CA1_vis_10	vis	10	BA39_CA1_vis_10_1	P29	Visual Cortex	12	Female
+614	BA39	CA1_vis_43	25	CA1_vis_43	BulkSeq_vis_43	CA1	CA1_vis_43	vis	43	BA39_CA1_vis_43_1	P29	Visual Cortex	18	Female
+615	BA39	CA1_vis_44	26	CA1_vis_44	BulkSeq_vis_44	CA1	CA1_vis_44	vis	44	BA39_CA1_vis_44_1	P29	Visual Cortex	21	Female
+616	BA39	CA1_vis_45	27	CA1_vis_45	BulkSeq_vis_45	CA1	CA1_vis_45	vis	45	BA39_CA1_vis_45_1	P29	Visual Cortex	3	Female
+617	BA39	CA1_vis_46	28	CA1_vis_46	BulkSeq_vis_46	CA1	CA1_vis_46	vis	46	BA39_CA1_vis_46_1	P29	Visual Cortex	15	Female
+618	BA39	CA1_vis_47	29	CA1_vis_47	BulkSeq_vis_47	CA1	CA1_vis_47	vis	47	BA39_CA1_vis_47_1	P29	Visual Cortex	18	Female
+619	BA39	CA1_vis_48	30	CA1_vis_48	BulkSeq_vis_48	CA1	CA1_vis_48	vis	48	BA39_CA1_vis_48_1	P29	Visual Cortex	21	Female
+620	BA39	CA1_vis_49	31	CA1_vis_49	BulkSeq_vis_49	CA1	CA1_vis_49	vis	49	BA39_CA1_vis_49_1	P29	Visual Cortex	3	Female
+621	BA39	CA1_vis_50	32	CA1_vis_50	BulkSeq_vis_50	CA1	CA1_vis_50	vis	50	BA39_CA1_vis_50_1	P29	Visual Cortex	15	Female
+623	BA40	CA1_vis_13	3	CA1_vis_13	BulkSeq_vis_13	CA1	CA1_vis_13	vis	13	BA40_CA1_vis_13_1	P29	Visual Cortex	12	Female
+630	BA40	CA1_ent_1	26	CA1_ent_1	BulkSeq_ent_1	CA1	CA1_ent_1	ent	1	BA40_CA1_ent_1_1	P29	Entorhinal cortex	12	Female
+634	BA40	CA1_ent_7	32	CA1_ent_7	BulkSeq_ent_7	CA1	CA1_ent_7	ent	7	BA40_CA1_ent_7_1	P29	Entorhinal cortex	12	Female
+645	BA41	CA1_ent_10	27	CA1_ent_10	BulkSeq_ent_10	CA1	CA1_ent_10	ent	10	BA41_CA1_ent_10_1	P29	Entorhinal cortex	12	Female
+648	BA41	CA1_ent_13	30	CA1_ent_13	BulkSeq_ent_13	CA1	CA1_ent_13	ent	13	BA41_CA1_ent_13_1	P29	Entorhinal cortex	12	Female
+651	BA42	CA1_vis_51	1	CA1_vis_51	BulkSeq_vis_51	CA1	CA1_vis_51	vis	51	BA42_CA1_vis_51_1	P29	Visual Cortex	18	Female
+652	BA42	CA1_vis_52	2	CA1_vis_52	BulkSeq_vis_52	CA1	CA1_vis_52	vis	52	BA42_CA1_vis_52_1	P29	Visual Cortex	21	Female
+653	BA42	CA1_vis_53	3	CA1_vis_53	BulkSeq_vis_53	CA1	CA1_vis_53	vis	53	BA42_CA1_vis_53_1	P29	Visual Cortex	3	Female
+654	BA42	CA1_vis_54	4	CA1_vis_54	BulkSeq_vis_54	CA1	CA1_vis_54	vis	54	BA42_CA1_vis_54_1	P29	Visual Cortex	15	Female
+655	BA42	CA1_vis_55	13	CA1_vis_55	BulkSeq_vis_55	CA1	CA1_vis_55	vis	55	BA42_CA1_vis_55_1	P29	Visual Cortex	18	Female
+656	BA42	CA1_vis_56	14	CA1_vis_56	BulkSeq_vis_56	CA1	CA1_vis_56	vis	56	BA42_CA1_vis_56_1	P29	Visual Cortex	21	Female
+688	BA44	CA1_ent_37	14	CA1_ent_37	BulkSeq_ent_37	CA1	CA1_ent_37	ent	37	BA44_CA1_ent_37_1	P30	Entorhinal cortex	3	Female
+689	BA44	CA1_ent_38	15	CA1_ent_38	BulkSeq_ent_38	CA1	CA1_ent_38	ent	38	BA44_CA1_ent_38_1	P30	Entorhinal cortex	15	Female
+690	BA44	CA1_ent_39	16	CA1_ent_39	BulkSeq_ent_39	CA1	CA1_ent_39	ent	39	BA44_CA1_ent_39_1	P30	Entorhinal cortex	18	Female
+699	BA45	CA1_ent_40	1	CA1_ent_40	BulkSeq_ent_40	CA1	CA1_ent_40	ent	40	BA45_CA1_ent_40_1	P30	Entorhinal cortex	21	Female
+700	BA45	CA1_ent_41	2	CA1_ent_41	BulkSeq_ent_41	CA1	CA1_ent_41	ent	41	BA45_CA1_ent_41_1	P30	Entorhinal cortex	3	Female
+701	BA45	CA1_ent_42	3	CA1_ent_42	BulkSeq_ent_42	CA1	CA1_ent_42	ent	42	BA45_CA1_ent_42_1	P30	Entorhinal cortex	15	Female
+702	BA45	CA1_ent_43	4	CA1_ent_43	BulkSeq_ent_43	CA1	CA1_ent_43	ent	43	BA45_CA1_ent_43_1	P30	Entorhinal cortex	18	Female
+703	BA45	CA1_ent_44	13	CA1_ent_44	BulkSeq_ent_44	CA1	CA1_ent_44	ent	44	BA45_CA1_ent_44_1	P30	Entorhinal cortex	21	Female
+704	BA45	CA1_ent_45	14	CA1_ent_45	BulkSeq_ent_45	CA1	CA1_ent_45	ent	45	BA45_CA1_ent_45_1	P30	Entorhinal cortex	3	Female
+705	BA45	CA1_ent_46	15	CA1_ent_46	BulkSeq_ent_46	CA1	CA1_ent_46	ent	46	BA45_CA1_ent_46_1	P30	Entorhinal cortex	15	Female
+706	BA45	CA1_ent_47	16	CA1_ent_47	BulkSeq_ent_47	CA1	CA1_ent_47	ent	47	BA45_CA1_ent_47_1	P30	Entorhinal cortex	18	Female
+715	BA46	CA1_ent_48	1	CA1_ent_48	BulkSeq_ent_48	CA1	CA1_ent_48	ent	48	BA46_CA1_ent_48_1	P30	Entorhinal cortex	21	Female
+716	BA46	CA1_ent_49	2	CA1_ent_49	BulkSeq_ent_49	CA1	CA1_ent_49	ent	49	BA46_CA1_ent_49_1	P30	Entorhinal cortex	3	Female
+717	BA46	CA1_ent_50	3	CA1_ent_50	BulkSeq_ent_50	CA1	CA1_ent_50	ent	50	BA46_CA1_ent_50_1	P30	Entorhinal cortex	15	Female
+718	BA46	CA1_ent_51	4	CA1_ent_51	BulkSeq_ent_51	CA1	CA1_ent_51	ent	51	BA46_CA1_ent_51_1	P30	Entorhinal cortex	18	Female
+719	BA46	CA1_ent_52	13	CA1_ent_52	BulkSeq_ent_52	CA1	CA1_ent_52	ent	52	BA46_CA1_ent_52_1	P30	Entorhinal cortex	21	Female
+720	BA46	CA1_ent_53	14	CA1_ent_53	BulkSeq_ent_53	CA1	CA1_ent_53	ent	53	BA46_CA1_ent_53_1	P30	Entorhinal cortex	3	Female
+721	BA46	CA1_ent_54	15	CA1_ent_54	BulkSeq_ent_54	CA1	CA1_ent_54	ent	54	BA46_CA1_ent_54_1	P30	Entorhinal cortex	15	Female
+722	BA46	CA1_ent_55	16	CA1_ent_55	BulkSeq_ent_55	CA1	CA1_ent_55	ent	55	BA46_CA1_ent_55_1	P30	Entorhinal cortex	18	Female
+805	BA51	CA1_cer_1	27	CA1_cer_1	BulkSeq_cer_1	CA1	CA1_cer_1	cer	1	BA51_CA1_cer_1_1	P31	Cerebellum	12	Female
+819	BA52	CA1_cer_7	25	CA1_cer_7	BulkSeq_cer_7	CA1	CA1_cer_7	cer	7	BA52_CA1_cer_7_1	P31	Cerebellum	12	Female
+822	BA52	CA1_cer_10	28	CA1_cer_10	BulkSeq_cer_10	CA1	CA1_cer_10	cer	10	BA52_CA1_cer_10_1	P31	Cerebellum	12	Female
+825	BA52	CA1_cer_13	31	CA1_cer_13	BulkSeq_cer_13	CA1	CA1_cer_13	cer	13	BA52_CA1_cer_13_1	P31	Cerebellum	12	Female
+859	BA55	CA1_cer_39	1	CA1_cer_39	BulkSeq_cer_39	CA1	CA1_cer_39	cer	39	BA55_CA1_cer_39_1	P32	Cerebellum	18	Female
+860	BA55	CA1_cer_40	2	CA1_cer_40	BulkSeq_cer_40	CA1	CA1_cer_40	cer	40	BA55_CA1_cer_40_1	P32	Cerebellum	21	Female
+861	BA55	CA1_cer_41	3	CA1_cer_41	BulkSeq_cer_41	CA1	CA1_cer_41	cer	41	BA55_CA1_cer_41_1	P32	Cerebellum	3	Female
+862	BA55	CA1_cer_42	4	CA1_cer_42	BulkSeq_cer_42	CA1	CA1_cer_42	cer	42	BA55_CA1_cer_42_1	P32	Cerebellum	15	Female
+863	BA55	CA1_cer_43	13	CA1_cer_43	BulkSeq_cer_43	CA1	CA1_cer_43	cer	43	BA55_CA1_cer_43_1	P32	Cerebellum	18	Female
+864	BA55	CA1_cer_44	14	CA1_cer_44	BulkSeq_cer_44	CA1	CA1_cer_44	cer	44	BA55_CA1_cer_44_1	P32	Cerebellum	21	Female
+865	BA55	CA1_cer_45	15	CA1_cer_45	BulkSeq_cer_45	CA1	CA1_cer_45	cer	45	BA55_CA1_cer_45_1	P32	Cerebellum	3	Female
+866	BA55	CA1_cer_46	16	CA1_cer_46	BulkSeq_cer_46	CA1	CA1_cer_46	cer	46	BA55_CA1_cer_46_1	P32	Cerebellum	15	Female
+867	BA55	CA1_cer_55	25	CA1_cer_55	BulkSeq_cer_55	CA1	CA1_cer_55	cer	55	BA55_CA1_cer_55_1	P32	Cerebellum	18	Female
+868	BA55	CA1_cer_56	26	CA1_cer_56	BulkSeq_cer_56	CA1	CA1_cer_56	cer	56	BA55_CA1_cer_56_1	P32	Cerebellum	21	Female
+872	BA55	CA1_med_1	30	CA1_med_1	BulkSeq_med_1	CA1	CA1_med_1	med	1	BA55_CA1_med_1_1	P32	Medulla	12	Female
+875	BA56	CA1_cer_47	1	CA1_cer_47	BulkSeq_cer_47	CA1	CA1_cer_47	cer	47	BA56_CA1_cer_47_1	P32	Cerebellum	18	Female
+876	BA56	CA1_cer_48	2	CA1_cer_48	BulkSeq_cer_48	CA1	CA1_cer_48	cer	48	BA56_CA1_cer_48_1	P32	Cerebellum	21	Female
+877	BA56	CA1_cer_49	3	CA1_cer_49	BulkSeq_cer_49	CA1	CA1_cer_49	cer	49	BA56_CA1_cer_49_1	P32	Cerebellum	3	Female
+878	BA56	CA1_cer_50	4	CA1_cer_50	BulkSeq_cer_50	CA1	CA1_cer_50	cer	50	BA56_CA1_cer_50_1	P32	Cerebellum	15	Female
+879	BA56	CA1_cer_51	13	CA1_cer_51	BulkSeq_cer_51	CA1	CA1_cer_51	cer	51	BA56_CA1_cer_51_1	P32	Cerebellum	18	Female
+880	BA56	CA1_cer_52	14	CA1_cer_52	BulkSeq_cer_52	CA1	CA1_cer_52	cer	52	BA56_CA1_cer_52_1	P32	Cerebellum	21	Female
+881	BA56	CA1_cer_53	15	CA1_cer_53	BulkSeq_cer_53	CA1	CA1_cer_53	cer	53	BA56_CA1_cer_53_1	P32	Cerebellum	3	Female
+882	BA56	CA1_cer_54	16	CA1_cer_54	BulkSeq_cer_54	CA1	CA1_cer_54	cer	54	BA56_CA1_cer_54_1	P32	Cerebellum	15	Female
+886	BA56	CA1_med_7	28	CA1_med_7	BulkSeq_med_7	CA1	CA1_med_7	med	7	BA56_CA1_med_7_1	P32	Medulla	12	Female
+889	BA56	CA1_med_10	31	CA1_med_10	BulkSeq_med_10	CA1	CA1_med_10	med	10	BA56_CA1_med_10_1	P32	Medulla	12	Female
+892	BA57	CA1_med_13	2	CA1_med_13	BulkSeq_med_13	CA1	CA1_med_13	med	13	BA57_CA1_med_13_1	P32	Medulla	12	Female
+916	BA58	CA1_med_37	26	CA1_med_37	BulkSeq_med_37	CA1	CA1_med_37	med	37	BA58_CA1_med_37_1	P32	Medulla	3	Female
+917	BA58	CA1_med_38	27	CA1_med_38	BulkSeq_med_38	CA1	CA1_med_38	med	38	BA58_CA1_med_38_1	P32	Medulla	15	Female
+918	BA58	CA1_med_39	28	CA1_med_39	BulkSeq_med_39	CA1	CA1_med_39	med	39	BA58_CA1_med_39_1	P32	Medulla	18	Female
+919	BA58	CA1_med_40	29	CA1_med_40	BulkSeq_med_40	CA1	CA1_med_40	med	40	BA58_CA1_med_40_1	P32	Medulla	21	Female
+920	BA58	CA1_med_41	30	CA1_med_41	BulkSeq_med_41	CA1	CA1_med_41	med	41	BA58_CA1_med_41_1	P32	Medulla	3	Female
+921	BA58	CA1_med_42	31	CA1_med_42	BulkSeq_med_42	CA1	CA1_med_42	med	42	BA58_CA1_med_42_1	P32	Medulla	15	Female
+922	BA58	CA1_med_43	32	CA1_med_43	BulkSeq_med_43	CA1	CA1_med_43	med	43	BA58_CA1_med_43_1	P32	Medulla	18	Female
+923	BA59	CA1_med_44	1	CA1_med_44	BulkSeq_med_44	CA1	CA1_med_44	med	44	BA59_CA1_med_44_1	P32	Medulla	21	Female
+924	BA59	CA1_med_45	2	CA1_med_45	BulkSeq_med_45	CA1	CA1_med_45	med	45	BA59_CA1_med_45_1	P32	Medulla	3	Female
+925	BA59	CA1_med_46	3	CA1_med_46	BulkSeq_med_46	CA1	CA1_med_46	med	46	BA59_CA1_med_46_1	P32	Medulla	15	Female
+926	BA59	CA1_med_47	4	CA1_med_47	BulkSeq_med_47	CA1	CA1_med_47	med	47	BA59_CA1_med_47_1	P32	Medulla	18	Female
+927	BA59	CA1_med_49	13	CA1_med_49	BulkSeq_med_49	CA1	CA1_med_49	med	49	BA59_CA1_med_49_1	P32	Medulla	3	Female
+928	BA59	CA1_med_48	14	CA1_med_48	BulkSeq_med_48	CA1	CA1_med_48	med	48	BA59_CA1_med_48_1	P32	Medulla	21	Female
+929	BA59	CA1_med_50	15	CA1_med_50	BulkSeq_med_50	CA1	CA1_med_50	med	50	BA59_CA1_med_50_1	P32	Medulla	15	Female
+930	BA59	CA1_med_51	16	CA1_med_51	BulkSeq_med_51	CA1	CA1_med_51	med	51	BA59_CA1_med_51_1	P32	Medulla	18	Female
+931	BA59	CA1_med_52	25	CA1_med_52	BulkSeq_med_52	CA1	CA1_med_52	med	52	BA59_CA1_med_52_1	P32	Medulla	21	Female
+932	BA59	CA1_med_53	26	CA1_med_53	BulkSeq_med_53	CA1	CA1_med_53	med	53	BA59_CA1_med_53_1	P32	Medulla	3	Female
+933	BA59	CA1_med_54	27	CA1_med_54	BulkSeq_med_54	CA1	CA1_med_54	med	54	BA59_CA1_med_54_1	P32	Medulla	15	Female
+934	BA59	CA1_med_55	28	CA1_med_55	BulkSeq_med_55	CA1	CA1_med_55	med	55	BA59_CA1_med_55_1	P32	Medulla	18	Female
+935	BA59	CA1_med_56	29	CA1_med_56	BulkSeq_med_56	CA1	CA1_med_56	med	56	BA59_CA1_med_56_1	P32	Medulla	21	Female

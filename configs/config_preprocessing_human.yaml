@@ -1,0 +1,35 @@
+### GENERAL SETTINGS
+mapping_info: data/mapping_infos/mapping_vs_hg38_mis1_ROSMAP.csv
+
+results_folder: preprocessing
+
+#--------------------- modules --------------------
+
+# _CA1
+modules: [ 
+  preprocessing,
+] 
+
+#---------- common parameter and colours ----------
+common:
+  input:
+    preprocesing_data_folder: raw_data/data
+    annotation_data_folder: data/annotations
+    data_sub_set: ROSMAP
+    rna_class_list: ["miRNA"]
+    norm: ["rpmm_norm"]
+    feature_filtering: filtered
+  parameters:
+    set_seed: 42
+
+
+#----------------- preprocessing -----------------
+preprocessing:
+  log_list: [2, 10]
+  min_detection_list: [3]
+  number_of_reads: 10000
+  detection_rate_list: [0.1]
+  filter_variable: "msex"
+  id_col: Sample
+  fastq_filename_col: fastq_name
+

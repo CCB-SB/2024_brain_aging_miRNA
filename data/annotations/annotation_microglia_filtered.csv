@@ -1,0 +1,9 @@
+fastq_name	Name	SampleID	ID	age	group
+V350158994_L01_97	young1	young1	young1	young	microglia
+V350158994_L01_98	young2	young2	young2	young	microglia
+V350158994_L01_99	young3	young3	young3	young	microglia
+V350158994_L01_100	young4	young4	young4	young	microglia
+V350158994_L01_101	old1	old1	old1	old	microglia
+V350158994_L01_102	old2	old2	old2	old	microglia
+V350158994_L01_103	old3	old3	old3	old	microglia
+V350158994_L01_104	old4	old4	old4	old	microglia

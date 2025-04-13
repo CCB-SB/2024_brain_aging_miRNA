@@ -1,0 +1,3636 @@
+### GENERAL SETTINGS
+feature_list: data/miRNA_list.csv
+mapping_info: data/mapping_infos/mapping_vs_mm10_mis1_CA1_CA2.csv
+
+results_folder: results/results_rpmm
+
+#--------------------- modules --------------------
+# additionnal modules: diff_exp_values_table, mirna_expression_median_violin_plot, pathway_analysis_results_heatmap_plots, halushka_violin_plots, make_publication_folder
+
+# make publication folder
+# modules: [
+#     make_publication_folder,
+# ]
+
+modules: [ 
+    diff_exp_CA1_age_3m_12m_15m,
+    ##volcano_CA1_age_3m_12m_15m_scatter_plot,
+    ##pca_scatter_plot,
+    top_expressed_mirnas,
+    umap,
+    coefficient_of_variation, tissue_specificity_index,
+    hclust_expression_brain_region_for_mirna_list_zscores_heatmap_plot, 
+] 
+
+# create publication folder
+# modules: [ 
+#     make_publication_folder
+# ]
+
+#---------- common parameter and colours ----------
+common:
+  input:
+    raw_data_folder: raw_data/data
+    annotation_data_folder: data/annotations
+    data_sub_set: CA1_aging_age=3m_12m_15m_male
+    rna_class: miRNA
+    feature_column: miRNA
+    feature_filtering: filtered
+    norm: rpmm_norm
+    detection_group: brain_region
+    detection_rate: 10p
+    identifier_column: SampleID
+  parameters:
+    set_seed: 42
+  plots:
+    dpi: 600
+    font_family: "Arial"
+    image_height: 6
+    image_width: 9
+    image_units: cm
+    font_size: 9
+    font_size_header: 12
+
+colors:
+  - direction:
+      up: "#E09900"
+      up_light: "#E9BD5B"
+      light: "#F4F5F5"
+      down_light: "#91C2AB"
+      down: "#488468"
+      sig_pos: "#E09900"
+      pos: "#E9BD5B"
+      neg: "#91C2AB"
+      sig_neg: "#488468"
+      enriched: "#E09900"
+      depleted: "#488468"
+  - brain_region:
+      cc: "#1c93d1" 
+      cer: "#e41e27"
+      cor: "#15a750"  
+      cp: "#7962a4" 
+      ent: "#f2932d"
+      hi: "#fad326"  
+      hi2: "#231f1f" 
+      hy: "#70c2eb" 
+      med: "#f1aaa6"
+      #mid: "#063804"
+      olf: "#c6bbd5" 
+      plx: "#f6c589" 
+      pon: "#b3b8c0" 
+      svz: "#ede29d"   
+      th: "#b65376" 
+      vis: "#ef98c1"  
+  - brain_region_text:
+      cc: "#ffffff" 
+      cer: "#ffffff" 
+      cor: "#ffffff" 
+      cp: "#ffffff" 
+      ent: "#000000" 
+      hi: "#000000" 
+      hi2: "#ffffff" 
+      hy: "#000000" 
+      med: "#000000"
+      #mid: "#000000"
+      olf: "#000000" 
+      plx: "#000000" 
+      pon: "#000000"  
+      svz: "#000000"    
+      th: "#ffffff" 
+      vis: "#000000" 
+  #- cohort:
+  #    CA1: "#24580E"
+  #    CA2: "#8b2222"
+  - sex:
+      Male: "#4dc8bf"
+      Female: "#7b5aa6"
+      #nan: "#000000"
+  - age:
+      #3: "#dd3226"
+      #12: "#faae61"
+      #15: "#fce091"
+      #18: "#e1f3fa"
+      ##19: "#e1f3fa"
+      #21: "#acdbec"
+      #26: "#4576b6"
+      #28: "#323995"
+      ##nan: "#000000"
+      3: "#C74132"
+      12: "#EFB16E"
+      15: "#F7E19B"
+      18: "#E4F2F9"
+      21: "#B5DAEA"
+      26: "#5175B1"
+      28: "#333990"
+  - plate:
+      P23: "#238200"
+      P24: "#5A9100"
+      P25: "#919F00"
+      P26: "#C8AD00"
+      P27: "#FFBB00"
+      P28: "#FE8C16"
+      P29: "#FC5C2C"
+      P30: "#CC4670"
+      P31: "#9C2FB3"
+      P32: "#755DC6"
+      P33: "#4E8AD9"
+      P34: "#27B8EC"
+      P35: "#00E5FF"
+  - RNA: 
+      piRNA: "#9f4e07"
+      mRNA: "#c37012"
+      lncRNA: "#e1a458"
+      miRNA: "#98c27c"
+      snoRNA: "#6baf6b"
+      snRNA: "#399852"
+      tRNA: "#1f743a"
+      rRNA: "#01592f"
+      scaRNA: "#003c24"
+      circRNA: "#002918"
+  - clusters:
+      I: ["#CC6827"]
+      II: ["#25578E"]
+      III: ["#A5261C"]
+      IV: ["#3A7E27"]
+      V: ["#6D4B98"]
+
+xticks_names:
+  - categories:
+      brain_region_capital: "Brain region"
+      brain_region: "brain region"
+      age_capital: "Age (month)"
+      age: "age (month)"
+      sex_capital: "Sex"
+      sex: "sex"
+      mouse_ID_capital: "Individual"
+      mouse_ID: "individual"
+  - age:
+      3: "3m"
+      12: "12m"
+      15: "15m"
+      18: "18m"
+      21: "21m"
+      26: "26m"
+      28: "28m"
+  - brain_region:
+      cc: "cc"
+      cer: "cer"
+      cor: "cor"
+      cp: "cp"
+      ent: "ent"
+      hi: "hi ant."
+      hi2: "hi post."
+      hy: "hy"
+      med: "med"
+      olf: "olf"
+      plx: "plx"
+      pon: "pon"
+      svz: "svz"
+      th: "th"
+      vis: "vis"
+      
+ 
+#----------------- preprocessing stats -----------------
+alignment_stats_bar_plot:
+  grouping: ["brain_region", age]
+  number_of_reads: 2e6
+
+mirna_number_per_tissue_bar_plot:
+    tissue: brain_region
+    detection_rate: [10, 50]
+    min_detect_raw: 5
+
+
+#------------------ plots and tables ------------------
+metadata_overview_tables:
+  combinations:
+    - SampleID:
+        g: ["brain_region", "age"]
+        pooling: []
+    - SampleID:
+        g: ["brain_region", "sex"]
+        pooling: []
+    - SampleID:
+        g: ["age", "sex"]
+        pooling: []
+    - mouse_ID:
+        g: ["age", "brain_region"]
+        pooling: []
+    - mouse_ID:
+        g: ["age", "brain_region"]
+        pooling: ["young", "young", "young", "adult", "adult", "old", "old"] #pooling only possible if parameter sortable (age, time, timepoint)
+
+diff_exp_CA1:
+  log_list: ["_log2", "_log10"]
+  adjustment: BH
+  comparisons:
+    - age:
+        g: ["12", "3"]
+        subset: []
+    - age:
+        g: ["15", "3"]
+        subset: []
+    - age:
+        g: ["18", "3"]
+        subset: []
+    - age:
+        g: ["21", "3"]
+        subset: []
+    - age:
+        g: ["26", "3"]
+        subset: []
+    - age:
+        g: ["28", "3"]
+        subset: []
+
+diff_exp_CA1_age_3m_12m_15m:
+  comparisons:
+    - age:
+        g: ["12", "3"]
+        subset: []
+    - age:
+        g: ["15", "3"]
+        subset: []
+
+
+diff_exp_CA1_without_age_26m_28m:
+  log_list: ["_log2", "_log10"]
+  adjustment: BH
+  comparisons:
+    - age:
+        g: ["12", "3"]
+        subset: []
+    - age:
+        g: ["15", "3"]
+        subset: []
+    - age:
+        g: ["18", "3"]
+        subset: []
+    - age:
+        g: ["21", "3"]
+        subset: []
+
+#diff_exp_values_table:
+#  diff_exp_logs: ["_log2"]
+#  comparisons:
+#    - Status:
+#        g: [Treatment, Control]
+#        subset: []
+
+aggregation_diff_exp_bar_plot:
+  diff_log: _log2
+  thresholds:
+    fc: 1.5
+    adj_p_value: 0.05
+    num_dereg_combinations_th: [1] # for how many combinations in a tissue has the feature to be deregulated
+    num_dereg_tissues_th: [2] # global features (for how many tissues is the feature deregulated)
+  props: 
+    - p1: ["brain_region", "age"]
+
+deregulated_comparison_sex_tissue_heatmap:
+  diff_log: _log2
+  thresholds:
+    fc: 1.5
+    adj_p_value: 0.05
+  props: 
+    - p1: ["brain_region", "age", "sex"]
+
+correlation_comp_age_heatmap_plot_table:
+  method: [spearman]
+  adjustment: BH
+  corr_th: [0.5]
+  # miRNA list
+  file: ["data/miRNA_list.csv"]
+  # tRNA list
+  #file: ["tRNA_list.csv"]
+  props: 
+    - p1: ["brain_region", "age"]
+
+aggregation_correlation_bar_plot:
+  thresholds:
+    adj_p_value: 0.05
+    corr_th: [0.5]
+    num_corr_tissues_th: [2] # global features (for how many tissues is the feature up or down correlated)
+  method: [spearman]
+  props: 
+    - p1: ["brain_region", "age"]
+
+sig_tissue_specific_comparison:
+  diff_exp_props:
+    num_dereg_combinations_th: [1]
+    num_dereg_tissues_th: [2]
+  corr_props:
+    method: [spearman]
+    corr_th: [0.5]
+    num_corr_tissues_th: [2] 
+  props: 
+    - p1: ["brain_region", "age"]
+
+correlation_age_table:
+  method: [spearman]
+  adjustment: BH
+  prop: "age"
+
+mfuzz_ts_analysis_for_sig_tissue_specific_miRNAs_line_plot:
+  cluster_props:
+    range_num_of_clusters: [2,3,4] 
+  plot_category: [brain_region, age]
+  diff_exp_props:
+    diff_log: _log2
+    num_dereg_combinations_th: [1]
+    num_dereg_tissues_th: [2]
+  corr_props:
+    method: [spearman]
+    corr_th: [0.5]
+    num_corr_tissues_th: [2]
+
+sig_tissue_specific_miRNAs_line_plot:
+  plot_category: [brain_region, age]
+  diff_exp_props:
+    diff_log: _log2
+    num_dereg_combinations_th: [1]
+    num_dereg_tissues_th: [2]
+  corr_props:
+    method: [spearman]
+    corr_th: [0.5]
+    num_corr_tissues_th: [2]
+
+candidate_comparison_venn_plot:
+  diff_exp_props:
+    num_dereg_combinations_th: [1]
+    num_dereg_tissues_th: [2]
+  corr_props:
+    method: [spearman]
+    corr_th: [0.5]
+    num_corr_tissues_th: [2] 
+  hclust_props:
+    subset: "CA1_age=3m_12m_15m"
+    method: ["cv_zscore"]
+    top: [50] 
+    zscores_th: [0.5]
+  props: 
+    - p1: ["brain_region", "age"]
+  tissue_specific:
+    plot_nrows: 3   # without_age=26m_28m: 3    # CA1: 3
+    plot_ncols: 5   # without_age=26m_28m: 5    # CA1: 5
+  all_features:
+    plot_nrows: 3   # without_age=26m_28m: 3    # CA1: 3
+    plot_ncols: 5   # without_age=26m_28m: 5    # CA1: 5
+
+candidate_comparison_venn_plot_tissue_split:
+  diff_exp_props:
+    num_dereg_combinations_th: [1]
+    num_dereg_tissues_th: [2]
+  corr_props:
+    method: [spearman]
+    corr_th: [0.5]
+    num_corr_tissues_th: [2] 
+  hclust_props:
+    subset: "CA1_age=3m_12m_15m"
+    method: ["cv_zscore"]
+    top: [50] 
+    zscores_th: [0.5]
+  props: 
+    - p1: ["brain_region", "age"]
+  plot_layout:
+    nrow: 3
+    ncol: 5
+
+candidate_comparison_venn_plot_cluster_split:
+  diff_exp_props:
+    num_dereg_combinations_th: [1]
+    num_dereg_tissues_th: [2]
+  corr_props:
+    method: [spearman]
+    corr_th: [0.5]
+    num_corr_tissues_th: [2] 
+  hclust_props:
+    subset: "CA1_age=3m_12m_15m"
+    method: ["cv_zscore"]
+    top: [50] 
+    zscores_th: [0.5]
+  props: 
+    - p1: ["brain_region", "age"]
+  plot_layout:
+    nrow: 1
+    ncol: 4
+
+pca_scatter_plot:
+  parameters:
+  properties: 
+    - p1: ["brain_region", "age"]
+    - p2: ["brain_region", "sex"]
+    #- p3: ["reads_aligned"]
+    - p4: ["brain_region"]
+    - p4: ["age"]
+    - p4: ["sex"]
+
+pvca_all_brain_regions_bar_plot:
+  properties: 
+    - [brain_region]
+    - [age]
+    - [sex]
+    - [mouse_ID]
+  parameters:
+    tissue: "all_brain_regions"
+    colour: "brain_region"
+    log: 10
+    min_var: 0.9
+    min_cutoff: 0 #0.005
+    keep_zeros: true #false  # phd thesis: true
+
+pvca_per_brain_regions_bar_plot:
+  properties:       
+    #- [brain_region]
+    #- [sex] 
+    - [age]
+    - [sex]
+  parameters:
+    #tissue: "age" 
+    #colour: "age" 
+    tissue: "brain_region"
+    colour: "brain_region"
+    log: 10
+    min_var: 0.9
+    min_cutoff: 0 #0.005
+    keep_zeros: false
+  plot_parameters:
+    vline: 12
+    hline: 12
+
+umap:
+  top_list: ["all", "100", "50"]
+  neighbors: [5,10,25] # [5 -> 50]
+  min_dist: [0.1,0.25] # [0.01 -> 0.5]
+  metric: [euclidean,correlation]
+  init: [random] # [random,spectral]
+  seed: [42]
+  norm: [raw,std]
+  properties: 
+    - p1: [brain_region] # colour
+    - p2: [age]
+    - p3: [sex]
+    - p4: [brain_region, age] # colour, shape
+    - p5: [brain_region, sex]
+
+mirna_expression_median_bar_box_plot:
+  parameters:
+    diff_log: "_log2"
+    comb_group: "brain_region"
+    polynom_degree: 2
+  files: 
+    #- [../../data_CA1/without_mid/sncrna-pipeline-input_CA1/quantification/miRNA_filtered_quantification_rpmm_norm.detection_rate_10p_per_brain_region.csv]
+    - [data/miRNA_list.csv]
+  features:
+    - [mmu-miR-9-3p, mmu-miR-9-5p]
+
+mirna_expression_over_time_box_bar_plot:
+  parameters:
+    diff_log: "_log2"
+    sig_niveau: 0.05
+    fc_th: 1.5
+    comb_group: "age"
+    plot_group: "brain_region"
+    polynom_degree: 2
+    plot_nrows: 3
+    plot_ncols: 5
+  # miRNA
+  files: 
+    #- [../../data_CA1/without_mid/sncrna-pipeline-input_CA1/quantification/miRNA_filtered_quantification_rpmm_norm.detection_rate_10p_per_brain_region.csv]
+    - [data/miRNA_list.csv]
+  features:
+    - [mmu-miR-146a-5p, mmu-miR-155-5p] #[mmu-miR-9-3p, mmu-miR-9-5p]
+  manual_plots_parameters: #expr_mmu-miR-155-5p_vis_svz_cp_cer_cc_pon_med_18x4.5
+    features: mmu-miR-146a-5p #mmu-miR-155-5p #mmu-miR-9-5p #mmu-miR-9-3p #mmu-miR-298-5p 
+    tissues: [cc, cor, cer, cp, ent, hi, hi2, hy, med, olf, plx, pon, svz, th, vis] # 155-5p: [vis, svz, cp, cer, cc, pon, med] # 155-5p: [hi2, hy, th, cor, ent, hi, olf, plx] # 146a-5p: [cc, cor, cer, cp, ent, hi, hi2, hy, med, olf, plx, pon, svz, th, vis]
+    plot_layout: [3, 5]
+    plot_size: [18, 12]
+  #tRNA
+#   files: 
+#     #- [../../data_CA1/without_mid/sncrna-pipeline-input_CA1/quantification/tRNA_filtered_quantification_rpmm_norm.detection_rate_10p_per_brain_region.csv]
+#     - [tRNA_list.csv]
+#   features:
+#     #- [mmu-miR-146a-5p, mmu-miR-155-5p] #[mmu-miR-9-3p, mmu-miR-9-5p]
+#   manual_plots_parameters: #expr_mmu-miR-155-5p_vis_svz_cp_cer_cc_pon_med_18x4.5
+#     features: "" #mmu-miR-155-5p #mmu-miR-146a-5p #mmu-miR-9-5p #mmu-miR-9-3p #mmu-miR-298-5p 
+#     tissues: "" #[hi2, hy, th, cor, ent, hi, olf, plx] # 155-5p: [vis, svz, cp, cer, cc, pon, med] # 155-5p: [hi2, hy, th, cor, ent, hi, olf, plx] 
+#     plot_layout: [1, 8]
+#     plot_size: [18, 3.5]
+
+mirna_expression_per_time_over_brain_region_box_bar_plot:
+  parameters:
+    diff_log: "_log2"
+    comb_group: "brain_region"
+    plot_group: "age"
+    plot_nrows: 2 # CA1: 2 CA1_without_age=26m_28m: 1
+    plot_ncols: 4 # CA1: 4 CA1_without_age=26m_28m: 5
+  files: 
+    #- [../../data_CA1/without_mid/sncrna-pipeline-input_CA1/quantification/miRNA_filtered_quantification_rpmm_norm.detection_rate_10p_per_brain_region.csv]
+    - [data/miRNA_list.csv]
+  features:
+    - [mmu-miR-9-3p, mmu-miR-9-5p]
+
+coefficient_of_variation:
+  tissues: "brain_region"
+  top_list: [100, 75, 50, 25]
+
+tissue_specificity_index:
+  tissues: "brain_region"
+  top_list: [100, 75, 50, 25]
+
+hclust_expression_brain_region_for_mirna_list_zscores_heatmap_plot:
+  prop: brain_region 
+  diff_log: _log10
+  method: ["cv_zscore", "tsi_zscore"]
+  top_list: [50] # target: [25, 50]
+  zscore_th: [0.5]
+  hclust_params:
+    scale: row
+    method: complete
+    dist_method: euclidean
+    seed: [42]
+    number_of_cluster: 4 # 3
+
+hclust_expression_brain_region_for_mirna_list_zscores_graph_venn_plot:
+  prop: brain_region 
+  diff_log: _log10
+  method: ["cv_zscore", "tsi_zscore"]
+  top_list: [25, 50, 75, 100] # target: [25, 50]
+  zscore_th: [0.25, 0.5] 
+  feature_keep_rate: [0.25, 0.5]  
+  intersection_th: [1] 
+
+mfuzz_ts_clustering:
+  cluster_props:
+    max_num_of_clusters: [200] 
+    num_of_clusters: [53] #67
+  plot_category: [brain_region, age]
+  diff_log: "_log2"
+
+mfuzz_ts_analysis_overview_line_plot:
+  thresholds:
+    membership_plot_ths: [0.15, 0.2, 0.25, 0.3, 0.5] # a time series has to have at least a memebership of % to be displayed in the membership plot
+    tissue_ths: [0.2, 0.3, 0.5] # how many % of a brain region should be contained in the cluster that the cluster is tissue specific
+    rna_occ_ths: [1, 2, 3, 4, 5] # how many feature should be contained in a cluster to be considered
+
+mfuzz_ts_analysis_membership_box_plot:
+  interesting_cluster: [24, 28, 38, 41]
+
+mfuzz_ts_analysis_single_line_plot:
+  interesting_cluster: [4, 5, 7, 9, 17, 18, 20, 21, 22, 23, 24, 27, 28, 30, 31, 33, 34, 37, 38, 41, 44, 46, 47, 50, 51]
+
+mfuzz_ts_analysis_age_development_clusters:
+  cluster_groups:
+    - g1: 
+        feature: "mmu-miR-155-5p" 
+        cluster: [11, 25, 33, 28, 23, 51, 22]
+    - g2: 
+        feature: "mmu-miR-155-5p" 
+        cluster: [28, 23, 51, 22]
+    - g3:
+        feature: "mmu-miR-146a-5p" 
+        cluster: [11, 22, 25, 28, 33, 41, 51]
+    - g4:
+        feature: "mmu-miR-5100" 
+        cluster: [4, 18, 22, 23, 25, 30, 41, 51]
+
+fc_versus_expr_scatter_plot:
+  diff_log: _log10
+  prop: brain_region 
+  thresholds:
+      fc: 1.5
+      adj_p_value: 0.05
+      auc: ""
+  comparisons_CA1:
+    - age:
+        g: ["12", "3"]
+        subset: ["brain_region", "cc"]
+    - age:
+        g: ["15", "3"]
+        subset: ["brain_region", "cc"]
+    - age:
+        g: ["18", "3"]
+        subset: ["brain_region", "cc"]
+    - age:
+        g: ["21", "3"]
+        subset: ["brain_region", "cc"]
+    - age:
+        g: ["26", "3"]
+        subset: ["brain_region", "cc"]
+    - age:
+        g: ["28", "3"]
+        subset: ["brain_region", "cc"]
+
+    - age:
+        g: ["12", "3"]
+        subset: ["brain_region", "cer"]
+    - age:
+        g: ["15", "3"]
+        subset: ["brain_region", "cer"]
+    - age:
+        g: ["18", "3"]
+        subset: ["brain_region", "cer"]
+    - age:
+        g: ["21", "3"]
+        subset: ["brain_region", "cer"]
+    - age:
+        g: ["26", "3"]
+        subset: ["brain_region", "cer"]
+    - age:
+        g: ["28", "3"]
+        subset: ["brain_region", "cer"]
+
+    - age:
+        g: ["12", "3"]
+        subset: ["brain_region", "cor"]
+    - age:
+        g: ["15", "3"]
+        subset: ["brain_region", "cor"]
+    - age:
+        g: ["18", "3"]
+        subset: ["brain_region", "cor"]
+    - age:
+        g: ["21", "3"]
+        subset: ["brain_region", "cor"]
+    - age:
+        g: ["26", "3"]
+        subset: ["brain_region", "cor"]
+    - age:
+        g: ["28", "3"]
+        subset: ["brain_region", "cor"]
+
+    - age:
+        g: ["12", "3"]
+        subset: ["brain_region", "cp"]
+    - age:
+        g: ["15", "3"]
+        subset: ["brain_region", "cp"]
+    - age:
+        g: ["18", "3"]
+        subset: ["brain_region", "cp"]
+    - age:
+        g: ["21", "3"]
+        subset: ["brain_region", "cp"]
+    - age:
+        g: ["26", "3"]
+        subset: ["brain_region", "cp"]
+    - age:
+        g: ["28", "3"]
+        subset: ["brain_region", "cp"]
+
+    - age:
+        g: ["12", "3"]
+        subset: ["brain_region", "ent"]
+    - age:
+        g: ["15", "3"]
+        subset: ["brain_region", "ent"]
+    - age:
+        g: ["18", "3"]
+        subset: ["brain_region", "ent"]
+    - age:
+        g: ["21", "3"]
+        subset: ["brain_region", "ent"]
+    - age:
+        g: ["26", "3"]
+        subset: ["brain_region", "ent"]
+    - age:
+        g: ["28", "3"]
+        subset: ["brain_region", "ent"]
+
+    - age:
+        g: ["12", "3"]
+        subset: ["brain_region", "hi"]
+    - age:
+        g: ["15", "3"]
+        subset: ["brain_region", "hi"]
+    - age:
+        g: ["18", "3"]
+        subset: ["brain_region", "hi"]
+    - age:
+        g: ["21", "3"]
+        subset: ["brain_region", "hi"]
+    - age:
+        g: ["26", "3"]
+        subset: ["brain_region", "hi"]
+    - age:
+        g: ["28", "3"]
+        subset: ["brain_region", "hi"]
+
+    - age:
+        g: ["12", "3"]
+        subset: ["brain_region", "hi2"]
+    - age:
+        g: ["15", "3"]
+        subset: ["brain_region", "hi2"]
+    - age:
+        g: ["18", "3"]
+        subset: ["brain_region", "hi2"]
+    - age:
+        g: ["21", "3"]
+        subset: ["brain_region", "hi2"]
+    - age:
+        g: ["26", "3"]
+        subset: ["brain_region", "hi2"]
+    - age:
+        g: ["28", "3"]
+        subset: ["brain_region", "hi2"]
+
+    - age:
+        g: ["12", "3"]
+        subset: ["brain_region", "hy"]
+    - age:
+        g: ["15", "3"]
+        subset: ["brain_region", "hy"]
+    - age:
+        g: ["18", "3"]
+        subset: ["brain_region", "hy"]
+    - age:
+        g: ["21", "3"]
+        subset: ["brain_region", "hy"]
+    - age:
+        g: ["26", "3"]
+        subset: ["brain_region", "hy"]
+    - age:
+        g: ["28", "3"]
+        subset: ["brain_region", "hy"]
+
+    - age:
+        g: ["12", "3"]
+        subset: ["brain_region", "med"]
+    - age:
+        g: ["15", "3"]
+        subset: ["brain_region", "med"]
+    - age:
+        g: ["18", "3"]
+        subset: ["brain_region", "med"]
+    - age:
+        g: ["21", "3"]
+        subset: ["brain_region", "med"]
+    - age:
+        g: ["26", "3"]
+        subset: ["brain_region", "med"]
+    - age:
+        g: ["28", "3"]
+        subset: ["brain_region", "med"]
+
+    - age:
+        g: ["12", "3"]
+        subset: ["brain_region", "olf"]
+    - age:
+        g: ["15", "3"]
+        subset: ["brain_region", "olf"]
+    - age:
+        g: ["18", "3"]
+        subset: ["brain_region", "olf"]
+    - age:
+        g: ["21", "3"]
+        subset: ["brain_region", "olf"]
+    - age:
+        g: ["26", "3"]
+        subset: ["brain_region", "olf"]
+    - age:
+        g: ["28", "3"]
+        subset: ["brain_region", "olf"]
+
+    - age:
+        g: ["12", "3"]
+        subset: ["brain_region", "plx"]
+    - age:
+        g: ["15", "3"]
+        subset: ["brain_region", "plx"]
+    - age:
+        g: ["18", "3"]
+        subset: ["brain_region", "plx"]
+    - age:
+        g: ["21", "3"]
+        subset: ["brain_region", "plx"]
+    - age:
+        g: ["26", "3"]
+        subset: ["brain_region", "plx"]
+    - age:
+        g: ["28", "3"]
+        subset: ["brain_region", "plx"]
+
+    - age:
+        g: ["12", "3"]
+        subset: ["brain_region", "pon"]
+    - age:
+        g: ["15", "3"]
+        subset: ["brain_region", "pon"]
+    - age:
+        g: ["18", "3"]
+        subset: ["brain_region", "pon"]
+    - age:
+        g: ["21", "3"]
+        subset: ["brain_region", "pon"]
+    - age:
+        g: ["26", "3"]
+        subset: ["brain_region", "pon"]
+    - age:
+        g: ["28", "3"]
+        subset: ["brain_region", "pon"]
+
+    - age:
+        g: ["12", "3"]
+        subset: ["brain_region", "svz"]
+    - age:
+        g: ["15", "3"]
+        subset: ["brain_region", "svz"]
+    - age:
+        g: ["18", "3"]
+        subset: ["brain_region", "svz"]
+    - age:
+        g: ["21", "3"]
+        subset: ["brain_region", "svz"]
+    - age:
+        g: ["26", "3"]
+        subset: ["brain_region", "svz"]
+    - age:
+        g: ["28", "3"]
+        subset: ["brain_region", "svz"]
+
+    - age:
+        g: ["12", "3"]
+        subset: ["brain_region", "th"]
+    - age:
+        g: ["15", "3"]
+        subset: ["brain_region", "th"]
+    - age:
+        g: ["18", "3"]
+        subset: ["brain_region", "th"]
+    - age:
+        g: ["21", "3"]
+        subset: ["brain_region", "th"]
+    - age:
+        g: ["26", "3"]
+        subset: ["brain_region", "th"]
+    - age:
+        g: ["28", "3"]
+        subset: ["brain_region", "th"]
+
+    - age:
+        g: ["12", "3"]
+        subset: ["brain_region", "vis"]
+    - age:
+        g: ["15", "3"]
+        subset: ["brain_region", "vis"]
+    - age:
+        g: ["18", "3"]
+        subset: ["brain_region", "vis"]
+    - age:
+        g: ["21", "3"]
+        subset: ["brain_region", "vis"]
+    - age:
+        g: ["26", "3"]
+        subset: ["brain_region", "vis"]
+    - age:
+        g: ["28", "3"]
+        subset: ["brain_region", "vis"]
+
+  comparisons_CA1_age_3m_12m_15m:
+    - age:
+        g: ["12", "3"]
+        subset: ["brain_region", "cc"]
+    - age:
+        g: ["15", "3"]
+        subset: ["brain_region", "cc"]
+    - age:
+        g: ["12", "3"]
+        subset: ["brain_region", "cer"]
+    - age:
+        g: ["15", "3"]
+        subset: ["brain_region", "cer"]
+    - age:
+        g: ["12", "3"]
+        subset: ["brain_region", "cor"]
+    - age:
+        g: ["15", "3"]
+        subset: ["brain_region", "cor"]
+    - age:
+        g: ["12", "3"]
+        subset: ["brain_region", "cp"]
+    - age:
+        g: ["15", "3"]
+        subset: ["brain_region", "cp"]
+    - age:
+        g: ["12", "3"]
+        subset: ["brain_region", "ent"]
+    - age:
+        g: ["15", "3"]
+        subset: ["brain_region", "ent"]
+    - age:
+        g: ["12", "3"]
+        subset: ["brain_region", "hi"]
+    - age:
+        g: ["15", "3"]
+        subset: ["brain_region", "hi"]
+    - age:
+        g: ["12", "3"]
+        subset: ["brain_region", "hi2"]
+    - age:
+        g: ["15", "3"]
+        subset: ["brain_region", "hi2"]
+    - age:
+        g: ["12", "3"]
+        subset: ["brain_region", "hy"]
+    - age:
+        g: ["15", "3"]
+        subset: ["brain_region", "hy"]
+    - age:
+        g: ["12", "3"]
+        subset: ["brain_region", "med"]
+    - age:
+        g: ["15", "3"]
+        subset: ["brain_region", "med"]
+    - age:
+        g: ["12", "3"]
+        subset: ["brain_region", "olf"]
+    - age:
+        g: ["15", "3"]
+        subset: ["brain_region", "olf"]
+    - age:
+        g: ["12", "3"]
+        subset: ["brain_region", "plx"]
+    - age:
+        g: ["15", "3"]
+        subset: ["brain_region", "plx"]
+    - age:
+        g: ["12", "3"]
+        subset: ["brain_region", "pon"]
+    - age:
+        g: ["15", "3"]
+        subset: ["brain_region", "pon"]
+    - age:
+        g: ["12", "3"]
+        subset: ["brain_region", "svz"]
+    - age:
+        g: ["15", "3"]
+        subset: ["brain_region", "svz"]
+    - age:
+        g: ["12", "3"]
+        subset: ["brain_region", "th"]
+    - age:
+        g: ["15", "3"]
+        subset: ["brain_region", "th"]
+    - age:
+        g: ["12", "3"]
+        subset: ["brain_region", "vis"]
+    - age:
+        g: ["15", "3"]
+        subset: ["brain_region", "vis"]
+
+  comparisons_CA1_without_age_26m_28m:
+    - age:
+        g: ["12", "3"]
+        subset: ["brain_region", "cc"]
+    - age:
+        g: ["15", "3"]
+        subset: ["brain_region", "cc"]
+    - age:
+        g: ["18", "3"]
+        subset: ["brain_region", "cc"]
+    - age:
+        g: ["21", "3"]
+        subset: ["brain_region", "cc"]
+
+    - age:
+        g: ["12", "3"]
+        subset: ["brain_region", "cer"]
+    - age:
+        g: ["15", "3"]
+        subset: ["brain_region", "cer"]
+    - age:
+        g: ["18", "3"]
+        subset: ["brain_region", "cer"]
+    - age:
+        g: ["21", "3"]
+        subset: ["brain_region", "cer"]
+
+    - age:
+        g: ["12", "3"]
+        subset: ["brain_region", "cor"]
+    - age:
+        g: ["15", "3"]
+        subset: ["brain_region", "cor"]
+    - age:
+        g: ["18", "3"]
+        subset: ["brain_region", "cor"]
+    - age:
+        g: ["21", "3"]
+        subset: ["brain_region", "cor"]
+
+    - age:
+        g: ["12", "3"]
+        subset: ["brain_region", "cp"]
+    - age:
+        g: ["15", "3"]
+        subset: ["brain_region", "cp"]
+    - age:
+        g: ["18", "3"]
+        subset: ["brain_region", "cp"]
+    - age:
+        g: ["21", "3"]
+        subset: ["brain_region", "cp"]
+
+    - age:
+        g: ["12", "3"]
+        subset: ["brain_region", "ent"]
+    - age:
+        g: ["15", "3"]
+        subset: ["brain_region", "ent"]
+    - age:
+        g: ["18", "3"]
+        subset: ["brain_region", "ent"]
+    - age:
+        g: ["21", "3"]
+        subset: ["brain_region", "ent"]
+
+    - age:
+        g: ["12", "3"]
+        subset: ["brain_region", "hi"]
+    - age:
+        g: ["15", "3"]
+        subset: ["brain_region", "hi"]
+    - age:
+        g: ["18", "3"]
+        subset: ["brain_region", "hi"]
+    - age:
+        g: ["21", "3"]
+        subset: ["brain_region", "hi"]
+
+    - age:
+        g: ["12", "3"]
+        subset: ["brain_region", "hi2"]
+    - age:
+        g: ["15", "3"]
+        subset: ["brain_region", "hi2"]
+    - age:
+        g: ["18", "3"]
+        subset: ["brain_region", "hi2"]
+    - age:
+        g: ["21", "3"]
+        subset: ["brain_region", "hi2"]
+
+    - age:
+        g: ["12", "3"]
+        subset: ["brain_region", "hy"]
+    - age:
+        g: ["15", "3"]
+        subset: ["brain_region", "hy"]
+    - age:
+        g: ["18", "3"]
+        subset: ["brain_region", "hy"]
+    - age:
+        g: ["21", "3"]
+        subset: ["brain_region", "hy"]
+
+    - age:
+        g: ["12", "3"]
+        subset: ["brain_region", "med"]
+    - age:
+        g: ["15", "3"]
+        subset: ["brain_region", "med"]
+    - age:
+        g: ["18", "3"]
+        subset: ["brain_region", "med"]
+    - age:
+        g: ["21", "3"]
+        subset: ["brain_region", "med"]
+
+    - age:
+        g: ["12", "3"]
+        subset: ["brain_region", "olf"]
+    - age:
+        g: ["15", "3"]
+        subset: ["brain_region", "olf"]
+    - age:
+        g: ["18", "3"]
+        subset: ["brain_region", "olf"]
+    - age:
+        g: ["21", "3"]
+        subset: ["brain_region", "olf"]
+
+    - age:
+        g: ["12", "3"]
+        subset: ["brain_region", "plx"]
+    - age:
+        g: ["15", "3"]
+        subset: ["brain_region", "plx"]
+    - age:
+        g: ["18", "3"]
+        subset: ["brain_region", "plx"]
+    - age:
+        g: ["21", "3"]
+        subset: ["brain_region", "plx"]
+
+    - age:
+        g: ["12", "3"]
+        subset: ["brain_region", "pon"]
+    - age:
+        g: ["15", "3"]
+        subset: ["brain_region", "pon"]
+    - age:
+        g: ["18", "3"]
+        subset: ["brain_region", "pon"]
+    - age:
+        g: ["21", "3"]
+        subset: ["brain_region", "pon"]
+
+    - age:
+        g: ["12", "3"]
+        subset: ["brain_region", "svz"]
+    - age:
+        g: ["15", "3"]
+        subset: ["brain_region", "svz"]
+    - age:
+        g: ["18", "3"]
+        subset: ["brain_region", "svz"]
+    - age:
+        g: ["21", "3"]
+        subset: ["brain_region", "svz"]
+
+    - age:
+        g: ["12", "3"]
+        subset: ["brain_region", "th"]
+    - age:
+        g: ["15", "3"]
+        subset: ["brain_region", "th"]
+    - age:
+        g: ["18", "3"]
+        subset: ["brain_region", "th"]
+    - age:
+        g: ["21", "3"]
+        subset: ["brain_region", "th"]
+
+    - age:
+        g: ["12", "3"]
+        subset: ["brain_region", "vis"]
+    - age:
+        g: ["15", "3"]
+        subset: ["brain_region", "vis"]
+    - age:
+        g: ["18", "3"]
+        subset: ["brain_region", "vis"]
+    - age:
+        g: ["21", "3"]
+        subset: ["brain_region", "vis"]
+
+volcano_scatter_plot:
+  diff_log: _log2
+  parameters:
+    updownregulated: 1.5
+    significance: 0.05
+    mineffectsize: 0.5
+  comparisons_sex:
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: []
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region", "cc"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region", "cer"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region", "cor"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region", "cp"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region", "ent"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region", "hi"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region", "hi2"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region", "hy"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region", "med"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region", "olf"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region", "plx"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region", "pon"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region", "svz"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region", "th"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region", "vis"]
+
+  comparisons_sex_for_br_age:
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "cc_3"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "cer_3"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "cor_3"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "cp_3"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "ent_3"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "hi_3"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "hi2_3"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "hy_3"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "med_3"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "olf_3"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "plx_3"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "pon_3"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "svz_3"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "th_3"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "vis_3"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "cc_12"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "cer_12"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "cor_12"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "cp_12"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "ent_12"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "hi_12"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "hi2_12"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "hy_12"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "med_12"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "olf_12"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "plx_12"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "pon_12"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "svz_12"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "th_12"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "vis_12"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "cc_15"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "cer_15"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "cor_15"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "cp_15"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "ent_15"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "hi_15"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "hi2_15"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "hy_15"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "med_15"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "olf_15"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "plx_15"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "pon_15"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "svz_15"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "th_15"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "vis_15"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "cc_18"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "cer_18"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "cor_18"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "cp_18"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "ent_18"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "hi_18"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "hi2_18"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "hy_18"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "med_18"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "olf_18"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "plx_18"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "pon_18"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "svz_18"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "th_18"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "vis_18"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "cc_21"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "cer_21"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "cor_21"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "cp_21"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "ent_21"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "hi_21"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "hi2_21"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "hy_21"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "med_21"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "olf_21"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "plx_21"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "pon_21"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "svz_21"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "th_21"]
+    #     - sex:
+    #         g: ["Male", "Female"]
+    #         subset: ["brain_region_age", "vis_21"]
+        
+  comparisons_age:
+    # - age:
+    #     g: ["12", "3"]
+    #     subset: []
+    # - age:
+    #     g: ["15", "3"]
+    #     subset: []
+    # - age:
+    #     g: ["18", "3"]
+    #     subset: []
+    # - age:
+    #     g: ["21", "3"]
+    #     subset: []
+    # - age:
+    #     g: ["26", "3"]
+    #     subset: []
+    # - age:
+    #     g: ["28", "3"]
+    #     subset: []
+    # - age:
+    #     g: ["15", "12"]
+    #     subset: []
+    # - age:
+    #     g: ["18", "12"]
+    #     subset: []
+    # - age:
+    #     g: ["21", "12"]
+    #     subset: []
+    # - age:
+    #     g: ["26", "12"]
+    #     subset: []
+    # - age:
+    #     g: ["28", "12"]
+    #     subset: []
+    # - age:
+    #     g: ["18", "15"]
+    #     subset: []
+    # - age:
+    #     g: ["21", "15"]
+    #     subset: []
+    # - age:
+    #     g: ["26", "15"]
+    #     subset: []
+    # - age:
+    #     g: ["28", "15"]
+    #     subset: []
+    # - age:
+    #     g: ["21", "18"]
+    #     subset: []
+    # - age:
+    #     g: ["26", "18"]
+    #     subset: []
+    # - age:
+    #     g: ["28", "18"]
+    #     subset: []
+    # - age:
+    #     g: ["26", "21"]
+    #     subset: []
+    # - age:
+    #     g: ["28", "21"]
+    #     subset: []
+    # - age:
+    #     g: ["28", "26"]
+    #     subset: []
+
+    # - age:
+    #     g: ["12", "3"]
+    #     subset: ["brain_region", "cc"]
+    # - age:
+    #     g: ["15", "3"]
+    #     subset: ["brain_region", "cc"]
+    # - age:
+    #     g: ["18", "3"]
+    #     subset: ["brain_region", "cc"]
+    # - age:
+    #     g: ["21", "3"]
+    #     subset: ["brain_region", "cc"]
+    # - age:
+    #     g: ["26", "3"]
+    #     subset: ["brain_region", "cc"]
+    # - age:
+    #     g: ["28", "3"]
+    #     subset: ["brain_region", "cc"]
+    # - age:
+    #     g: ["15", "12"]
+    #     subset: ["brain_region", "cc"]
+    # - age:
+    #     g: ["18", "12"]
+    #     subset: ["brain_region", "cc"]
+    # - age:
+    #     g: ["21", "12"]
+    #     subset: ["brain_region", "cc"]
+    # - age:
+    #     g: ["26", "12"]
+    #     subset: ["brain_region", "cc"]
+    # - age:
+    #     g: ["28", "12"]
+    #     subset: ["brain_region", "cc"]
+    # - age:
+    #     g: ["18", "15"]
+    #     subset: ["brain_region", "cc"]
+    # - age:
+    #     g: ["21", "15"]
+    #     subset: ["brain_region", "cc"]
+    # - age:
+    #     g: ["26", "15"]
+    #     subset: ["brain_region", "cc"]
+    # - age:
+    #     g: ["28", "15"]
+    #     subset: ["brain_region", "cc"]
+    # - age:
+    #     g: ["21", "18"]
+    #     subset: ["brain_region", "cc"]
+    # - age:
+    #     g: ["26", "18"]
+    #     subset: ["brain_region", "cc"]
+    # - age:
+    #     g: ["28", "18"]
+    #     subset: ["brain_region", "cc"]
+    # - age:
+    #     g: ["26", "21"]
+    #     subset: ["brain_region", "cc"]
+    # - age:
+    #     g: ["28", "21"]
+    #     subset: ["brain_region", "cc"]
+    # - age:
+    #     g: ["28", "26"]
+    #     subset: ["brain_region", "cc"]
+  
+    # - age:
+    #     g: ["12", "3"]
+    #     subset: ["brain_region", "cer"]
+    # - age:
+    #     g: ["15", "3"]
+    #     subset: ["brain_region", "cer"]
+    # - age:
+    #     g: ["18", "3"]
+    #     subset: ["brain_region", "cer"]
+    # - age:
+    #     g: ["21", "3"]
+    #     subset: ["brain_region", "cer"]
+    # - age:
+    #     g: ["26", "3"]
+    #     subset: ["brain_region", "cer"]
+    # - age:
+    #     g: ["28", "3"]
+    #     subset: ["brain_region", "cer"]
+    # - age:
+    #     g: ["15", "12"]
+    #     subset: ["brain_region", "cer"]
+    # - age:
+    #     g: ["18", "12"]
+    #     subset: ["brain_region", "cer"]
+    # - age:
+    #     g: ["21", "12"]
+    #     subset: ["brain_region", "cer"]
+    # - age:
+    #     g: ["26", "12"]
+    #     subset: ["brain_region", "cer"]
+    # - age:
+    #     g: ["28", "12"]
+    #     subset: ["brain_region", "cer"]
+    # - age:
+    #     g: ["18", "15"]
+    #     subset: ["brain_region", "cer"]
+    # - age:
+    #     g: ["21", "15"]
+    #     subset: ["brain_region", "cer"]
+    # - age:
+    #     g: ["26", "15"]
+    #     subset: ["brain_region", "cer"]
+    # - age:
+    #     g: ["28", "15"]
+    #     subset: ["brain_region", "cer"]
+    # - age:
+    #     g: ["21", "18"]
+    #     subset: ["brain_region", "cer"]
+    # - age:
+    #     g: ["26", "18"]
+    #     subset: ["brain_region", "cer"]
+    # - age:
+    #     g: ["28", "18"]
+    #     subset: ["brain_region", "cer"]
+    # - age:
+    #     g: ["26", "21"]
+    #     subset: ["brain_region", "cer"]
+    # - age:
+    #     g: ["28", "21"]
+    #     subset: ["brain_region", "cer"]
+    # - age:
+    #     g: ["28", "26"]
+    #     subset: ["brain_region", "cer"]
+
+    # - age:
+    #     g: ["12", "3"]
+    #     subset: ["brain_region", "cor"]
+    # - age:
+    #     g: ["15", "3"]
+    #     subset: ["brain_region", "cor"]
+    # - age:
+    #     g: ["18", "3"]
+    #     subset: ["brain_region", "cor"]
+    # - age:
+    #     g: ["21", "3"]
+    #     subset: ["brain_region", "cor"]
+    # - age:
+    #     g: ["26", "3"]
+    #     subset: ["brain_region", "cor"]
+    # - age:
+    #     g: ["28", "3"]
+    #     subset: ["brain_region", "cor"]
+    # - age:
+    #     g: ["15", "12"]
+    #     subset: ["brain_region", "cor"]
+    # - age:
+    #     g: ["18", "12"]
+    #     subset: ["brain_region", "cor"]
+    # - age:
+    #     g: ["21", "12"]
+    #     subset: ["brain_region", "cor"]
+    # - age:
+    #     g: ["26", "12"]
+    #     subset: ["brain_region", "cor"]
+    # - age:
+    #     g: ["28", "12"]
+    #     subset: ["brain_region", "cor"]
+    # - age:
+    #     g: ["18", "15"]
+    #     subset: ["brain_region", "cor"]
+    # - age:
+    #     g: ["21", "15"]
+    #     subset: ["brain_region", "cor"]
+    # - age:
+    #     g: ["26", "15"]
+    #     subset: ["brain_region", "cor"]
+    # - age:
+    #     g: ["28", "15"]
+    #     subset: ["brain_region", "cor"]
+    # - age:
+    #     g: ["21", "18"]
+    #     subset: ["brain_region", "cor"]
+    # - age:
+    #     g: ["26", "18"]
+    #     subset: ["brain_region", "cor"]
+    # - age:
+    #     g: ["28", "18"]
+    #     subset: ["brain_region", "cor"]
+    # - age:
+    #     g: ["26", "21"]
+    #     subset: ["brain_region", "cor"]
+    # - age:
+    #     g: ["28", "21"]
+    #     subset: ["brain_region", "cor"]
+    # - age:
+    #     g: ["28", "26"]
+    #     subset: ["brain_region", "cor"]
+
+    # - age:
+    #     g: ["12", "3"]
+    #     subset: ["brain_region", "cp"]
+    # - age:
+    #     g: ["15", "3"]
+    #     subset: ["brain_region", "cp"]
+    # - age:
+    #     g: ["18", "3"]
+    #     subset: ["brain_region", "cp"]
+    # - age:
+    #     g: ["21", "3"]
+    #     subset: ["brain_region", "cp"]
+    # - age:
+    #     g: ["26", "3"]
+    #     subset: ["brain_region", "cp"]
+    # - age:
+    #     g: ["28", "3"]
+    #     subset: ["brain_region", "cp"]
+    # - age:
+    #     g: ["15", "12"]
+    #     subset: ["brain_region", "cp"]
+    # - age:
+    #     g: ["18", "12"]
+    #     subset: ["brain_region", "cp"]
+    # - age:
+    #     g: ["21", "12"]
+    #     subset: ["brain_region", "cp"]
+    # - age:
+    #     g: ["26", "12"]
+    #     subset: ["brain_region", "cp"]
+    # - age:
+    #     g: ["28", "12"]
+    #     subset: ["brain_region", "cp"]
+    # - age:
+    #     g: ["18", "15"]
+    #     subset: ["brain_region", "cp"]
+    # - age:
+    #     g: ["21", "15"]
+    #     subset: ["brain_region", "cp"]
+    # - age:
+    #     g: ["26", "15"]
+    #     subset: ["brain_region", "cp"]
+    # - age:
+    #     g: ["28", "15"]
+    #     subset: ["brain_region", "cp"]
+    # - age:
+    #     g: ["21", "18"]
+    #     subset: ["brain_region", "cp"]
+    # - age:
+    #     g: ["26", "18"]
+    #     subset: ["brain_region", "cp"]
+    # - age:
+    #     g: ["28", "18"]
+    #     subset: ["brain_region", "cp"]
+    # - age:
+    #     g: ["26", "21"]
+    #     subset: ["brain_region", "cp"]
+    # - age:
+    #     g: ["28", "21"]
+    #     subset: ["brain_region", "cp"]
+    # - age:
+    #     g: ["28", "26"]
+    #     subset: ["brain_region", "cp"]
+
+    # - age:
+    #     g: ["12", "3"]
+    #     subset: ["brain_region", "ent"]
+    # - age:
+    #     g: ["15", "3"]
+    #     subset: ["brain_region", "ent"]
+    # - age:
+    #     g: ["18", "3"]
+    #     subset: ["brain_region", "ent"]
+    # - age:
+    #     g: ["21", "3"]
+    #     subset: ["brain_region", "ent"]
+    # - age:
+    #     g: ["26", "3"]
+    #     subset: ["brain_region", "ent"]
+    # - age:
+    #     g: ["28", "3"]
+    #     subset: ["brain_region", "ent"]
+    # - age:
+    #     g: ["15", "12"]
+    #     subset: ["brain_region", "ent"]
+    # - age:
+    #     g: ["18", "12"]
+    #     subset: ["brain_region", "ent"]
+    # - age:
+    #     g: ["21", "12"]
+    #     subset: ["brain_region", "ent"]
+    # - age:
+    #     g: ["26", "12"]
+    #     subset: ["brain_region", "ent"]
+    # - age:
+    #     g: ["28", "12"]
+    #     subset: ["brain_region", "ent"]
+    # - age:
+    #     g: ["18", "15"]
+    #     subset: ["brain_region", "ent"]
+    # - age:
+    #     g: ["21", "15"]
+    #     subset: ["brain_region", "ent"]
+    # - age:
+    #     g: ["26", "15"]
+    #     subset: ["brain_region", "ent"]
+    # - age:
+    #     g: ["28", "15"]
+    #     subset: ["brain_region", "ent"]
+    # - age:
+    #     g: ["21", "18"]
+    #     subset: ["brain_region", "ent"]
+    # - age:
+    #     g: ["26", "18"]
+    #     subset: ["brain_region", "ent"]
+    # - age:
+    #     g: ["28", "18"]
+    #     subset: ["brain_region", "ent"]
+    # - age:
+    #     g: ["26", "21"]
+    #     subset: ["brain_region", "ent"]
+    # - age:
+    #     g: ["28", "21"]
+    #     subset: ["brain_region", "ent"]
+    # - age:
+    #     g: ["28", "26"]
+    #     subset: ["brain_region", "ent"]
+
+    # - age:
+    #     g: ["12", "3"]
+    #     subset: ["brain_region", "hi"]
+    # - age:
+    #     g: ["15", "3"]
+    #     subset: ["brain_region", "hi"]
+    # - age:
+    #     g: ["18", "3"]
+    #     subset: ["brain_region", "hi"]
+    # - age:
+    #     g: ["21", "3"]
+    #     subset: ["brain_region", "hi"]
+    # - age:
+    #     g: ["26", "3"]
+    #     subset: ["brain_region", "hi"]
+    # - age:
+    #     g: ["28", "3"]
+    #     subset: ["brain_region", "hi"]
+    # - age:
+    #     g: ["15", "12"]
+    #     subset: ["brain_region", "hi"]
+    # - age:
+    #     g: ["18", "12"]
+    #     subset: ["brain_region", "hi"]
+    # - age:
+    #     g: ["21", "12"]
+    #     subset: ["brain_region", "hi"]
+    # - age:
+    #     g: ["26", "12"]
+    #     subset: ["brain_region", "hi"]
+    # - age:
+    #     g: ["28", "12"]
+    #     subset: ["brain_region", "hi"]
+    # - age:
+    #     g: ["18", "15"]
+    #     subset: ["brain_region", "hi"]
+    # - age:
+    #     g: ["21", "15"]
+    #     subset: ["brain_region", "hi"]
+    # - age:
+    #     g: ["26", "15"]
+    #     subset: ["brain_region", "hi"]
+    # - age:
+    #     g: ["28", "15"]
+    #     subset: ["brain_region", "hi"]
+    # - age:
+    #     g: ["21", "18"]
+    #     subset: ["brain_region", "hi"]
+    # - age:
+    #     g: ["26", "18"]
+    #     subset: ["brain_region", "hi"]
+    # - age:
+    #     g: ["28", "18"]
+    #     subset: ["brain_region", "hi"]
+    # - age:
+    #     g: ["26", "21"]
+    #     subset: ["brain_region", "hi"]
+    # - age:
+    #     g: ["28", "21"]
+    #     subset: ["brain_region", "hi"]
+    # - age:
+    #     g: ["28", "26"]
+    #     subset: ["brain_region", "hi"]
+
+    # - age:
+    #     g: ["12", "3"]
+    #     subset: ["brain_region", "hi2"]
+    # - age:
+    #     g: ["15", "3"]
+    #     subset: ["brain_region", "hi2"]
+    # - age:
+    #     g: ["18", "3"]
+    #     subset: ["brain_region", "hi2"]
+    # - age:
+    #     g: ["21", "3"]
+    #     subset: ["brain_region", "hi2"]
+    # - age:
+    #     g: ["26", "3"]
+    #     subset: ["brain_region", "hi2"]
+    # - age:
+    #     g: ["28", "3"]
+    #     subset: ["brain_region", "hi2"]
+    # - age:
+    #     g: ["15", "12"]
+    #     subset: ["brain_region", "hi2"]
+    # - age:
+    #     g: ["18", "12"]
+    #     subset: ["brain_region", "hi2"]
+    # - age:
+    #     g: ["21", "12"]
+    #     subset: ["brain_region", "hi2"]
+    # - age:
+    #     g: ["26", "12"]
+    #     subset: ["brain_region", "hi2"]
+    # - age:
+    #     g: ["28", "12"]
+    #     subset: ["brain_region", "hi2"]
+    # - age:
+    #     g: ["18", "15"]
+    #     subset: ["brain_region", "hi2"]
+    # - age:
+    #     g: ["21", "15"]
+    #     subset: ["brain_region", "hi2"]
+    # - age:
+    #     g: ["26", "15"]
+    #     subset: ["brain_region", "hi2"]
+    # - age:
+    #     g: ["28", "15"]
+    #     subset: ["brain_region", "hi2"]
+    # - age:
+    #     g: ["21", "18"]
+    #     subset: ["brain_region", "hi2"]
+    # - age:
+    #     g: ["26", "18"]
+    #     subset: ["brain_region", "hi2"]
+    # - age:
+    #     g: ["28", "18"]
+    #     subset: ["brain_region", "hi2"]
+    # - age:
+    #     g: ["26", "21"]
+    #     subset: ["brain_region", "hi2"]
+    # - age:
+    #     g: ["28", "21"]
+    #     subset: ["brain_region", "hi2"]
+    # - age:
+    #     g: ["28", "26"]
+    #     subset: ["brain_region", "hi2"]
+
+    # - age:
+    #     g: ["12", "3"]
+    #     subset: ["brain_region", "hy"]
+    # - age:
+    #     g: ["15", "3"]
+    #     subset: ["brain_region", "hy"]
+    # - age:
+    #     g: ["18", "3"]
+    #     subset: ["brain_region", "hy"]
+    # - age:
+    #     g: ["21", "3"]
+    #     subset: ["brain_region", "hy"]
+    # - age:
+    #     g: ["26", "3"]
+    #     subset: ["brain_region", "hy"]
+    # - age:
+    #     g: ["28", "3"]
+    #     subset: ["brain_region", "hy"]
+    # - age:
+    #     g: ["15", "12"]
+    #     subset: ["brain_region", "hy"]
+    # - age:
+    #     g: ["18", "12"]
+    #     subset: ["brain_region", "hy"]
+    # - age:
+    #     g: ["21", "12"]
+    #     subset: ["brain_region", "hy"]
+    # - age:
+    #     g: ["26", "12"]
+    #     subset: ["brain_region", "hy"]
+    # - age:
+    #     g: ["28", "12"]
+    #     subset: ["brain_region", "hy"]
+    # - age:
+    #     g: ["18", "15"]
+    #     subset: ["brain_region", "hy"]
+    # - age:
+    #     g: ["21", "15"]
+    #     subset: ["brain_region", "hy"]
+    # - age:
+    #     g: ["26", "15"]
+    #     subset: ["brain_region", "hy"]
+    # - age:
+    #     g: ["28", "15"]
+    #     subset: ["brain_region", "hy"]
+    # - age:
+    #     g: ["21", "18"]
+    #     subset: ["brain_region", "hy"]
+    # - age:
+    #     g: ["26", "18"]
+    #     subset: ["brain_region", "hy"]
+    # - age:
+    #     g: ["28", "18"]
+    #     subset: ["brain_region", "hy"]
+    # - age:
+    #     g: ["26", "21"]
+    #     subset: ["brain_region", "hy"]
+    # - age:
+    #     g: ["28", "21"]
+    #     subset: ["brain_region", "hy"]
+    # - age:
+    #     g: ["28", "26"]
+    #     subset: ["brain_region", "hy"]
+
+    # - age:
+    #     g: ["12", "3"]
+    #     subset: ["brain_region", "med"]
+    # - age:
+    #     g: ["15", "3"]
+    #     subset: ["brain_region", "med"]
+    # - age:
+    #     g: ["18", "3"]
+    #     subset: ["brain_region", "med"]
+    # - age:
+    #     g: ["21", "3"]
+    #     subset: ["brain_region", "med"]
+    # - age:
+    #     g: ["26", "3"]
+    #     subset: ["brain_region", "med"]
+    # - age:
+    #     g: ["28", "3"]
+    #     subset: ["brain_region", "med"]
+    # - age:
+    #     g: ["15", "12"]
+    #     subset: ["brain_region", "med"]
+    # - age:
+    #     g: ["18", "12"]
+    #     subset: ["brain_region", "med"]
+    # - age:
+    #     g: ["21", "12"]
+    #     subset: ["brain_region", "med"]
+    # - age:
+    #     g: ["26", "12"]
+    #     subset: ["brain_region", "med"]
+    # - age:
+    #     g: ["28", "12"]
+    #     subset: ["brain_region", "med"]
+    # - age:
+    #     g: ["18", "15"]
+    #     subset: ["brain_region", "med"]
+    # - age:
+    #     g: ["21", "15"]
+    #     subset: ["brain_region", "med"]
+    # - age:
+    #     g: ["26", "15"]
+    #     subset: ["brain_region", "med"]
+    # - age:
+    #     g: ["28", "15"]
+    #     subset: ["brain_region", "med"]
+    # - age:
+    #     g: ["21", "18"]
+    #     subset: ["brain_region", "med"]
+    # - age:
+    #     g: ["26", "18"]
+    #     subset: ["brain_region", "med"]
+    # - age:
+    #     g: ["28", "18"]
+    #     subset: ["brain_region", "med"]
+    # - age:
+    #     g: ["26", "21"]
+    #     subset: ["brain_region", "med"]
+    # - age:
+    #     g: ["28", "21"]
+    #     subset: ["brain_region", "med"]
+    # - age:
+    #     g: ["28", "26"]
+    #     subset: ["brain_region", "med"]
+
+    # - age:
+    #     g: ["12", "3"]
+    #     subset: ["brain_region", "olf"]
+    # - age:
+    #     g: ["15", "3"]
+    #     subset: ["brain_region", "olf"]
+    # - age:
+    #     g: ["18", "3"]
+    #     subset: ["brain_region", "olf"]
+    # - age:
+    #     g: ["21", "3"]
+    #     subset: ["brain_region", "olf"]
+    # - age:
+    #     g: ["26", "3"]
+    #     subset: ["brain_region", "olf"]
+    # - age:
+    #     g: ["28", "3"]
+    #     subset: ["brain_region", "olf"]
+    # - age:
+    #     g: ["15", "12"]
+    #     subset: ["brain_region", "olf"]
+    # - age:
+    #     g: ["18", "12"]
+    #     subset: ["brain_region", "olf"]
+    # - age:
+    #     g: ["21", "12"]
+    #     subset: ["brain_region", "olf"]
+    # - age:
+    #     g: ["26", "12"]
+    #     subset: ["brain_region", "olf"]
+    # - age:
+    #     g: ["28", "12"]
+    #     subset: ["brain_region", "olf"]
+    # - age:
+    #     g: ["18", "15"]
+    #     subset: ["brain_region", "olf"]
+    # - age:
+    #     g: ["21", "15"]
+    #     subset: ["brain_region", "olf"]
+    # - age:
+    #     g: ["26", "15"]
+    #     subset: ["brain_region", "olf"]
+    # - age:
+    #     g: ["28", "15"]
+    #     subset: ["brain_region", "olf"]
+    # - age:
+    #     g: ["21", "18"]
+    #     subset: ["brain_region", "olf"]
+    # - age:
+    #     g: ["26", "18"]
+    #     subset: ["brain_region", "olf"]
+    # - age:
+    #     g: ["28", "18"]
+    #     subset: ["brain_region", "olf"]
+    # - age:
+    #     g: ["26", "21"]
+    #     subset: ["brain_region", "olf"]
+    # - age:
+    #     g: ["28", "21"]
+    #     subset: ["brain_region", "olf"]
+    # - age:
+    #     g: ["28", "26"]
+    #     subset: ["brain_region", "olf"]
+
+    # - age:
+    #     g: ["12", "3"]
+    #     subset: ["brain_region", "plx"]
+    # - age:
+    #     g: ["15", "3"]
+    #     subset: ["brain_region", "plx"]
+    # - age:
+    #     g: ["18", "3"]
+    #     subset: ["brain_region", "plx"]
+    # - age:
+    #     g: ["21", "3"]
+    #     subset: ["brain_region", "plx"]
+    # - age:
+    #     g: ["26", "3"]
+    #     subset: ["brain_region", "plx"]
+    # - age:
+    #     g: ["28", "3"]
+    #     subset: ["brain_region", "plx"]
+    # - age:
+    #     g: ["15", "12"]
+    #     subset: ["brain_region", "plx"]
+    # - age:
+    #     g: ["18", "12"]
+    #     subset: ["brain_region", "plx"]
+    # - age:
+    #     g: ["21", "12"]
+    #     subset: ["brain_region", "plx"]
+    # - age:
+    #     g: ["26", "12"]
+    #     subset: ["brain_region", "plx"]
+    # - age:
+    #     g: ["28", "12"]
+    #     subset: ["brain_region", "plx"]
+    # - age:
+    #     g: ["18", "15"]
+    #     subset: ["brain_region", "plx"]
+    # - age:
+    #     g: ["21", "15"]
+    #     subset: ["brain_region", "plx"]
+    # - age:
+    #     g: ["26", "15"]
+    #     subset: ["brain_region", "plx"]
+    # - age:
+    #     g: ["28", "15"]
+    #     subset: ["brain_region", "plx"]
+    # - age:
+    #     g: ["21", "18"]
+    #     subset: ["brain_region", "plx"]
+    # - age:
+    #     g: ["26", "18"]
+    #     subset: ["brain_region", "plx"]
+    # - age:
+    #     g: ["28", "18"]
+    #     subset: ["brain_region", "plx"]
+    # - age:
+    #     g: ["26", "21"]
+    #     subset: ["brain_region", "plx"]
+    # - age:
+    #     g: ["28", "21"]
+    #     subset: ["brain_region", "plx"]
+    # - age:
+    #     g: ["28", "26"]
+    #     subset: ["brain_region", "plx"]
+
+    # - age:
+    #     g: ["12", "3"]
+    #     subset: ["brain_region", "pon"]
+    # - age:
+    #     g: ["15", "3"]
+    #     subset: ["brain_region", "pon"]
+    # - age:
+    #     g: ["18", "3"]
+    #     subset: ["brain_region", "pon"]
+    # - age:
+    #     g: ["21", "3"]
+    #     subset: ["brain_region", "pon"]
+    # - age:
+    #     g: ["26", "3"]
+    #     subset: ["brain_region", "pon"]
+    # - age:
+    #     g: ["28", "3"]
+    #     subset: ["brain_region", "pon"]
+    # - age:
+    #     g: ["15", "12"]
+    #     subset: ["brain_region", "pon"]
+    # - age:
+    #     g: ["18", "12"]
+    #     subset: ["brain_region", "pon"]
+    # - age:
+    #     g: ["21", "12"]
+    #     subset: ["brain_region", "pon"]
+    # - age:
+    #     g: ["26", "12"]
+    #     subset: ["brain_region", "pon"]
+    # - age:
+    #     g: ["28", "12"]
+    #     subset: ["brain_region", "pon"]
+    # - age:
+    #     g: ["18", "15"]
+    #     subset: ["brain_region", "pon"]
+    # - age:
+    #     g: ["21", "15"]
+    #     subset: ["brain_region", "pon"]
+    # - age:
+    #     g: ["26", "15"]
+    #     subset: ["brain_region", "pon"]
+    # - age:
+    #     g: ["28", "15"]
+    #     subset: ["brain_region", "pon"]
+    # - age:
+    #     g: ["21", "18"]
+    #     subset: ["brain_region", "pon"]
+    # - age:
+    #     g: ["26", "18"]
+    #     subset: ["brain_region", "pon"]
+    # - age:
+    #     g: ["28", "18"]
+    #     subset: ["brain_region", "pon"]
+    # - age:
+    #     g: ["26", "21"]
+    #     subset: ["brain_region", "pon"]
+    # - age:
+    #     g: ["28", "21"]
+    #     subset: ["brain_region", "pon"]
+    # - age:
+    #     g: ["28", "26"]
+    #     subset: ["brain_region", "pon"]
+
+    # - age:
+    #     g: ["12", "3"]
+    #     subset: ["brain_region", "svz"]
+    # - age:
+    #     g: ["15", "3"]
+    #     subset: ["brain_region", "svz"]
+    # - age:
+    #     g: ["18", "3"]
+    #     subset: ["brain_region", "svz"]
+    # - age:
+    #     g: ["21", "3"]
+    #     subset: ["brain_region", "svz"]
+    # - age:
+    #     g: ["26", "3"]
+    #     subset: ["brain_region", "svz"]
+    # - age:
+    #     g: ["28", "3"]
+    #     subset: ["brain_region", "svz"]
+    # - age:
+    #     g: ["15", "12"]
+    #     subset: ["brain_region", "svz"]
+    # - age:
+    #     g: ["18", "12"]
+    #     subset: ["brain_region", "svz"]
+    # - age:
+    #     g: ["21", "12"]
+    #     subset: ["brain_region", "svz"]
+    # - age:
+    #     g: ["26", "12"]
+    #     subset: ["brain_region", "svz"]
+    # - age:
+    #     g: ["28", "12"]
+    #     subset: ["brain_region", "svz"]
+    # - age:
+    #     g: ["18", "15"]
+    #     subset: ["brain_region", "svz"]
+    # - age:
+    #     g: ["21", "15"]
+    #     subset: ["brain_region", "svz"]
+    # - age:
+    #     g: ["26", "15"]
+    #     subset: ["brain_region", "svz"]
+    # - age:
+    #     g: ["28", "15"]
+    #     subset: ["brain_region", "svz"]
+    # - age:
+    #     g: ["21", "18"]
+    #     subset: ["brain_region", "svz"]
+    # - age:
+    #     g: ["26", "18"]
+    #     subset: ["brain_region", "svz"]
+    # - age:
+    #     g: ["28", "18"]
+    #     subset: ["brain_region", "svz"]
+    # - age:
+    #     g: ["26", "21"]
+    #     subset: ["brain_region", "svz"]
+    # - age:
+    #     g: ["28", "21"]
+    #     subset: ["brain_region", "svz"]
+    # - age:
+    #     g: ["28", "26"]
+    #     subset: ["brain_region", "svz"]
+
+    # - age:
+    #     g: ["12", "3"]
+    #     subset: ["brain_region", "th"]
+    # - age:
+    #     g: ["15", "3"]
+    #     subset: ["brain_region", "th"]
+    # - age:
+    #     g: ["18", "3"]
+    #     subset: ["brain_region", "th"]
+    # - age:
+    #     g: ["21", "3"]
+    #     subset: ["brain_region", "th"]
+    # - age:
+    #     g: ["26", "3"]
+    #     subset: ["brain_region", "th"]
+    # - age:
+    #     g: ["28", "3"]
+    #     subset: ["brain_region", "th"]
+    # - age:
+    #     g: ["15", "12"]
+    #     subset: ["brain_region", "th"]
+    # - age:
+    #     g: ["18", "12"]
+    #     subset: ["brain_region", "th"]
+    # - age:
+    #     g: ["21", "12"]
+    #     subset: ["brain_region", "th"]
+    # - age:
+    #     g: ["26", "12"]
+    #     subset: ["brain_region", "th"]
+    # - age:
+    #     g: ["28", "12"]
+    #     subset: ["brain_region", "th"]
+    # - age:
+    #     g: ["18", "15"]
+    #     subset: ["brain_region", "th"]
+    # - age:
+    #     g: ["21", "15"]
+    #     subset: ["brain_region", "th"]
+    # - age:
+    #     g: ["26", "15"]
+    #     subset: ["brain_region", "th"]
+    # - age:
+    #     g: ["28", "15"]
+    #     subset: ["brain_region", "th"]
+    # - age:
+    #     g: ["21", "18"]
+    #     subset: ["brain_region", "th"]
+    # - age:
+    #     g: ["26", "18"]
+    #     subset: ["brain_region", "th"]
+    # - age:
+    #     g: ["28", "18"]
+    #     subset: ["brain_region", "th"]
+    # - age:
+    #     g: ["26", "21"]
+    #     subset: ["brain_region", "th"]
+    # - age:
+    #     g: ["28", "21"]
+    #     subset: ["brain_region", "th"]
+    # - age:
+    #     g: ["28", "26"]
+    #     subset: ["brain_region", "th"]
+
+    # - age:
+    #     g: ["12", "3"]
+    #     subset: ["brain_region", "vis"]
+    # - age:
+    #     g: ["15", "3"]
+    #     subset: ["brain_region", "vis"]
+    # - age:
+    #     g: ["18", "3"]
+    #     subset: ["brain_region", "vis"]
+    # - age:
+    #     g: ["21", "3"]
+    #     subset: ["brain_region", "vis"]
+    # - age:
+    #     g: ["26", "3"]
+    #     subset: ["brain_region", "vis"]
+    # - age:
+    #     g: ["28", "3"]
+    #     subset: ["brain_region", "vis"]
+    # - age:
+    #     g: ["15", "12"]
+    #     subset: ["brain_region", "vis"]
+    # - age:
+    #     g: ["18", "12"]
+    #     subset: ["brain_region", "vis"]
+    # - age:
+    #     g: ["21", "12"]
+    #     subset: ["brain_region", "vis"]
+    # - age:
+    #     g: ["26", "12"]
+    #     subset: ["brain_region", "vis"]
+    # - age:
+    #     g: ["28", "12"]
+    #     subset: ["brain_region", "vis"]
+    # - age:
+    #     g: ["18", "15"]
+    #     subset: ["brain_region", "vis"]
+    # - age:
+    #     g: ["21", "15"]
+    #     subset: ["brain_region", "vis"]
+    # - age:
+    #     g: ["26", "15"]
+    #     subset: ["brain_region", "vis"]
+    # - age:
+    #     g: ["28", "15"]
+    #     subset: ["brain_region", "vis"]
+    # - age:
+    #     g: ["21", "18"]
+    #     subset: ["brain_region", "vis"]
+    # - age:
+    #     g: ["26", "18"]
+    #     subset: ["brain_region", "vis"]
+    # - age:
+    #     g: ["28", "18"]
+    #     subset: ["brain_region", "vis"]
+    # - age:
+    #     g: ["26", "21"]
+    #     subset: ["brain_region", "vis"]
+    # - age:
+    #     g: ["28", "21"]
+    #     subset: ["brain_region", "vis"]
+    # - age:
+    #     g: ["28", "26"]
+    #     subset: ["brain_region", "vis"]
+
+  comparisons_age_without_age_26m_28m:
+    # - age:
+    #     g: ["12", "3"]
+    #     subset: []
+    # - age:
+    #     g: ["15", "3"]
+    #     subset: []
+    # - age:
+    #     g: ["18", "3"]
+    #     subset: []
+    # - age:
+    #     g: ["21", "3"]
+    #     subset: []
+    # - age:
+    #     g: ["15", "12"]
+    #     subset: []
+    # - age:
+    #     g: ["18", "12"]
+    #     subset: []
+    # - age:
+    #     g: ["21", "12"]
+    #     subset: []
+    # - age:
+    #     g: ["18", "15"]
+    #     subset: []
+    # - age:
+    #     g: ["21", "15"]
+    #     subset: []
+    # - age:
+    #     g: ["21", "18"]
+    #     subset: []
+
+    # - age:
+    #     g: ["12", "3"]
+    #     subset: ["brain_region", "cc"]
+    # - age:
+    #     g: ["15", "3"]
+    #     subset: ["brain_region", "cc"]
+    # - age:
+    #     g: ["18", "3"]
+    #     subset: ["brain_region", "cc"]
+    # - age:
+    #     g: ["21", "3"]
+    #     subset: ["brain_region", "cc"]
+    # - age:
+    #     g: ["15", "12"]
+    #     subset: ["brain_region", "cc"]
+    # - age:
+    #     g: ["18", "12"]
+    #     subset: ["brain_region", "cc"]
+    # - age:
+    #     g: ["21", "12"]
+    #     subset: ["brain_region", "cc"]
+    # - age:
+    #     g: ["18", "15"]
+    #     subset: ["brain_region", "cc"]
+    # - age:
+    #     g: ["21", "15"]
+    #     subset: ["brain_region", "cc"]
+    # - age:
+    #     g: ["21", "18"]
+    #     subset: ["brain_region", "cc"]
+  
+    # - age:
+    #     g: ["12", "3"]
+    #     subset: ["brain_region", "cer"]
+    # - age:
+    #     g: ["15", "3"]
+    #     subset: ["brain_region", "cer"]
+    # - age:
+    #     g: ["18", "3"]
+    #     subset: ["brain_region", "cer"]
+    # - age:
+    #     g: ["21", "3"]
+    #     subset: ["brain_region", "cer"]
+    # - age:
+    #     g: ["15", "12"]
+    #     subset: ["brain_region", "cer"]
+    # - age:
+    #     g: ["18", "12"]
+    #     subset: ["brain_region", "cer"]
+    # - age:
+    #     g: ["21", "12"]
+    #     subset: ["brain_region", "cer"]
+    # - age:
+    #     g: ["18", "15"]
+    #     subset: ["brain_region", "cer"]
+    # - age:
+    #     g: ["21", "15"]
+    #     subset: ["brain_region", "cer"]
+    # - age:
+    #     g: ["21", "18"]
+    #     subset: ["brain_region", "cer"]
+
+    # - age:
+    #     g: ["12", "3"]
+    #     subset: ["brain_region", "cor"]
+    # - age:
+    #     g: ["15", "3"]
+    #     subset: ["brain_region", "cor"]
+    # - age:
+    #     g: ["18", "3"]
+    #     subset: ["brain_region", "cor"]
+    # - age:
+    #     g: ["21", "3"]
+    #     subset: ["brain_region", "cor"]
+    # - age:
+    #     g: ["15", "12"]
+    #     subset: ["brain_region", "cor"]
+    # - age:
+    #     g: ["18", "12"]
+    #     subset: ["brain_region", "cor"]
+    # - age:
+    #     g: ["21", "12"]
+    #     subset: ["brain_region", "cor"]
+    # - age:
+    #     g: ["18", "15"]
+    #     subset: ["brain_region", "cor"]
+    # - age:
+    #     g: ["21", "15"]
+    #     subset: ["brain_region", "cor"]
+    # - age:
+    #     g: ["21", "18"]
+    #     subset: ["brain_region", "cor"]
+
+    # - age:
+    #     g: ["12", "3"]
+    #     subset: ["brain_region", "cp"]
+    # - age:
+    #     g: ["15", "3"]
+    #     subset: ["brain_region", "cp"]
+    # - age:
+    #     g: ["18", "3"]
+    #     subset: ["brain_region", "cp"]
+    # - age:
+    #     g: ["21", "3"]
+    #     subset: ["brain_region", "cp"]
+    # - age:
+    #     g: ["15", "12"]
+    #     subset: ["brain_region", "cp"]
+    # - age:
+    #     g: ["18", "12"]
+    #     subset: ["brain_region", "cp"]
+    # - age:
+    #     g: ["21", "12"]
+    #     subset: ["brain_region", "cp"]
+    # - age:
+    #     g: ["18", "15"]
+    #     subset: ["brain_region", "cp"]
+    # - age:
+    #     g: ["21", "15"]
+    #     subset: ["brain_region", "cp"]
+    # - age:
+    #     g: ["21", "18"]
+    #     subset: ["brain_region", "cp"]
+
+    # - age:
+    #     g: ["12", "3"]
+    #     subset: ["brain_region", "ent"]
+    # - age:
+    #     g: ["15", "3"]
+    #     subset: ["brain_region", "ent"]
+    # - age:
+    #     g: ["18", "3"]
+    #     subset: ["brain_region", "ent"]
+    # - age:
+    #     g: ["21", "3"]
+    #     subset: ["brain_region", "ent"]
+    # - age:
+    #     g: ["15", "12"]
+    #     subset: ["brain_region", "ent"]
+    # - age:
+    #     g: ["18", "12"]
+    #     subset: ["brain_region", "ent"]
+    # - age:
+    #     g: ["21", "12"]
+    #     subset: ["brain_region", "ent"]
+    # - age:
+    #     g: ["18", "15"]
+    #     subset: ["brain_region", "ent"]
+    # - age:
+    #     g: ["21", "15"]
+    #     subset: ["brain_region", "ent"]
+    # - age:
+    #     g: ["21", "18"]
+    #     subset: ["brain_region", "ent"]
+
+    # - age:
+    #     g: ["12", "3"]
+    #     subset: ["brain_region", "hi"]
+    # - age:
+    #     g: ["15", "3"]
+    #     subset: ["brain_region", "hi"]
+    # - age:
+    #     g: ["18", "3"]
+    #     subset: ["brain_region", "hi"]
+    # - age:
+    #     g: ["21", "3"]
+    #     subset: ["brain_region", "hi"]
+    # - age:
+    #     g: ["15", "12"]
+    #     subset: ["brain_region", "hi"]
+    # - age:
+    #     g: ["18", "12"]
+    #     subset: ["brain_region", "hi"]
+    # - age:
+    #     g: ["21", "12"]
+    #     subset: ["brain_region", "hi"]
+    # - age:
+    #     g: ["18", "15"]
+    #     subset: ["brain_region", "hi"]
+    # - age:
+    #     g: ["21", "15"]
+    #     subset: ["brain_region", "hi"]
+    # - age:
+    #     g: ["21", "18"]
+    #     subset: ["brain_region", "hi"]
+
+    # - age:
+    #     g: ["12", "3"]
+    #     subset: ["brain_region", "hi2"]
+    # - age:
+    #     g: ["15", "3"]
+    #     subset: ["brain_region", "hi2"]
+    # - age:
+    #     g: ["18", "3"]
+    #     subset: ["brain_region", "hi2"]
+    # - age:
+    #     g: ["21", "3"]
+    #     subset: ["brain_region", "hi2"]
+    # - age:
+    #     g: ["15", "12"]
+    #     subset: ["brain_region", "hi2"]
+    # - age:
+    #     g: ["18", "12"]
+    #     subset: ["brain_region", "hi2"]
+    # - age:
+    #     g: ["21", "12"]
+    #     subset: ["brain_region", "hi2"]
+    # - age:
+    #     g: ["18", "15"]
+    #     subset: ["brain_region", "hi2"]
+    # - age:
+    #     g: ["21", "15"]
+    #     subset: ["brain_region", "hi2"]
+    # - age:
+    #     g: ["21", "18"]
+    #     subset: ["brain_region", "hi2"]
+
+    # - age:
+    #     g: ["12", "3"]
+    #     subset: ["brain_region", "hy"]
+    # - age:
+    #     g: ["15", "3"]
+    #     subset: ["brain_region", "hy"]
+    # - age:
+    #     g: ["18", "3"]
+    #     subset: ["brain_region", "hy"]
+    # - age:
+    #     g: ["21", "3"]
+    #     subset: ["brain_region", "hy"]
+    # - age:
+    #     g: ["15", "12"]
+    #     subset: ["brain_region", "hy"]
+    # - age:
+    #     g: ["18", "12"]
+    #     subset: ["brain_region", "hy"]
+    # - age:
+    #     g: ["21", "12"]
+    #     subset: ["brain_region", "hy"]
+    # - age:
+    #     g: ["18", "15"]
+    #     subset: ["brain_region", "hy"]
+    # - age:
+    #     g: ["21", "15"]
+    #     subset: ["brain_region", "hy"]
+    # - age:
+    #     g: ["21", "18"]
+    #     subset: ["brain_region", "hy"]
+
+    # - age:
+    #     g: ["12", "3"]
+    #     subset: ["brain_region", "med"]
+    # - age:
+    #     g: ["15", "3"]
+    #     subset: ["brain_region", "med"]
+    # - age:
+    #     g: ["18", "3"]
+    #     subset: ["brain_region", "med"]
+    # - age:
+    #     g: ["21", "3"]
+    #     subset: ["brain_region", "med"]
+    # - age:
+    #     g: ["15", "12"]
+    #     subset: ["brain_region", "med"]
+    # - age:
+    #     g: ["18", "12"]
+    #     subset: ["brain_region", "med"]
+    # - age:
+    #     g: ["21", "12"]
+    #     subset: ["brain_region", "med"]
+    # - age:
+    #     g: ["18", "15"]
+    #     subset: ["brain_region", "med"]
+    # - age:
+    #     g: ["21", "15"]
+    #     subset: ["brain_region", "med"]
+    # - age:
+    #     g: ["21", "18"]
+    #     subset: ["brain_region", "med"]
+
+    # - age:
+    #     g: ["12", "3"]
+    #     subset: ["brain_region", "olf"]
+    # - age:
+    #     g: ["15", "3"]
+    #     subset: ["brain_region", "olf"]
+    # - age:
+    #     g: ["18", "3"]
+    #     subset: ["brain_region", "olf"]
+    # - age:
+    #     g: ["21", "3"]
+    #     subset: ["brain_region", "olf"]
+    # - age:
+    #     g: ["15", "12"]
+    #     subset: ["brain_region", "olf"]
+    # - age:
+    #     g: ["18", "12"]
+    #     subset: ["brain_region", "olf"]
+    # - age:
+    #     g: ["21", "12"]
+    #     subset: ["brain_region", "olf"]
+    # - age:
+    #     g: ["18", "15"]
+    #     subset: ["brain_region", "olf"]
+    # - age:
+    #     g: ["21", "15"]
+    #     subset: ["brain_region", "olf"]
+    # - age:
+    #     g: ["21", "18"]
+    #     subset: ["brain_region", "olf"]
+
+    # - age:
+    #     g: ["12", "3"]
+    #     subset: ["brain_region", "plx"]
+    # - age:
+    #     g: ["15", "3"]
+    #     subset: ["brain_region", "plx"]
+    # - age:
+    #     g: ["18", "3"]
+    #     subset: ["brain_region", "plx"]
+    # - age:
+    #     g: ["21", "3"]
+    #     subset: ["brain_region", "plx"]
+    # - age:
+    #     g: ["15", "12"]
+    #     subset: ["brain_region", "plx"]
+    # - age:
+    #     g: ["18", "12"]
+    #     subset: ["brain_region", "plx"]
+    # - age:
+    #     g: ["21", "12"]
+    #     subset: ["brain_region", "plx"]
+    # - age:
+    #     g: ["18", "15"]
+    #     subset: ["brain_region", "plx"]
+    # - age:
+    #     g: ["21", "15"]
+    #     subset: ["brain_region", "plx"]
+    # - age:
+    #     g: ["21", "18"]
+    #     subset: ["brain_region", "plx"]
+
+    # - age:
+    #     g: ["12", "3"]
+    #     subset: ["brain_region", "pon"]
+    # - age:
+    #     g: ["15", "3"]
+    #     subset: ["brain_region", "pon"]
+    # - age:
+    #     g: ["18", "3"]
+    #     subset: ["brain_region", "pon"]
+    # - age:
+    #     g: ["21", "3"]
+    #     subset: ["brain_region", "pon"]
+    # - age:
+    #     g: ["15", "12"]
+    #     subset: ["brain_region", "pon"]
+    # - age:
+    #     g: ["18", "12"]
+    #     subset: ["brain_region", "pon"]
+    # - age:
+    #     g: ["21", "12"]
+    #     subset: ["brain_region", "pon"]
+    # - age:
+    #     g: ["18", "15"]
+    #     subset: ["brain_region", "pon"]
+    # - age:
+    #     g: ["21", "15"]
+    #     subset: ["brain_region", "pon"]
+    # - age:
+    #     g: ["21", "18"]
+    #     subset: ["brain_region", "pon"]
+
+    # - age:
+    #     g: ["12", "3"]
+    #     subset: ["brain_region", "svz"]
+    # - age:
+    #     g: ["15", "3"]
+    #     subset: ["brain_region", "svz"]
+    # - age:
+    #     g: ["18", "3"]
+    #     subset: ["brain_region", "svz"]
+    # - age:
+    #     g: ["21", "3"]
+    #     subset: ["brain_region", "svz"]
+    # - age:
+    #     g: ["15", "12"]
+    #     subset: ["brain_region", "svz"]
+    # - age:
+    #     g: ["18", "12"]
+    #     subset: ["brain_region", "svz"]
+    # - age:
+    #     g: ["21", "12"]
+    #     subset: ["brain_region", "svz"]
+    # - age:
+    #     g: ["18", "15"]
+    #     subset: ["brain_region", "svz"]
+    # - age:
+    #     g: ["21", "15"]
+    #     subset: ["brain_region", "svz"]
+    # - age:
+    #     g: ["21", "18"]
+    #     subset: ["brain_region", "svz"]
+
+    # - age:
+    #     g: ["12", "3"]
+    #     subset: ["brain_region", "th"]
+    # - age:
+    #     g: ["15", "3"]
+    #     subset: ["brain_region", "th"]
+    # - age:
+    #     g: ["18", "3"]
+    #     subset: ["brain_region", "th"]
+    # - age:
+    #     g: ["21", "3"]
+    #     subset: ["brain_region", "th"]
+    # - age:
+    #     g: ["15", "12"]
+    #     subset: ["brain_region", "th"]
+    # - age:
+    #     g: ["18", "12"]
+    #     subset: ["brain_region", "th"]
+    # - age:
+    #     g: ["21", "12"]
+    #     subset: ["brain_region", "th"]
+    # - age:
+    #     g: ["18", "15"]
+    #     subset: ["brain_region", "th"]
+    # - age:
+    #     g: ["21", "15"]
+    #     subset: ["brain_region", "th"]
+    # - age:
+    #     g: ["21", "18"]
+    #     subset: ["brain_region", "th"]
+
+    # - age:
+    #     g: ["12", "3"]
+    #     subset: ["brain_region", "vis"]
+    # - age:
+    #     g: ["15", "3"]
+    #     subset: ["brain_region", "vis"]
+    # - age:
+    #     g: ["18", "3"]
+    #     subset: ["brain_region", "vis"]
+    # - age:
+    #     g: ["21", "3"]
+    #     subset: ["brain_region", "vis"]
+    # - age:
+    #     g: ["15", "12"]
+    #     subset: ["brain_region", "vis"]
+    # - age:
+    #     g: ["18", "12"]
+    #     subset: ["brain_region", "vis"]
+    # - age:
+    #     g: ["21", "12"]
+    #     subset: ["brain_region", "vis"]
+    # - age:
+    #     g: ["18", "15"]
+    #     subset: ["brain_region", "vis"]
+    # - age:
+    #     g: ["21", "15"]
+    #     subset: ["brain_region", "vis"]
+    # - age:
+    #     g: ["21", "18"]
+    #     subset: ["brain_region", "vis"]
+
+  comparisons_brain_region:
+    - brain_region:
+        g: ["cer", "cc"]
+    - brain_region:
+        g: ["cor", "cc"]
+    - brain_region:
+        g: ["cp", "cc"]
+    - brain_region:
+        g: ["ent", "cc"]
+    - brain_region:
+        g: ["hi", "cc"]
+    - brain_region:
+        g: ["hi2", "cc"]
+    - brain_region:
+        g: ["hy", "cc"]
+    - brain_region:
+        g: ["med", "cc"]
+    - brain_region:
+        g: ["olf", "cc"]
+    - brain_region:
+        g: ["plx", "cc"]
+    - brain_region:
+        g: ["pon", "cc"]
+    - brain_region:
+        g: ["svz", "cc"]
+    - brain_region:
+        g: ["th", "cc"]
+    - brain_region:
+        g: ["vis", "cc"]
+
+    - brain_region:
+        g: ["cor", "cer"]
+    - brain_region:
+        g: ["cp", "cer"]
+    - brain_region:
+        g: ["ent", "cer"]
+    - brain_region:
+        g: ["hi", "cer"]
+    - brain_region:
+        g: ["hi2", "cer"]
+    - brain_region:
+        g: ["hy", "cer"]
+    - brain_region:
+        g: ["med", "cer"]
+    - brain_region:
+        g: ["olf", "cer"]
+    - brain_region:
+        g: ["plx", "cer"]
+    - brain_region:
+        g: ["pon", "cer"]
+    - brain_region:
+        g: ["svz", "cer"]
+    - brain_region:
+        g: ["th", "cer"]
+    - brain_region:
+        g: ["vis", "cer"]
+
+    - brain_region:
+        g: ["cp", "cor"]
+    - brain_region:
+        g: ["ent", "cor"]
+    - brain_region:
+        g: ["hi", "cor"]
+    - brain_region:
+        g: ["hi2", "cor"]
+    - brain_region:
+        g: ["hy", "cor"]
+    - brain_region:
+        g: ["med", "cor"]
+    - brain_region:
+        g: ["olf", "cor"]
+    - brain_region:
+        g: ["plx", "cor"]
+    - brain_region:
+        g: ["pon", "cor"]
+    - brain_region:
+        g: ["svz", "cor"]
+    - brain_region:
+        g: ["th", "cor"]
+    - brain_region:
+        g: ["vis", "cor"]
+
+    - brain_region:
+        g: ["ent", "cp"]
+    - brain_region:
+        g: ["hi", "cp"]
+    - brain_region:
+        g: ["hi2", "cp"]
+    - brain_region:
+        g: ["hy", "cp"]
+    - brain_region:
+        g: ["med", "cp"]
+    - brain_region:
+        g: ["olf", "cp"]
+    - brain_region:
+        g: ["plx", "cp"]
+    - brain_region:
+        g: ["pon", "cp"]
+    - brain_region:
+        g: ["svz", "cp"]
+    - brain_region:
+        g: ["th", "cp"]
+    - brain_region:
+        g: ["vis", "cp"]
+
+    - brain_region:
+        g: ["hi", "ent"]
+    - brain_region:
+        g: ["hi2", "ent"]
+    - brain_region:
+        g: ["hy", "ent"]
+    - brain_region:
+        g: ["med", "ent"]
+    - brain_region:
+        g: ["olf", "ent"]
+    - brain_region:
+        g: ["plx", "ent"]
+    - brain_region:
+        g: ["pon", "ent"]
+    - brain_region:
+        g: ["svz", "ent"]
+    - brain_region:
+        g: ["th", "ent"]
+    - brain_region:
+        g: ["vis", "ent"]
+
+    - brain_region:
+        g: ["hi2", "hi"]
+    - brain_region:
+        g: ["hy", "hi"]
+    - brain_region:
+        g: ["med", "hi"]
+    - brain_region:
+        g: ["olf", "hi"]
+    - brain_region:
+        g: ["plx", "hi"]
+    - brain_region:
+        g: ["pon", "hi"]
+    - brain_region:
+        g: ["svz", "hi"]
+    - brain_region:
+        g: ["th", "hi"]
+    - brain_region:
+        g: ["vis", "hi"]
+
+    - brain_region:
+        g: ["hy", "hi2"]
+    - brain_region:
+        g: ["med", "hi2"]
+    - brain_region:
+        g: ["olf", "hi2"]
+    - brain_region:
+        g: ["plx", "hi2"]
+    - brain_region:
+        g: ["pon", "hi2"]
+    - brain_region:
+        g: ["svz", "hi2"]
+    - brain_region:
+        g: ["th", "hi2"]
+    - brain_region:
+        g: ["vis", "hi2"]
+
+    - brain_region:
+        g: ["med", "hy"]
+    - brain_region:
+        g: ["olf", "hy"]
+    - brain_region:
+        g: ["plx", "hy"]
+    - brain_region:
+        g: ["pon", "hy"]
+    - brain_region:
+        g: ["svz", "hy"]
+    - brain_region:
+        g: ["th", "hy"]
+    - brain_region:
+        g: ["vis", "hy"]
+
+    - brain_region:
+        g: ["olf", "med"]
+    - brain_region:
+        g: ["plx", "med"]
+    - brain_region:
+        g: ["pon", "med"]
+    - brain_region:
+        g: ["svz", "med"]
+    - brain_region:
+        g: ["th", "med"]
+    - brain_region:
+        g: ["vis", "med"]
+
+    - brain_region:
+        g: ["plx", "olf"]
+    - brain_region:
+        g: ["pon", "olf"]
+    - brain_region:
+        g: ["svz", "olf"]
+    - brain_region:
+        g: ["th", "olf"]
+    - brain_region:
+        g: ["vis", "olf"]
+
+    - brain_region:
+        g: ["pon", "plx"]
+    - brain_region:
+        g: ["svz", "plx"]
+    - brain_region:
+        g: ["th", "plx"]
+    - brain_region:
+        g: ["vis", "plx"]
+
+    - brain_region:
+        g: ["svz", "pon"]
+    - brain_region:
+        g: ["th", "pon"]
+    - brain_region:
+        g: ["vis", "pon"]
+
+    - brain_region:
+        g: ["th", "svz"]
+    - brain_region:
+        g: ["vis", "svz"]
+
+    - brain_region:
+        g: ["vis", "th"]
+
+  comparisons_brain_region_tms:
+    # - brain_region:
+    #     g: ["cc", "brain"]
+    # - brain_region:
+    #     g: ["cer", "brain"]
+    # - brain_region:
+    #     g: ["cor", "brain"]
+    # - brain_region:
+    #     g: ["cp", "brain"]
+    # - brain_region:
+    #     g: ["ent", "brain"]
+    # - brain_region:
+    #     g: ["hi", "brain"]
+    # - brain_region:
+    #     g: ["hi2", "brain"]
+    # - brain_region:
+    #     g: ["hy", "brain"]
+    # - brain_region:
+    #     g: ["med", "brain"]
+    # - brain_region:
+    #     g: ["olf", "brain"]
+    # - brain_region:
+    #     g: ["plx", "brain"]
+    # - brain_region:
+    #     g: ["pon", "brain"]
+    # - brain_region:
+    #     g: ["svz", "brain"]
+    # - brain_region:
+    #     g: ["th", "brain"]
+    # - brain_region:
+    #     g: ["vis", "brain"]
+    
+    # - brain_region:
+    #     g: ["cc", "brain"]
+    #     subset: ["age", "3"]
+    # - brain_region:
+    #     g: ["cer", "brain"]
+    #     subset: ["age", "3"]
+    # - brain_region:
+    #     g: ["cor", "brain"]
+    #     subset: ["age", "3"]
+    # - brain_region:
+    #     g: ["cp", "brain"]
+    #     subset: ["age", "3"]
+    # - brain_region:
+    #     g: ["ent", "brain"]
+    #     subset: ["age", "3"]
+    # - brain_region:
+    #     g: ["hi", "brain"]
+    #     subset: ["age", "3"]
+    # - brain_region:
+    #     g: ["hi2", "brain"]
+    #     subset: ["age", "3"]
+    # - brain_region:
+    #     g: ["hy", "brain"]
+    #     subset: ["age", "3"]
+    # - brain_region:
+    #     g: ["med", "brain"]
+    #     subset: ["age", "3"]
+    # - brain_region:
+    #     g: ["olf", "brain"]
+    #     subset: ["age", "3"]
+    # - brain_region:
+    #     g: ["plx", "brain"]
+    #     subset: ["age", "3"]
+    # - brain_region:
+    #     g: ["pon", "brain"]
+    #     subset: ["age", "3"]
+    # - brain_region:
+    #     g: ["svz", "brain"]
+    #     subset: ["age", "3"]
+    # - brain_region:
+    #     g: ["th", "brain"]
+    #     subset: ["age", "3"]
+    # - brain_region:
+    #     g: ["vis", "brain"]
+    #     subset: ["age", "3"]
+
+    # - brain_region:
+    #     g: ["cc", "brain"]
+    #     subset: ["age", "12"]
+    # - brain_region:
+    #     g: ["cer", "brain"]
+    #     subset: ["age", "12"]
+    # - brain_region:
+    #     g: ["cor", "brain"]
+    #     subset: ["age", "12"]
+    # - brain_region:
+    #     g: ["cp", "brain"]
+    #     subset: ["age", "12"]
+    # - brain_region:
+    #     g: ["ent", "brain"]
+    #     subset: ["age", "12"]
+    # - brain_region:
+    #     g: ["hi", "brain"]
+    #     subset: ["age", "12"]
+    # - brain_region:
+    #     g: ["hi2", "brain"]
+    #     subset: ["age", "12"]
+    # - brain_region:
+    #     g: ["hy", "brain"]
+    #     subset: ["age", "12"]
+    # - brain_region:
+    #     g: ["med", "brain"]
+    #     subset: ["age", "12"]
+    # - brain_region:
+    #     g: ["olf", "brain"]
+    #     subset: ["age", "12"]
+    # - brain_region:
+    #     g: ["plx", "brain"]
+    #     subset: ["age", "12"]
+    # - brain_region:
+    #     g: ["pon", "brain"]
+    #     subset: ["age", "12"]
+    # - brain_region:
+    #     g: ["svz", "brain"]
+    #     subset: ["age", "12"]
+    # - brain_region:
+    #     g: ["th", "brain"]
+    #     subset: ["age", "12"]
+    # - brain_region:
+    #     g: ["vis", "brain"]
+    #     subset: ["age", "12"]
+
+    # - brain_region:
+    #     g: ["cc", "brain"]
+    #     subset: ["age", "15"]
+    # - brain_region:
+    #     g: ["cer", "brain"]
+    #     subset: ["age", "15"]
+    # - brain_region:
+    #     g: ["cor", "brain"]
+    #     subset: ["age", "15"]
+    # - brain_region:
+    #     g: ["cp", "brain"]
+    #     subset: ["age", "15"]
+    # - brain_region:
+    #     g: ["ent", "brain"]
+    #     subset: ["age", "15"]
+    # - brain_region:
+    #     g: ["hi", "brain"]
+    #     subset: ["age", "15"]
+    # - brain_region:
+    #     g: ["hi2", "brain"]
+    #     subset: ["age", "15"]
+    # - brain_region:
+    #     g: ["hy", "brain"]
+    #     subset: ["age", "15"]
+    # - brain_region:
+    #     g: ["med", "brain"]
+    #     subset: ["age", "15"]
+    # - brain_region:
+    #     g: ["olf", "brain"]
+    #     subset: ["age", "15"]
+    # - brain_region:
+    #     g: ["plx", "brain"]
+    #     subset: ["age", "15"]
+    # - brain_region:
+    #     g: ["pon", "brain"]
+    #     subset: ["age", "15"]
+    # - brain_region:
+    #     g: ["svz", "brain"]
+    #     subset: ["age", "15"]
+    # - brain_region:
+    #     g: ["th", "brain"]
+    #     subset: ["age", "15"]
+    # - brain_region:
+    #     g: ["vis", "brain"]
+    #     subset: ["age", "15"]
+
+volcano_scatter_plot_manual:
+  diff_log: _log2
+  parameters:
+    updownregulated: 1.5
+    significance: 0.05
+    mineffectsize: 0.5
+  manual_plots_parameters:
+    heighlight_features: [mmu-miR-155-5p]
+    plot_nrows: 2
+    plot_ncols: 2
+  comparisons:
+    - sex:
+        g: ["Male", "Female"]
+        subset: ["brain_region", "cor"]
+    - sex:
+        g: ["Male", "Female"]
+        subset: ["brain_region", "cp"]
+    - sex:
+        g: ["Male", "Female"]
+        subset: ["brain_region", "th"]
+    - sex:
+        g: ["Male", "Female"]
+        subset: ["brain_region", "olf"]
+#   manual_plots_parameters:
+#     heighlight_features: [mmu-miR-155-5p]
+#     plot_nrows: 2
+#     plot_ncols: 2
+#   comparisons:
+#     - sex:
+#         g: ["Male", "Female"]
+#         subset: ["brain_region", "cor"]
+#     - sex:
+#         g: ["Male", "Female"]
+#         subset: ["brain_region", "cp"]
+#     - sex:
+#         g: ["Male", "Female"]
+#         subset: ["brain_region", "th"]
+#     - sex:
+#         g: ["Male", "Female"]
+#         subset: ["brain_region", "pon"]
+
+#pathway_analysis_results_heatmap_plots:
+#  filter_params:
+#    min_pathway: 0
+#    min_feature: 2
+#    sig_th: 0.05
+
+fc_brain_region_vs_tms_brain_upset_plot:
+  parameters:
+    log_fc_thres_list: [1.5, 2, 3]
+    sig_lvl: 0.05
+    tissues: brain_region
+    tissues_control: brain
+    mode: distinct
+    plot_th: 3
+    diff_log: _log2
+
+pathway_analysis_bubble_plot:
+  sig_lvl: 0.05
+  method: ["gsea"] #"ora"
+  comparisons:
+    - sex:
+        g: ["Male", "Female"]
+        subset: ["brain_region", "cor"]
+    - sex:
+        g: ["Male", "Female"]
+        subset: ["brain_region", "cp"]
+    - sex:
+        g: ["Male", "Female"]
+        subset: ["brain_region", "th"]
+
+pathway_analysis_bubble_plot_age_correlated:
+  sig_lvl: 0.05
+  method: ["gsea"] #"ora"
+  comparisons:
+    - age:
+        subset: ["brain_region", "cc"]
+    - age:
+        subset: ["brain_region", "cer"]
+    - age:
+        subset: ["brain_region", "cor"]
+    - age:
+        subset: ["brain_region", "cp"]
+    - age:
+        subset: ["brain_region", "ent"]
+    - age:
+        subset: ["brain_region", "hi"]
+    - age:
+        subset: ["brain_region", "hi2"]
+    - age:
+        subset: ["brain_region", "hy"]
+    - age:
+        subset: ["brain_region", "med"]
+    - age:
+        subset: ["brain_region", "olf"]
+    - age:
+        subset: ["brain_region", "plx"]
+    - age:
+        subset: ["brain_region", "pon"]
+    - age:
+        subset: ["brain_region", "svz"]
+    - age:
+        subset: ["brain_region", "th"]
+    - age:
+        subset: ["brain_region", "vis"]
+
+
+target_genes_scatter_plot:
+  feature: "mmu-miR-155-5p"
+  gene_list_folder_path: "data/cas_target_genes_of_mmu-miR-155-5p_unique_origin.csv"
+  split_prop: "brain_region"
+  hline_th: 3000
+
+correlation_mirna_mrna:
+  method: [pearson] #, spearman]
+  adjustment: BH
+  corr_th: [0.7, 0.5, 0.4, 0.3]
+
+correlation_mirna_target_genes_cas:
+  feature: "mmu-miR-155-5p"
+  gene_list_cas_folder_path: "data/cas.csv"
+  gene_list_target_genes_folder_path: "data/miRTargetLink/miRTargetLink_2.0_target_genes_mmu-miR-155-5p_filtered.csv"
+  save_folder: "target_genes_corr"
+  split_prop: "brain_region"
+  colour_genes: "data/gene_pathway_colour_mapping.csv"
+  split_prop_scatter: ["brain_region", "age"]
+  corr_params:
+    - method: [spearman]
+    - adjustment: BH
+    - corr_th: [0.5, 0.3]
+    - sig_lvl: [0.05]
+  manual_plots_parameters:
+    - genes: ["ARNTL", "CCNH", "ZFP322A", "PTPRJ"]
+    - target_genes_source: "target_genes_all"
+    - method: [spearman]
+    - corr_th: 0.3
+    - plot_layout: [2, 2]
+    - plot_size: [9, 9]
+
+
+correlation_mirna_target_genes_martin:
+  feature: "mmu-miR-155-5p"
+  gene_list_cas_folder_path: "data/cas.csv"
+  gene_list_target_genes: 
+    - path: "data/paper_10.1080_15476286.2025.2449775/krnb_a_2449775_sm9584.xlsx"
+    - sheet: "Venny 2.1 results"
+  save_folder: "target_genes_martin_corr"
+  split_prop: "brain_region"
+  #colour_genes: "gene_pathway_colour_mapping.csv"
+  split_prop_scatter: ["brain_region", "age"]
+  corr_params:
+    - method: [spearman]
+    - adjustment: BH
+    - corr_th: [0.5, 0.3]
+    - sig_lvl: [0.05]
+  manual_plots_parameters:
+    - genes: ["ARNTL", "ADAM23", "PCSK5", "REPS2", "NRCAM", "NSG2"]
+    - target_genes_source: "target_genes_all"
+    - method: [spearman]
+    - corr_th: 0.3
+    - plot_layout: [3, 2]
+    - plot_size: [8, 10.5]
+
+correlation_mirna_target_genes_mtor_table_scatter_plot:
+  feature: "mmu-miR-155-5p"
+  gene_list_cas_folder_path: "data/cas.csv"
+  gene_list_target_genes: 
+    - path: "data/paper_10.1080_15476286.2025.2449775/krnb_a_2449775_sm9584.xlsx"
+    - sheet: "Venny 2.1 results"
+  gene_list_target_genes_folder_path: ".data/miRTargetLink/miRTargetLink_2.0_target_genes_mmu-miR-155-5p_filtered.csv"
+  gene_list_mtor: "data/mtor_gene_list.csv"
+  save_folder: "target_genes_mtor"
+  split_prop: "brain_region"
+  corr_prop: "age"
+  #colour_genes: "gene_pathway_colour_mapping.csv"
+  split_prop_scatter: ["brain_region", "age"]
+  corr_params:
+    - method: [spearman]
+    - adjustment: BH
+    - corr_th: [0.5, 0.3]
+    - sig_lvl: [0.05]
+  manual_plots_parameters:
+    - genes: ["ARNTL", "ADAM23", "PCSK5", "REPS2", "NRCAM", "NSG2"]
+    - target_genes_source: "target_genes_all"
+    - method: [spearman]
+    - corr_th: 0.3
+    - plot_layout: [3, 2]
+    - plot_size: [8, 10.5]
+
+external_bar_plot:
+  raw_data_path: "data/paper_10.1523_JNEUROSCI.3582-16.2017/LoessM_norm_miRNA_array_WEBSITE_final.csv"
+  id_col: "Our name"
+  rna: "miR-146a-5p" #"miR-155-5p" #"miR-5100"
+  plot_titles: 
+    - plot_title: "miR-146a-5p\nBrainstem versus:" #"miR-155-5p\nBrainstem versus:" #"miR-5100\nBrainstem versus:"
+    - x_lab: ""
+    - y_lab: "Fold change"
+  columns_mean:
+    - mean_bs.ago: "Brainstem"
+    - mean_bs.Syn: "All Neurons" 
+    - mean_bs.ChAT: "Motor Neurons"
+    - mean_bs.GFAP: "Astrocytes"
+    - mean_bs.Lyz2: "Microglia/Immune"
+  columns_fc:
+    - log2FC_Synvsago_bs: "All Neurons"
+    - log2FC_ChATvsago_bs: "Motor Neurons" 
+    - log2FC_GFAPvsago_bs: "Astrocytes"
+    - log2FC_Lyz2vsago_bs: "Microglia/Immune"
+  results_folder: "results/results_external/paper_10.1523_JNEUROSCI.3582-16.2017"
+
+overlap_sig_correlated_paper_bar_plot:
+  raw_data_path: "data/mirna_list_cholinergic_cleaned_flat.csv"
+  thresholds:
+    adj_p_value: 0.05
+    corr_th: [0.3, 0.5]
+  method: [spearman]
+  props: 
+    - p1: ["brain_region", "age"]
+  plot_size: 
+    image_height: 6
+    image_width: 6
+
+mirna_neighborhood:
+  thresholds:
+    adj_p_value: 0.05
+    corr_th: [0.3, 0.5]
+  method: [spearman]
+  props: 
+    - p1: ["brain_region", "age"]
+  plot_layout:
+    plot_nrows: 8
+    plot_ncols: 2
+  plot_size: 
+    image_height: 28
+    image_width: 18
+
+isomir_line_plot:
+  plot_group: "brain_region"
+  comp_group: "age"
+  feature: "mmu-miR-155-5p"
+  colours:
+    - canonical: "#525200"
+    - rest: "#DFDFB9"
+  feature_col: "miRNA"
+  plot_layout: [3, 5]
+  plot_size: [18, 9]
+  manual_plot:
+    - props: [vis, svz, cer, cc, pon] #[cor, cp, ent, hi, hi2, hy, med, olf, plx, th] 
+    - plot_layout: [1, 5] #[2, 5]
+    - plot_size: [9, 3.5] #[12,6]
+
+isomir_heatmap_plot:
+  plot_group: "brain_region"
+  feature: "mmu-miR-155-5p"
+  top_list: [10, 15, 20, 25]
+  colours:
+    - canonical: "#525200"
+    - rest: "#DFDFB9"
+  feature_col: "miRNA"

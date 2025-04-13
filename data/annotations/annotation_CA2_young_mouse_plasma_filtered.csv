@@ -1,0 +1,69 @@
+mouse_ID	V1	Pool number	Sample ID	Barcode Number	SampleID	sampleID	cohort	ID	brain_region	brain_region_long	age	sex	experiment	mouseID	name	Experiment	treatment	months	cage	injection type	fastq_name
+72	1223	BA77	CA2_cc_72	29	CA2_cc_72	BulkSeq_cc_72	CA2	CA2_cc_72	cc	Corpus callosum	19	Male	CA2	72	27	young mouse plasma	PBS	19	36846	retro-orbital	BA77_CA2_cc_72_1
+73	1055	BA67	CA2_cc_73	13	CA2_cc_73	BulkSeq_cc_73	CA2	CA2_cc_73	cc	Corpus callosum	19	Male	CA2	73	28	young mouse plasma	old mice with young plasma	19	36848	retro-orbital	BA67_CA2_cc_73_1
+76	1095	BA69	CA2_cc_76	29	CA2_cc_76	BulkSeq_cc_76	CA2	CA2_cc_76	cc	Corpus callosum	19	Male	CA2	76	31	young mouse plasma	PBS	19	36846	retro-orbital	BA69_CA2_cc_76_1
+80	1047	BA66	CA2_cc_80	29	CA2_cc_80	BulkSeq_cc_80	CA2	CA2_cc_80	cc	Corpus callosum	19	Male	CA2	80	35	young mouse plasma	PBS	19	36543	retro-orbital	BA66_CA2_cc_80_1
+81	1239	BA78	CA2_cc_81	29	CA2_cc_81	BulkSeq_cc_81	CA2	CA2_cc_81	cc	Corpus callosum	19	Male	CA2	81	36	young mouse plasma	old mice with young plasma	19	36848	retro-orbital	BA78_CA2_cc_81_1
+84	808	BA51	CA2_cc_84	30	CA2_cc_84	BulkSeq_cc_84	CA2	CA2_cc_84	cc	Corpus callosum	19	Male	CA2	84	39	young mouse plasma	PBS	19	36543	retro-orbital	BA51_CA2_cc_84_1
+72	1233	BA78	CA2_cer_72	15	CA2_cer_72	BulkSeq_cer_72	CA2	CA2_cer_72	cer	Cerebellum	19	Male	CA2	72	27	young mouse plasma	PBS	19	36846	retro-orbital	BA78_CA2_cer_72_1
+73	1081	BA68	CA2_cer_73	31	CA2_cer_73	BulkSeq_cer_73	CA2	CA2_cer_73	cer	Cerebellum	19	Male	CA2	73	28	young mouse plasma	old mice with young plasma	19	36848	retro-orbital	BA68_CA2_cer_73_1
+77	1137	BA72	CA2_cer_77	15	CA2_cer_77	BulkSeq_cer_77	CA2	CA2_cer_77	cer	Cerebellum	19	Male	CA2	77	32	young mouse plasma	old mice with young plasma	19	36848	retro-orbital	BA72_CA2_cer_77_1
+80	1232	BA78	CA2_cer_80	14	CA2_cer_80	BulkSeq_cer_80	CA2	CA2_cer_80	cer	Cerebellum	19	Male	CA2	80	35	young mouse plasma	PBS	19	36543	retro-orbital	BA78_CA2_cer_80_1
+81	982	BA62	CA2_cer_81	28	CA2_cer_81	BulkSeq_cer_81	CA2	CA2_cer_81	cer	Cerebellum	19	Male	CA2	81	36	young mouse plasma	old mice with young plasma	19	36848	retro-orbital	BA62_CA2_cer_81_1
+84	729	BA46	CA2_cer_84	31	CA2_cer_84	BulkSeq_cer_84	CA2	CA2_cer_84	cer	Cerebellum	19	Male	CA2	84	39	young mouse plasma	PBS	19	36543	retro-orbital	BA46_CA2_cer_84_1
+72	1220	BA77	CA2_cor_72	26	CA2_cor_72	BulkSeq_cor_72	CA2	CA2_cor_72	cor	Motor cortex	19	Male	CA2	72	27	young mouse plasma	PBS	19	36846	retro-orbital	BA77_CA2_cor_72_1
+76	1092	BA69	CA2_cor_76	26	CA2_cor_76	BulkSeq_cor_76	CA2	CA2_cor_76	cor	Motor cortex	19	Male	CA2	76	31	young mouse plasma	PBS	19	36846	retro-orbital	BA69_CA2_cor_76_1
+77	1116	BA71	CA2_cor_77	2	CA2_cor_77	BulkSeq_cor_77	CA2	CA2_cor_77	cor	Motor cortex	19	Male	CA2	77	32	young mouse plasma	old mice with young plasma	19	36848	retro-orbital	BA71_CA2_cor_77_1
+80	1044	BA66	CA2_cor_80	26	CA2_cor_80	BulkSeq_cor_80	CA2	CA2_cor_80	cor	Motor cortex	19	Male	CA2	80	35	young mouse plasma	PBS	19	36543	retro-orbital	BA66_CA2_cor_80_1
+81	1236	BA78	CA2_cor_81	26	CA2_cor_81	BulkSeq_cor_81	CA2	CA2_cor_81	cor	Motor cortex	19	Male	CA2	81	36	young mouse plasma	old mice with young plasma	19	36848	retro-orbital	BA78_CA2_cor_81_1
+84	674	BA43	CA2_cor_84	16	CA2_cor_84	BulkSeq_cor_84	CA2	CA2_cor_84	cor	Motor cortex	19	Male	CA2	84	39	young mouse plasma	PBS	19	36543	retro-orbital	BA43_CA2_cor_84_1
+72	1221	BA77	CA2_cp_72	27	CA2_cp_72	BulkSeq_cp_72	CA2	CA2_cp_72	cp	Caudate putamen	19	Male	CA2	72	27	young mouse plasma	PBS	19	36846	retro-orbital	BA77_CA2_cp_72_1
+76	1093	BA69	CA2_cp_76	27	CA2_cp_76	BulkSeq_cp_76	CA2	CA2_cp_76	cp	Caudate putamen	19	Male	CA2	76	31	young mouse plasma	PBS	19	36846	retro-orbital	BA69_CA2_cp_76_1
+77	1117	BA71	CA2_cp_77	3	CA2_cp_77	BulkSeq_cp_77	CA2	CA2_cp_77	cp	Caudate putamen	19	Male	CA2	77	32	young mouse plasma	old mice with young plasma	19	36848	retro-orbital	BA71_CA2_cp_77_1
+81	1237	BA78	CA2_cp_81	27	CA2_cp_81	BulkSeq_cp_81	CA2	CA2_cp_81	cp	Caudate putamen	19	Male	CA2	81	36	young mouse plasma	old mice with young plasma	19	36848	retro-orbital	BA78_CA2_cp_81_1
+84	714	BA45	CA2_cp_84	32	CA2_cp_84	BulkSeq_cp_84	CA2	CA2_cp_84	cp	Caudate putamen	19	Male	CA2	84	39	young mouse plasma	PBS	19	36543	retro-orbital	BA45_CA2_cp_84_1
+72	1226	BA77	CA2_hi_72	32	CA2_hi_72	BulkSeq_hi_72	CA2	CA2_hi_72	hi	Hippocampus (anterior)	19	Male	CA2	72	27	young mouse plasma	PBS	19	36846	retro-orbital	BA77_CA2_hi_72_1
+73	1058	BA67	CA2_hi_73	16	CA2_hi_73	BulkSeq_hi_73	CA2	CA2_hi_73	hi	Hippocampus (anterior)	19	Male	CA2	73	28	young mouse plasma	old mice with young plasma	19	36848	retro-orbital	BA67_CA2_hi_73_1
+76	1098	BA69	CA2_hi_76	32	CA2_hi_76	BulkSeq_hi_76	CA2	CA2_hi_76	hi	Hippocampus (anterior)	19	Male	CA2	76	31	young mouse plasma	PBS	19	36846	retro-orbital	BA69_CA2_hi_76_1
+77	1122	BA71	CA2_hi_77	16	CA2_hi_77	BulkSeq_hi_77	CA2	CA2_hi_77	hi	Hippocampus (anterior)	19	Male	CA2	77	32	young mouse plasma	old mice with young plasma	19	36848	retro-orbital	BA71_CA2_hi_77_1
+80	1050	BA66	CA2_hi_80	32	CA2_hi_80	BulkSeq_hi_80	CA2	CA2_hi_80	hi	Hippocampus (anterior)	19	Male	CA2	80	35	young mouse plasma	PBS	19	36543	retro-orbital	BA66_CA2_hi_80_1
+81	1242	BA78	CA2_hi_81	32	CA2_hi_81	BulkSeq_hi_81	CA2	CA2_hi_81	hi	Hippocampus (anterior)	19	Male	CA2	81	36	young mouse plasma	old mice with young plasma	19	36848	retro-orbital	BA78_CA2_hi_81_1
+72	1234	BA78	CA2_med_72	16	CA2_med_72	BulkSeq_med_72	CA2	CA2_med_72	med	Medulla	19	Male	CA2	72	27	young mouse plasma	PBS	19	36846	retro-orbital	BA78_CA2_med_72_1
+73	1082	BA68	CA2_med_73	32	CA2_med_73	BulkSeq_med_73	CA2	CA2_med_73	med	Medulla	19	Male	CA2	73	28	young mouse plasma	old mice with young plasma	19	36848	retro-orbital	BA68_CA2_med_73_1
+76	1114	BA70	CA2_med_76	32	CA2_med_76	BulkSeq_med_76	CA2	CA2_med_76	med	Medulla	19	Male	CA2	76	31	young mouse plasma	PBS	19	36846	retro-orbital	BA70_CA2_med_76_1
+77	1138	BA72	CA2_med_77	16	CA2_med_77	BulkSeq_med_77	CA2	CA2_med_77	med	Medulla	19	Male	CA2	77	32	young mouse plasma	old mice with young plasma	19	36848	retro-orbital	BA72_CA2_med_77_1
+80	1235	BA78	CA2_med_80	25	CA2_med_80	BulkSeq_med_80	CA2	CA2_med_80	med	Medulla	19	Male	CA2	80	35	young mouse plasma	PBS	19	36543	retro-orbital	BA78_CA2_med_80_1
+81	983	BA62	CA2_med_81	29	CA2_med_81	BulkSeq_med_81	CA2	CA2_med_81	med	Medulla	19	Male	CA2	81	36	young mouse plasma	old mice with young plasma	19	36848	retro-orbital	BA62_CA2_med_81_1
+84	730	BA46	CA2_med_84	32	CA2_med_84	BulkSeq_med_84	CA2	CA2_med_84	med	Medulla	19	Male	CA2	84	39	young mouse plasma	PBS	19	36543	retro-orbital	BA46_CA2_med_84_1
+72	750	BA48	CA2_olf_72	4	CA2_olf_72	BulkSeq_olf_72	CA2	CA2_olf_72	olf	Olfactory bulb	19	Male	CA2	72	27	young mouse plasma	PBS	19	36846	retro-orbital	BA48_CA2_olf_72_1
+73	751	BA48	CA2_olf_73	13	CA2_olf_73	BulkSeq_olf_73	CA2	CA2_olf_73	olf	Olfactory bulb	19	Male	CA2	73	28	young mouse plasma	old mice with young plasma	19	36848	retro-orbital	BA48_CA2_olf_73_1
+76	754	BA48	CA2_olf_76	16	CA2_olf_76	BulkSeq_olf_76	CA2	CA2_olf_76	olf	Olfactory bulb	19	Male	CA2	76	31	young mouse plasma	PBS	19	36846	retro-orbital	BA48_CA2_olf_76_1
+77	763	BA49	CA2_olf_77	1	CA2_olf_77	BulkSeq_olf_77	CA2	CA2_olf_77	olf	Olfactory bulb	19	Male	CA2	77	32	young mouse plasma	old mice with young plasma	19	36848	retro-orbital	BA49_CA2_olf_77_1
+80	766	BA49	CA2_olf_80	4	CA2_olf_80	BulkSeq_olf_80	CA2	CA2_olf_80	olf	Olfactory bulb	19	Male	CA2	80	35	young mouse plasma	PBS	19	36543	retro-orbital	BA49_CA2_olf_80_1
+81	767	BA49	CA2_olf_81	13	CA2_olf_81	BulkSeq_olf_81	CA2	CA2_olf_81	olf	Olfactory bulb	19	Male	CA2	81	36	young mouse plasma	old mice with young plasma	19	36848	retro-orbital	BA49_CA2_olf_81_1
+84	770	BA49	CA2_olf_84	16	CA2_olf_84	BulkSeq_olf_84	CA2	CA2_olf_84	olf	Olfactory bulb	19	Male	CA2	84	39	young mouse plasma	PBS	19	36543	retro-orbital	BA49_CA2_olf_84_1
+72	1227	BA78	CA2_plx_72	1	CA2_plx_72	BulkSeq_plx_72	CA2	CA2_plx_72	plx	Choroid Plexus	19	Male	CA2	72	27	young mouse plasma	PBS	19	36846	retro-orbital	BA78_CA2_plx_72_1
+73	1075	BA68	CA2_plx_73	25	CA2_plx_73	BulkSeq_plx_73	CA2	CA2_plx_73	plx	Choroid Plexus	19	Male	CA2	73	28	young mouse plasma	old mice with young plasma	19	36848	retro-orbital	BA68_CA2_plx_73_1
+76	1107	BA70	CA2_plx_76	25	CA2_plx_76	BulkSeq_plx_76	CA2	CA2_plx_76	plx	Choroid Plexus	19	Male	CA2	76	31	young mouse plasma	PBS	19	36846	retro-orbital	BA70_CA2_plx_76_1
+80	1171	BA74	CA2_plx_80	25	CA2_plx_80	BulkSeq_plx_80	CA2	CA2_plx_80	plx	Choroid Plexus	19	Male	CA2	80	35	young mouse plasma	PBS	19	36543	retro-orbital	BA74_CA2_plx_80_1
+81	955	BA61	CA2_plx_81	1	CA2_plx_81	BulkSeq_plx_81	CA2	CA2_plx_81	plx	Choroid Plexus	19	Male	CA2	81	36	young mouse plasma	old mice with young plasma	19	36848	retro-orbital	BA61_CA2_plx_81_1
+84	723	BA46	CA2_plx_84	25	CA2_plx_84	BulkSeq_plx_84	CA2	CA2_plx_84	plx	Choroid Plexus	19	Male	CA2	84	39	young mouse plasma	PBS	19	36543	retro-orbital	BA46_CA2_plx_84_1
+73	1080	BA68	CA2_pon_73	30	CA2_pon_73	BulkSeq_pon_73	CA2	CA2_pon_73	pon	Pons	19	Male	CA2	73	28	young mouse plasma	old mice with young plasma	19	36848	retro-orbital	BA68_CA2_pon_73_1
+76	1112	BA70	CA2_pon_76	30	CA2_pon_76	BulkSeq_pon_76	CA2	CA2_pon_76	pon	Pons	19	Male	CA2	76	31	young mouse plasma	PBS	19	36846	retro-orbital	BA70_CA2_pon_76_1
+77	1136	BA72	CA2_pon_77	14	CA2_pon_77	BulkSeq_pon_77	CA2	CA2_pon_77	pon	Pons	19	Male	CA2	77	32	young mouse plasma	old mice with young plasma	19	36848	retro-orbital	BA72_CA2_pon_77_1
+80	1229	BA78	CA2_pon_80	3	CA2_pon_80	BulkSeq_pon_80	CA2	CA2_pon_80	pon	Pons	19	Male	CA2	80	35	young mouse plasma	PBS	19	36543	retro-orbital	BA78_CA2_pon_80_1
+81	981	BA62	CA2_pon_81	27	CA2_pon_81	BulkSeq_pon_81	CA2	CA2_pon_81	pon	Pons	19	Male	CA2	81	36	young mouse plasma	old mice with young plasma	19	36848	retro-orbital	BA62_CA2_pon_81_1
+84	728	BA46	CA2_pon_84	30	CA2_pon_84	BulkSeq_pon_84	CA2	CA2_pon_84	pon	Pons	19	Male	CA2	84	39	young mouse plasma	PBS	19	36543	retro-orbital	BA46_CA2_pon_84_1
+72	1224	BA77	CA2_th_72	30	CA2_th_72	BulkSeq_th_72	CA2	CA2_th_72	th	Thalamus	19	Male	CA2	72	27	young mouse plasma	PBS	19	36846	retro-orbital	BA77_CA2_th_72_1
+73	1056	BA67	CA2_th_73	14	CA2_th_73	BulkSeq_th_73	CA2	CA2_th_73	th	Thalamus	19	Male	CA2	73	28	young mouse plasma	old mice with young plasma	19	36848	retro-orbital	BA67_CA2_th_73_1
+76	1096	BA69	CA2_th_76	30	CA2_th_76	BulkSeq_th_76	CA2	CA2_th_76	th	Thalamus	19	Male	CA2	76	31	young mouse plasma	PBS	19	36846	retro-orbital	BA69_CA2_th_76_1
+77	1120	BA71	CA2_th_77	14	CA2_th_77	BulkSeq_th_77	CA2	CA2_th_77	th	Thalamus	19	Male	CA2	77	32	young mouse plasma	old mice with young plasma	19	36848	retro-orbital	BA71_CA2_th_77_1
+80	1048	BA66	CA2_th_80	30	CA2_th_80	BulkSeq_th_80	CA2	CA2_th_80	th	Thalamus	19	Male	CA2	80	35	young mouse plasma	PBS	19	36543	retro-orbital	BA66_CA2_th_80_1
+81	1240	BA78	CA2_th_81	30	CA2_th_81	BulkSeq_th_81	CA2	CA2_th_81	th	Thalamus	19	Male	CA2	81	36	young mouse plasma	old mice with young plasma	19	36848	retro-orbital	BA78_CA2_th_81_1
+84	827	BA53	CA2_th_84	1	CA2_th_84	BulkSeq_th_84	CA2	CA2_th_84	th	Thalamus	19	Male	CA2	84	39	young mouse plasma	PBS	19	36543	retro-orbital	BA53_CA2_th_84_1
+73	1077	BA68	CA2_vis_73	27	CA2_vis_73	BulkSeq_vis_73	CA2	CA2_vis_73	vis	Visual Cortex	19	Male	CA2	73	28	young mouse plasma	old mice with young plasma	19	36848	retro-orbital	BA68_CA2_vis_73_1
+76	1109	BA70	CA2_vis_76	27	CA2_vis_76	BulkSeq_vis_76	CA2	CA2_vis_76	vis	Visual Cortex	19	Male	CA2	76	31	young mouse plasma	PBS	19	36846	retro-orbital	BA70_CA2_vis_76_1
+77	1133	BA72	CA2_vis_77	3	CA2_vis_77	BulkSeq_vis_77	CA2	CA2_vis_77	vis	Visual Cortex	19	Male	CA2	77	32	young mouse plasma	old mice with young plasma	19	36848	retro-orbital	BA72_CA2_vis_77_1
+80	1203	BA76	CA2_vis_80	25	CA2_vis_80	BulkSeq_vis_80	CA2	CA2_vis_80	vis	Visual Cortex	19	Male	CA2	80	35	young mouse plasma	PBS	19	36543	retro-orbital	BA76_CA2_vis_80_1
+81	985	BA62	CA2_vis_81	31	CA2_vis_81	BulkSeq_vis_81	CA2	CA2_vis_81	vis	Visual Cortex	19	Male	CA2	81	36	young mouse plasma	old mice with young plasma	19	36848	retro-orbital	BA62_CA2_vis_81_1
+84	725	BA46	CA2_vis_84	27	CA2_vis_84	BulkSeq_vis_84	CA2	CA2_vis_84	vis	Visual Cortex	19	Male	CA2	84	39	young mouse plasma	PBS	19	36543	retro-orbital	BA46_CA2_vis_84_1
