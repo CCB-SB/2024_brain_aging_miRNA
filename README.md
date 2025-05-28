@@ -20,7 +20,7 @@ Annika Engel<sup>&,1</sup>, Viktoria Wagner<sup>&,1,2</sup>, Oliver Hahn<sup>2,3
 
 <sup>&</sup> These authors contributed equally: Annika Engel, Viktoria Wagner
 
-PMID: 40382330 PMCID: PMC12085673 DOI: 10.1038/s41467-025-59860-6 
+PMID: 40382330 PMCID: [PMC12085673](https://pmc.ncbi.nlm.nih.gov/articles/PMC12085673/) DOI: [10.1038/s41467-025-59860-6](https://doi.org/10.1038/s41467-025-59860-6)
 
 ## Usage
 1. Download raw count files from GEO and put them into the "raw_data" folder as described in the README files there.
